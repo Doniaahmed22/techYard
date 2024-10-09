@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\MacBook.png",
+      "PackagePath": "staticwebassets\\Images\\category\\MacBook.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\MacMini.png",
+      "PackagePath": "staticwebassets\\Images\\category\\MacMini.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\MacOS.png",
+      "PackagePath": "staticwebassets\\Images\\category\\MacOS.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\MacPro.png",
+      "PackagePath": "staticwebassets\\Images\\category\\MacPro.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\MacStudio.png",
+      "PackagePath": "staticwebassets\\Images\\category\\MacStudio.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\Network.png",
+      "PackagePath": "staticwebassets\\Images\\category\\Network.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\iMac.png",
+      "PackagePath": "staticwebassets\\Images\\category\\iMac.png"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.techYard.API.props",
+      "PackagePath": "build\\techYard.API.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.techYard.API.props",
+      "PackagePath": "buildMultiTargeting\\techYard.API.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.techYard.API.props",
+      "PackagePath": "buildTransitive\\techYard.API.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.techYard.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

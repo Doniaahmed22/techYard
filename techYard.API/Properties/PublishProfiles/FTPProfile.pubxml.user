@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAcOQyf0EUXUasSJtppCdzlAAAAAACAAAAAAAQZgAAAAEAACAAAADDWtwrNCqXg6lR0/fo2+Sil+d9lKDmyPzs8l8dfHr4WwAAAAAOgAAAAAIAACAAAAC3MylEW/vDWWsnMKC5MSRKrnW01wwdH6DZPtkJIdAv2yAAAAAuvv6J8cDxZ/E72X5N/sahGIr675DzQ226gHXgVgNcykAAAAB0mpCCbJxZ9beE/nfkcddrGQpFBbMSeNs42axqQvDJoORqyk3S3hDIWV+tEmKVbKfktj2JIjW76LkkqeB7mpg9</EncryptedPassword>
+    <_PublishTargetUrl>ftp://155.254.244.35/www.techyardhub.somee.com</_PublishTargetUrl>
+    <History>False|2024-10-09T20:16:15.5935940Z;False|2024-10-09T23:14:01.2803954+03:00;False|2024-10-09T21:55:44.4641501+03:00;False|2024-10-09T21:52:08.6614416+03:00;False|2024-10-09T21:40:56.4831549+03:00;False|2024-10-09T21:35:19.7368804+03:00;False|2024-10-09T21:29:38.5484674+03:00;True|2024-10-09T17:46:27.3749953+03:00;False|2024-10-09T17:22:18.0469495+03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>10/08/2024 23:12:07</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>10/09/2024 17:32:58</publishTime>
+    </File>
+    <File Include="AutoMapper.dll">
+      <publishTime>02/07/2024 23:45:30</publishTime>
+    </File>
+    <File Include="Microsoft.Data.SqlClient.dll">
+      <publishTime>10/19/2023 03:46:40</publishTime>
+    </File>
+    <File Include="Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>10/20/2020 20:13:38</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Abstractions.dll">
+      <publishTime>02/16/2024 23:33:00</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.dll">
+      <publishTime>02/16/2024 23:33:16</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Relational.dll">
+      <publishTime>02/16/2024 23:33:24</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.SqlServer.dll">
+      <publishTime>02/16/2024 23:33:56</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Caching.Memory.dll">
+      <publishTime>01/14/2022 21:54:16</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyInjection.dll">
+      <publishTime>09/26/2022 19:42:22</publishTime>
+    </File>
+    <File Include="Microsoft.Identity.Client.dll">
+      <publishTime>10/19/2020 23:51:12</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.JsonWebTokens.dll">
+      <publishTime>10/13/2020 02:21:34</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Logging.dll">
+      <publishTime>10/13/2020 02:23:12</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Protocols.dll">
+      <publishTime>10/13/2020 02:25:30</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Protocols.OpenIdConnect.dll">
+      <publishTime>10/13/2020 02:31:32</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Tokens.dll">
+      <publishTime>10/13/2020 02:27:48</publishTime>
+    </File>
+    <File Include="Microsoft.OpenApi.dll">
+      <publishTime>08/29/2020 22:14:12</publishTime>
+    </File>
+    <File Include="Microsoft.Win32.SystemEvents.dll">
+      <publishTime>11/15/2019 10:54:18</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.Swagger.dll">
+      <publishTime>01/11/2023 08:48:20</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.SwaggerGen.dll">
+      <publishTime>01/11/2023 08:48:24</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.SwaggerUI.dll">
+      <publishTime>01/11/2023 08:49:02</publishTime>
+    </File>
+    <File Include="System.Configuration.ConfigurationManager.dll">
+      <publishTime>11/15/2019 10:37:04</publishTime>
+    </File>
+    <File Include="System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>02/16/2023 02:32:04</publishTime>
+    </File>
+    <File Include="System.Drawing.Common.dll">
+      <publishTime>11/15/2019 10:54:20</publishTime>
+    </File>
+    <File Include="System.IdentityModel.Tokens.Jwt.dll">
+      <publishTime>10/13/2020 02:20:12</publishTime>
+    </File>
+    <File Include="System.Runtime.Caching.dll">
+      <publishTime>11/15/2019 10:53:44</publishTime>
+    </File>
+    <File Include="System.Security.Cryptography.ProtectedData.dll">
+      <publishTime>11/15/2019 10:53:46</publishTime>
+    </File>
+    <File Include="System.Security.Permissions.dll">
+      <publishTime>11/15/2019 10:56:44</publishTime>
+    </File>
+    <File Include="System.Windows.Extensions.dll">
+      <publishTime>11/15/2019 10:54:30</publishTime>
+    </File>
+    <File Include="techYard.API.deps.json">
+      <publishTime>10/09/2024 17:41:59</publishTime>
+    </File>
+    <File Include="techYard.API.dll">
+      <publishTime>10/09/2024 17:41:57</publishTime>
+    </File>
+    <File Include="techYard.API.exe">
+      <publishTime>10/09/2024 17:41:57</publishTime>
+    </File>
+    <File Include="techYard.API.pdb">
+      <publishTime>10/09/2024 17:41:57</publishTime>
+    </File>
+    <File Include="techYard.API.runtimeconfig.json">
+      <publishTime>10/09/2024 17:41:59</publishTime>
+    </File>
+    <File Include="techYard.Data.dll">
+      <publishTime>10/09/2024 17:20:09</publishTime>
+    </File>
+    <File Include="techYard.Data.pdb">
+      <publishTime>10/09/2024 17:20:09</publishTime>
+    </File>
+    <File Include="techYard.Repository.dll">
+      <publishTime>10/09/2024 17:20:10</publishTime>
+    </File>
+    <File Include="techYard.Repository.pdb">
+      <publishTime>10/09/2024 17:20:10</publishTime>
+    </File>
+    <File Include="techYard.Service.dll">
+      <publishTime>10/09/2024 17:20:11</publishTime>
+    </File>
+    <File Include="techYard.Service.pdb">
+      <publishTime>10/09/2024 17:20:11</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>10/09/2024 17:41:59</publishTime>
+    </File>
+    <File Include="wwwroot/Images/category/iMac.png">
+      <publishTime>10/09/2024 14:06:06</publishTime>
+    </File>
+    <File Include="wwwroot/Images/category/MacBook.png">
+      <publishTime>10/09/2024 14:28:12</publishTime>
+    </File>
+    <File Include="wwwroot/Images/category/MacMini.png">
+      <publishTime>10/09/2024 14:28:07</publishTime>
+    </File>
+    <File Include="wwwroot/Images/category/MacOS.png">
+      <publishTime>10/09/2024 14:28:12</publishTime>
+    </File>
+    <File Include="wwwroot/Images/category/MacPro.png">
+      <publishTime>10/09/2024 14:03:08</publishTime>
+    </File>
+    <File Include="wwwroot/Images/category/MacStudio.png">
+      <publishTime>10/09/2024 14:28:10</publishTime>
+    </File>
+    <File Include="wwwroot/Images/category/Network.png">
+      <publishTime>10/09/2024 14:28:25</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
