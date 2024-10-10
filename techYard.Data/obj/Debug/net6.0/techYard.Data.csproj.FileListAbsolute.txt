@@ -22,3 +22,4 @@ C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.Data\obj\Debug\net6.0
 C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.Data\obj\Debug\net6.0\refint\techYard.Data.dll
 C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.Data\obj\Debug\net6.0\techYard.Data.pdb
 C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.Data\obj\Debug\net6.0\ref\techYard.Data.dll
+C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.Data\obj\Debug\net6.0\techYard.Data.sourcelink.json

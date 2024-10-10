@@ -53,7 +53,12 @@ namespace techYard.Data.Migrations
                     b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("productsId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("productsId");
 
                     b.ToTable("productDetailsImages");
                 });
@@ -130,9 +135,6 @@ namespace techYard.Data.Migrations
                     b.Property<bool?>("popular")
                         .HasColumnType("bit");
 
-                    b.Property<int?>("productDetailsImagesId")
-                        .HasColumnType("int");
-
                     b.Property<int?>("productFeaturesId")
                         .HasColumnType("int");
 
@@ -143,13 +145,22 @@ namespace techYard.Data.Migrations
 
                     b.HasIndex("categoryId");
 
-                    b.HasIndex("productDetailsImagesId");
-
                     b.HasIndex("productFeaturesId")
                         .IsUnique()
                         .HasFilter("[productFeaturesId] IS NOT NULL");
 
                     b.ToTable("products");
+                });
+
+            modelBuilder.Entity("techYard.Data.Entities.ProductDetailsImages", b =>
+                {
+                    b.HasOne("techYard.Data.Entities.Products", "products")
+                        .WithMany("productDetailsImages")
+                        .HasForeignKey("productsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("products");
                 });
 
             modelBuilder.Entity("techYard.Data.Entities.Products", b =>
@@ -158,17 +169,11 @@ namespace techYard.Data.Migrations
                         .WithMany("products")
                         .HasForeignKey("categoryId");
 
-                    b.HasOne("techYard.Data.Entities.ProductDetailsImages", "productDetailsImages")
-                        .WithMany("products")
-                        .HasForeignKey("productDetailsImagesId");
-
                     b.HasOne("techYard.Data.Entities.ProductFeatures", "productFeatures")
                         .WithOne("products")
                         .HasForeignKey("techYard.Data.Entities.Products", "productFeaturesId");
 
                     b.Navigation("category");
-
-                    b.Navigation("productDetailsImages");
 
                     b.Navigation("productFeatures");
                 });
@@ -178,14 +183,14 @@ namespace techYard.Data.Migrations
                     b.Navigation("products");
                 });
 
-            modelBuilder.Entity("techYard.Data.Entities.ProductDetailsImages", b =>
+            modelBuilder.Entity("techYard.Data.Entities.ProductFeatures", b =>
                 {
                     b.Navigation("products");
                 });
 
-            modelBuilder.Entity("techYard.Data.Entities.ProductFeatures", b =>
+            modelBuilder.Entity("techYard.Data.Entities.Products", b =>
                 {
-                    b.Navigation("products");
+                    b.Navigation("productDetailsImages");
                 });
 #pragma warning restore 612, 618
         }

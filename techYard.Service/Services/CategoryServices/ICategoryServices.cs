@@ -14,6 +14,10 @@ namespace techYard.Service.Services.CategoryServices
         Task<IReadOnlyList<categoryDto>> GetAllCategories();
         Task<categoryDto> GetCategoryById(int id);
         Task AddCategory(AddCategoryDto categoryDto);
+        Task<categoryDto> DeleteCategoryById(int id);
+        Task<categoryDto> UpdateCategory(int id, AddCategoryDto entity);
+
+
 
     }
 }

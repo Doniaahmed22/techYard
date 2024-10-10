@@ -134,7 +134,6 @@ C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.API\obj\Debug\net6.0\
 C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.API\obj\Debug\net6.0\techYard.API.AssemblyInfoInputs.cache
 C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.API\obj\Debug\net6.0\techYard.API.AssemblyInfo.cs
 C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.API\obj\Debug\net6.0\techYard.API.csproj.CoreCompileInputs.cache
-C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.API\obj\Debug\net6.0\techYard.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.API\obj\Debug\net6.0\techYard.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.API\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.API\obj\Debug\net6.0\staticwebassets.development.json
@@ -150,3 +149,5 @@ C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.API\obj\Debug\net6.0\
 C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.API\obj\Debug\net6.0\techYard.API.pdb
 C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.API\obj\Debug\net6.0\techYard.API.genruntimeconfig.cache
 C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.API\obj\Debug\net6.0\ref\techYard.API.dll
+C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.API\obj\Debug\net6.0\techYard.API.sourcelink.json
+C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.API\obj\Debug\net6.0\techYard.API.MvcApplicationPartsAssemblyInfo.cs

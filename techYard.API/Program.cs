@@ -40,6 +40,9 @@ namespace techYard.API
                 app.UseHsts(); // تفعيل HSTS
             }
 
+            app.UseStaticFiles(); // للسماح بتقديم الملفات الثابتة مثل الصور
+
+
             app.UseHttpsRedirection();
 
             app.UseStaticFiles();

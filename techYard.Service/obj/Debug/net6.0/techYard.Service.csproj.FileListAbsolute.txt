@@ -32,3 +32,4 @@ C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.Service\obj\Debug\net
 C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.Service\obj\Debug\net6.0\refint\techYard.Service.dll
 C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.Service\obj\Debug\net6.0\techYard.Service.pdb
 C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.Service\obj\Debug\net6.0\ref\techYard.Service.dll
+C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.Service\obj\Debug\net6.0\techYard.Service.sourcelink.json

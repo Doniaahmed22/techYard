@@ -12,7 +12,7 @@ namespace techYard.Repository.Interfaces
         Task<TEntity> GetByIdAsync(int? id);
         Task<IReadOnlyList<TEntity>> GetAllAsync();
         Task AddAsync(TEntity entity);
-        void Update(TEntity entity);
-        void Delete(TEntity entity);
+        Task Update(TEntity new_entity);
+        Task<TEntity> Delete(int id);
     }
 }

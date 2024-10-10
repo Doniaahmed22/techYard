@@ -128,3 +128,4 @@ C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.API\obj\Release\net6.
 C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.API\obj\Release\net6.0\win-x64\techYard.API.pdb
 C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.API\obj\Release\net6.0\win-x64\techYard.API.genruntimeconfig.cache
 C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.API\obj\Release\net6.0\win-x64\ref\techYard.API.dll
+C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.API\obj\Release\net6.0\win-x64\techYard.API.sourcelink.json

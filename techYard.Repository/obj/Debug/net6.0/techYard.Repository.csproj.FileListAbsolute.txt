@@ -28,3 +28,4 @@ C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.Repository\obj\Debug\
 C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.Repository\obj\Debug\net6.0\refint\techYard.Repository.dll
 C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.Repository\obj\Debug\net6.0\techYard.Repository.pdb
 C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.Repository\obj\Debug\net6.0\ref\techYard.Repository.dll
+C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.Repository\obj\Debug\net6.0\techYard.Repository.sourcelink.json

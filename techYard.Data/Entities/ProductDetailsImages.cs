@@ -10,7 +10,8 @@ namespace techYard.Data.Entities
     {
         public int Id { get; set; }
         public string? ImageUrl { get; set; }
-        public ICollection<Products>? products { get; set; }
+
+        public Products products { get; set; }
 
     }
 }

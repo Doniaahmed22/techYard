@@ -24,6 +24,5 @@ namespace techYard.Service.Services.productsServices.Dtos
         public int? categoryId { get; set; }
         public Categories? category { get; set; }
         public int? productFeaturesId { get; set; }
-        public ProductFeatures? productFeatures { get; set; }
     }
 }

@@ -13,8 +13,10 @@ namespace techYard.Repository.Repositories
     public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : BaseEntity
     {
         private readonly techYardDbContext _context;
-        public GenericRepository(techYardDbContext context)
+        readonly IUnitOfWork _unitOfWork;
+        public GenericRepository(techYardDbContext context, IUnitOfWork unitOfWork)
         {
+            _unitOfWork = unitOfWork;
             _context = context;
         }
         public async Task AddAsync(TEntity entity)
@@ -22,9 +24,17 @@ namespace techYard.Repository.Repositories
             await _context.Set<TEntity>().AddAsync(entity);
         }
 
-        public void Delete(TEntity entity)
+        public async Task<TEntity> Delete(int id)
         {
-            _context.Set<TEntity>().Remove(entity);
+            var entity = await GetByIdAsync(id);
+            if (entity != null)
+            {
+                _context.Set<TEntity>().Remove(entity);
+                //await _unitOfWork.CompleteAsync();
+                return entity;
+
+            }
+            return null;
         }
 
         public async Task<IReadOnlyList<TEntity>> GetAllAsync()
@@ -37,9 +47,11 @@ namespace techYard.Repository.Repositories
             return await _context.Set<TEntity>().FindAsync(id);
         }
 
-        public void Update(TEntity entity)
+        public async Task Update(TEntity new_entity)
         {
-            _context.Set<TEntity>().Update(entity);
+            _context.Set<TEntity>().Update(new_entity);
+            //await _unitOfWork.CompleteAsync();
+
         }
     }
 }

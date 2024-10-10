@@ -25,6 +25,8 @@ namespace techYard.Repository.Repositories
             return await _context.SaveChangesAsync();
         }
 
+        
+
         public IGenericRepository<TEntity> Repository<TEntity>() where TEntity : BaseEntity
         {
             if (_repositories == null)
@@ -35,13 +37,15 @@ namespace techYard.Repository.Repositories
             var entityKey = typeof(TEntity).Name;
             if (!_repositories.ContainsKey(entityKey))
             {
-                var repositoryType = typeof(GenericRepository<TEntity>);
-                var repositoryInstance = Activator.CreateInstance(repositoryType, _context); // إزالة MakeGenericType هنا
+                // Directly instantiate the repository
+                var repositoryInstance = new GenericRepository<TEntity>(_context, this); // Use direct instantiation
 
                 _repositories.Add(entityKey, repositoryInstance);
             }
 
             return (IGenericRepository<TEntity>)_repositories[entityKey];
         }
+
+
     }
     }

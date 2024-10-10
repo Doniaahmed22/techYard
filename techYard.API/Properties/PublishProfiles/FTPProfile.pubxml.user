@@ -7,7 +7,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAcOQyf0EUXUasSJtppCdzlAAAAAACAAAAAAAQZgAAAAEAACAAAADDWtwrNCqXg6lR0/fo2+Sil+d9lKDmyPzs8l8dfHr4WwAAAAAOgAAAAAIAACAAAAC3MylEW/vDWWsnMKC5MSRKrnW01wwdH6DZPtkJIdAv2yAAAAAuvv6J8cDxZ/E72X5N/sahGIr675DzQ226gHXgVgNcykAAAAB0mpCCbJxZ9beE/nfkcddrGQpFBbMSeNs42axqQvDJoORqyk3S3hDIWV+tEmKVbKfktj2JIjW76LkkqeB7mpg9</EncryptedPassword>
     <_PublishTargetUrl>ftp://155.254.244.35/www.techyardhub.somee.com</_PublishTargetUrl>
-    <History>False|2024-10-09T20:16:15.5935940Z;False|2024-10-09T23:14:01.2803954+03:00;False|2024-10-09T21:55:44.4641501+03:00;False|2024-10-09T21:52:08.6614416+03:00;False|2024-10-09T21:40:56.4831549+03:00;False|2024-10-09T21:35:19.7368804+03:00;False|2024-10-09T21:29:38.5484674+03:00;True|2024-10-09T17:46:27.3749953+03:00;False|2024-10-09T17:22:18.0469495+03:00;</History>
+    <History>False|2024-10-10T11:28:03.8098198Z;False|2024-10-10T14:26:56.4607597+03:00;False|2024-10-10T14:24:25.0327261+03:00;True|2024-10-10T14:17:06.0557703+03:00;False|2024-10-09T23:51:41.8463117+03:00;False|2024-10-09T23:16:15.5935940+03:00;False|2024-10-09T23:14:01.2803954+03:00;False|2024-10-09T21:55:44.4641501+03:00;False|2024-10-09T21:52:08.6614416+03:00;False|2024-10-09T21:40:56.4831549+03:00;False|2024-10-09T21:35:19.7368804+03:00;False|2024-10-09T21:29:38.5484674+03:00;True|2024-10-09T17:46:27.3749953+03:00;False|2024-10-09T17:22:18.0469495+03:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -15,7 +15,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/08/2024 23:12:07</publishTime>
     </File>
     <File Include="appsettings.json">
-      <publishTime>10/09/2024 17:32:58</publishTime>
+      <publishTime>10/10/2024 13:31:16</publishTime>
     </File>
     <File Include="AutoMapper.dll">
       <publishTime>02/07/2024 23:45:30</publishTime>
@@ -102,40 +102,46 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/15/2019 10:54:30</publishTime>
     </File>
     <File Include="techYard.API.deps.json">
-      <publishTime>10/09/2024 17:41:59</publishTime>
+      <publishTime>10/10/2024 14:15:20</publishTime>
     </File>
     <File Include="techYard.API.dll">
-      <publishTime>10/09/2024 17:41:57</publishTime>
+      <publishTime>10/10/2024 14:15:19</publishTime>
     </File>
     <File Include="techYard.API.exe">
-      <publishTime>10/09/2024 17:41:57</publishTime>
+      <publishTime>10/10/2024 14:15:19</publishTime>
     </File>
     <File Include="techYard.API.pdb">
-      <publishTime>10/09/2024 17:41:57</publishTime>
+      <publishTime>10/10/2024 14:15:19</publishTime>
     </File>
     <File Include="techYard.API.runtimeconfig.json">
-      <publishTime>10/09/2024 17:41:59</publishTime>
+      <publishTime>10/10/2024 14:15:20</publishTime>
     </File>
     <File Include="techYard.Data.dll">
-      <publishTime>10/09/2024 17:20:09</publishTime>
+      <publishTime>10/09/2024 22:28:43</publishTime>
     </File>
     <File Include="techYard.Data.pdb">
-      <publishTime>10/09/2024 17:20:09</publishTime>
+      <publishTime>10/09/2024 22:28:43</publishTime>
     </File>
     <File Include="techYard.Repository.dll">
-      <publishTime>10/09/2024 17:20:10</publishTime>
+      <publishTime>10/10/2024 14:14:53</publishTime>
     </File>
     <File Include="techYard.Repository.pdb">
-      <publishTime>10/09/2024 17:20:10</publishTime>
+      <publishTime>10/10/2024 14:14:53</publishTime>
     </File>
     <File Include="techYard.Service.dll">
-      <publishTime>10/09/2024 17:20:11</publishTime>
+      <publishTime>10/10/2024 14:14:54</publishTime>
     </File>
     <File Include="techYard.Service.pdb">
-      <publishTime>10/09/2024 17:20:11</publishTime>
+      <publishTime>10/10/2024 14:14:54</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>10/09/2024 17:41:59</publishTime>
+      <publishTime>10/10/2024 14:15:20</publishTime>
+    </File>
+    <File Include="wwwroot/Images/category/c6e33b5f-d7bd-4f31-96a5-712df0085fd2.png">
+      <publishTime>10/10/2024 13:37:27</publishTime>
+    </File>
+    <File Include="wwwroot/Images/category/e0788ae1-1449-46e7-885e-ed76046ea608.png">
+      <publishTime>10/10/2024 13:30:01</publishTime>
     </File>
     <File Include="wwwroot/Images/category/iMac.png">
       <publishTime>10/09/2024 14:06:06</publishTime>
