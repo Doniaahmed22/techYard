@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/gZmKoD6TGxT04NE7MIxQ+Ka3dLsU+rxIZQBqeqhqrs=",
+  "Hash": "pi4eXJfNw6VDQ7gQ/9onV8SrM+8aTfG4Iu2p3ALpWoo=",
   "Source": "techYard.API",
   "BasePath": "_content/techYard.API",
   "Mode": "Default",
@@ -53,25 +53,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\category\\520c719f-4391-4282-be1e-ad74135f7868.png"
-    },
-    {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\833ebbe2-53aa-4596-a35d-a6947a159d00.png",
-      "SourceId": "techYard.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
-      "BasePath": "_content/techYard.API",
-      "RelativePath": "Images/category/833ebbe2-53aa-4596-a35d-a6947a159d00.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\category\\833ebbe2-53aa-4596-a35d-a6947a159d00.png"
     },
     {
       "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\8bf669d7-922b-473e-9a56-2188850c1c05.png",

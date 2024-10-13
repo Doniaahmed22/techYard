@@ -62,6 +62,10 @@ namespace techYard.Repository.Repositories
             return await _context.Set<TEntity>().FindAsync(id);
         }
 
+
+
+
+
         //public async Task<TEntity> GetByIdAsync(int id, params Expression<Func<TEntity, object>>[] includes)
         //{
         //    // بدء الاستعلام عن الكيان بناءً على المعرف

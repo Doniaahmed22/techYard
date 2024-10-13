@@ -20,7 +20,6 @@ namespace techYard.API.Controllers
 
         [HttpGet]
         [Route("GetAllProducts")]
-        //[Authorize(Roles = "Admin")]
         public async Task<ActionResult<IEnumerable<getProduct>>> GetAllProducts()
         {
             var Products = await _productServices.GetAllProducts();
@@ -117,15 +116,15 @@ namespace techYard.API.Controllers
             }
 
             // التعامل مع الصورة الرئيسية
-            if (productDto.ImageUrl != null && productDto.ImageUrl.Length > 0)
+            if (productDto.imageUrl != null && productDto.imageUrl.Length > 0)
             {
                 // معالجة الصورة الرئيسية
-                var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(productDto.ImageUrl.FileName);
+                var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(productDto.imageUrl.FileName);
                 var fullPath = Path.Combine(imagePath, uniqueFileName);
 
                 using (var stream = new FileStream(fullPath, FileMode.Create))
                 {
-                    await productDto.ImageUrl.CopyToAsync(stream);
+                    await productDto.imageUrl.CopyToAsync(stream);
                 }
 
                 existingProduct.imageUrl = "Images/products/" + uniqueFileName; // مسار نسبي للصورة الرئيسية
@@ -137,15 +136,15 @@ namespace techYard.API.Controllers
             }
 
             // التعامل مع صورة hover
-            if (productDto.ImageUrlHover != null && productDto.ImageUrlHover.Length > 0)
+            if (productDto.imageUrlInHover != null && productDto.imageUrlInHover.Length > 0)
             {
                 // معالجة الصورة المتداخلة (Hover)
-                var uniqueHoverFileName = Guid.NewGuid().ToString() + Path.GetExtension(productDto.ImageUrlHover.FileName);
+                var uniqueHoverFileName = Guid.NewGuid().ToString() + Path.GetExtension(productDto.imageUrlInHover.FileName);
                 var hoverFullPath = Path.Combine(imagePath, uniqueHoverFileName);
 
                 using (var stream = new FileStream(hoverFullPath, FileMode.Create))
                 {
-                    await productDto.ImageUrlHover.CopyToAsync(stream);
+                    await productDto.imageUrlInHover.CopyToAsync(stream);
                 }
 
                 existingProduct.imageUrlInHover = "Images/products/" + uniqueHoverFileName; // مسار نسبي لصورة الـ hover
@@ -159,12 +158,10 @@ namespace techYard.API.Controllers
             // تحديث باقي خصائص المنتج
             existingProduct.Name = productDto.Name;
             existingProduct.oldPrice = productDto.oldPrice;
-            existingProduct.NewPrice = productDto.NewPrice;
             existingProduct.discount = productDto.discount;
             existingProduct.soldOut = productDto.soldOut;
             existingProduct.popular = productDto.popular;
             existingProduct.categoryId = productDto.categoryId;
-            existingProduct.productFeaturesId = productDto.productFeaturesId;
 
             // حفظ التعديلات في قاعدة البيانات
             await _productServices.UpdateProduct(id, existingProduct);
@@ -183,13 +180,13 @@ namespace techYard.API.Controllers
         public async Task<IActionResult> AddProduct([FromForm] productForAdditionDto productDto)
         {
             // التحقق من وجود الصورة الرئيسية
-            if (productDto.ImageUrl == null || productDto.ImageUrl.Length == 0)
+            if (productDto.imageUrl == null || productDto.imageUrl.Length == 0)
             {
                 return BadRequest("Please upload a valid main image.");
             }
 
             // التحقق من وجود صورة hover
-            if (productDto.ImageUrlHover == null || productDto.ImageUrlHover.Length == 0)
+            if (productDto.imageUrlInHover == null || productDto.imageUrlInHover.Length == 0)
             {
                 return BadRequest("Please upload a valid hover image.");
             }
@@ -203,36 +200,34 @@ namespace techYard.API.Controllers
             }
 
             // معالجة الصورة الرئيسية
-            var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(productDto.ImageUrl.FileName);
+            var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(productDto.imageUrl.FileName);
             var fullPath = Path.Combine(imagePath, uniqueFileName);
 
             using (var stream = new FileStream(fullPath, FileMode.Create))
             {
-                await productDto.ImageUrl.CopyToAsync(stream);
+                await productDto.imageUrl.CopyToAsync(stream);
             }
 
             // معالجة الصورة المتداخلة (Hover)
-            var uniqueHoverFileName = Guid.NewGuid().ToString() + Path.GetExtension(productDto.ImageUrlHover.FileName);
+            var uniqueHoverFileName = Guid.NewGuid().ToString() + Path.GetExtension(productDto.imageUrlInHover.FileName);
             var hoverFullPath = Path.Combine(imagePath, uniqueHoverFileName);
 
             using (var stream = new FileStream(hoverFullPath, FileMode.Create))
             {
-                await productDto.ImageUrlHover.CopyToAsync(stream);
+                await productDto.imageUrlInHover.CopyToAsync(stream);
             }
 
             // حفظ مسار الصورة النسبي في قاعدة البيانات
             var product = new AddProductDto
             {
                 Name = productDto.Name,
-                ImageUrl = "Images/products/" + uniqueFileName,          // مسار نسبي للصورة الرئيسية
-                ImageUrlHover = "Images/products/" + uniqueHoverFileName, // مسار نسبي لصورة الـ hover
+                imageUrl = "Images/products/" + uniqueFileName,          // مسار نسبي للصورة الرئيسية
+                imageUrlInHover = "Images/products/" + uniqueHoverFileName, // مسار نسبي لصورة الـ hover
                 oldPrice = productDto.oldPrice,
-                NewPrice = productDto.NewPrice,
                 discount = productDto.discount,
                 soldOut = productDto.soldOut,
                 popular = productDto.popular,
                 categoryId = productDto.categoryId,
-                productFeaturesId = productDto.productFeaturesId,
                 // قم بإضافة خصائص أخرى حسب الحاجة
             };
 

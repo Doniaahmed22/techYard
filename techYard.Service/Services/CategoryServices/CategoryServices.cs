@@ -24,21 +24,73 @@ namespace techYard.Service.Services.CategoryServices
             _context = context;
         }
 
+        //public async Task<IReadOnlyList<categoryDto>> GetAllCategories()
+        //{
+        //    var categories = await _unitOfWork.Repository<Categories>().GetAllAsync(
+        //        p=>p.products
+        //        );
+        //    return _mapper.Map<IReadOnlyList<categoryDto>>(categories);
+        //}
+
+
+
         public async Task<IReadOnlyList<categoryDto>> GetAllCategories()
         {
-            var categories = await _unitOfWork.Repository<Categories>().GetAllAsync();
+            var categories = await _unitOfWork.Repository<Categories>()
+                .GetAllAsync();  // تأكد من جلب الـ Products
+
             return _mapper.Map<IReadOnlyList<categoryDto>>(categories);
         }
 
-        public async Task<categoryDto> GetCategoryById(int id)
+
+
+
+
+        //public async Task<categoryDto> GetCategoryById(int id)
+        //{
+        //    var category = await _unitOfWork.Repository<Categories>().GetByIdAsync(id);
+        //    if(category == null)
+        //    {
+        //        return null;
+        //    }
+        //    return _mapper.Map<categoryDto>(category);
+        //}
+
+
+
+        public async Task<categoryDto?> GetCategoryById(int id)
         {
+            // جلب الفئة بناءً على الـ ID مع المنتجات المرتبطة
             var category = await _unitOfWork.Repository<Categories>().GetByIdAsync(id);
-            if(category == null)
-            {
-                return null;
-            }
-            return _mapper.Map<categoryDto>(category);
+
+            // التحقق من وجود الفئة
+            if (category == null) return null;
+
+            //// تحويل الفئة إلى categoryDto باستخدام AutoMapper
+            var categoryDto = _mapper.Map<categoryDto>(category);
+
+            //// استبعاد الخصائص غير المرغوب فيها من المنتجات
+            //if (categoryDto.products != null)
+            //{
+            //    foreach (var product in categoryDto.products)
+            //    {
+            //        // يمكنك استخدام AutoMapper أيضًا لإعادة تشكيل البيانات إذا لزم الأمر
+            //        product.productFeatures = null; // استبعاد الـ productFeatures
+            //        product.productDetailsImages = null; // استبعاد الصور
+            //    }
+            //}
+
+            return categoryDto;
         }
+
+
+
+
+
+
+
+
+
 
         public async Task AddCategory(AddCategoryDto categoryDto)
         {

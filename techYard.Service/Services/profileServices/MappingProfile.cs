@@ -11,38 +11,10 @@ using techYard.Service.Services.productsServices.Dtos;
 
 namespace techYard.Service.Services.profileServices
 {
-    public class MappingProfile:Profile
+    public class MappingProfile : Profile
     {
         public MappingProfile()
         {
-            //CreateMap<Products, getProduct>();
-            //CreateMap<getProduct, Products>();
-
-            //CreateMap<AddProductDto, Products>()
-            //    .ForMember(dest => dest.imageUrlInHover, options => options.MapFrom(src => src.ImageUrlHover));
-
-            //CreateMap<Products, AddProductDto>()
-            //    .ForMember(dest => dest.ImageUrlHover, options => options.MapFrom(src=>src.imageUrlInHover));
-
-
-
-            //CreateMap<Categories, categoryDto>()
-            //    .ForMember(dest=> dest.imageUrl , options => options.MapFrom<ProductUrlResolver>());
-
-            //CreateMap<categoryDto, Categories>();
-            //CreateMap<AddCategoryDto, Categories>();
-            //CreateMap<Categories, AddCategoryDto>();
-
-
-            //CreateMap<AddFeatureDto, ProductFeatures>();
-            //CreateMap<ProductFeatures, AddFeatureDto>();
-
-            //CreateMap<GetFeatureDto, ProductFeatures>();
-            //CreateMap<ProductFeatures, GetFeatureDto>();
-
-
-
-
 
             // خريطة تحويل من Products إلى getProduct
             CreateMap<Products, getProduct>();
@@ -50,11 +22,11 @@ namespace techYard.Service.Services.profileServices
 
             // خريطة تحويل من AddProductDto إلى Products
             CreateMap<AddProductDto, Products>()
-                .ForMember(dest => dest.imageUrlInHover, options => options.MapFrom(src => src.ImageUrlHover));
+                .ForMember(dest => dest.imageUrlInHover, options => options.MapFrom(src => src.imageUrlInHover));
 
             // خريطة تحويل من Products إلى AddProductDto
             CreateMap<Products, AddProductDto>()
-                .ForMember(dest => dest.ImageUrlHover, options => options.MapFrom(src => src.imageUrlInHover));
+                .ForMember(dest => dest.imageUrlInHover, options => options.MapFrom(src => src.imageUrlInHover));
 
             // خريطة تحويل من Categories إلى categoryDto مع استخدام المحلل ProductUrlResolver
             CreateMap<Categories, categoryDto>()
@@ -80,8 +52,31 @@ namespace techYard.Service.Services.profileServices
 
 
 
+            //// خريطة تحويل من Products إلى getProduct مع تجاهل العلاقات الدورية
+            //CreateMap<Products, getProduct>()
+            //    .ForMember(dest => dest.category, opt => opt.Ignore())  // تجاهل الفئة لتجنب الدوران
+            //    .ForMember(dest => dest.productFeatures, opt => opt.Ignore());  // تجاهل الميزات
+
+            //// خريطة تحويل من ProductFeatures إلى GetFeatureDto مع تجاهل المنتجات
+            //CreateMap<ProductFeatures, GetFeatureDto>()
+            //    .ForMember(dest => dest.products, opt => opt.Ignore());
+
+            //// خريطة تحويل من Categories إلى categoryDto مع تجاهل المنتجات
+            //CreateMap<Categories, categoryDto>();
+            //CreateMap<Categories, categoryDto>()
+            //    .ForMember(dest => dest.products, opt => opt.Ignore());
 
 
+
+
+
+
+            //CreateMap<Categories, categoryDto>()
+            //.ForMember(dest => dest.products, opt => opt.MapFrom(src => src.products));
+
+            //CreateMap<Products, getProduct>()
+            //    .ForMember(dest => dest.productFeatures, opt => opt.Ignore())
+            //    .ForMember(dest => dest.productDetailsImages, opt => opt.Ignore());
 
         }
     }

@@ -8,10 +8,7 @@ namespace techYard.Data.Entities
 {
     public class ProductDetailsImages:BaseEntity
     {
-        public int Id { get; set; }
         public string? ImageUrl { get; set; }
-
-        public Products products { get; set; }
 
     }
 }

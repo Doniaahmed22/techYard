@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace techYard.Data.Entities
 {
-    public class Categories :BaseEntity    {
-        public int Id {  get; set; }
+    public class Categories :BaseEntity {
         public string name { get; set; }
         public string? imageUrl { get; set; }
         public ICollection<Products>? products { get; set; }
