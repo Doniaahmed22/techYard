@@ -19,7 +19,11 @@ namespace techYard.Service.Services.productsServices.Dtos
         public bool? popular { get; set; }
         public string? model { get; set; }
         public string? OS { get; set; }
+        public IEnumerable<ProductDetailsImages>? ProductDetailsImages { get; set; } = Enumerable.Empty<ProductDetailsImages>();
         public int? categoryId { get; set; }
+
+
+
         //public Categories? category { get; set; }
         //public ICollection<ProductDetailsImages>? productDetailsImages { get; set; }
         //public ICollection<ProductFeatures>? ProductFeatures { get; set; }

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using techYard.Data.Entities;
 using techYard.Service.Services.CategoryServices.Dtos;
 using techYard.Service.Services.featuresServices.Dtos;
+using techYard.Service.Services.ProductImagesServices;
 using techYard.Service.Services.productsServices;
 using techYard.Service.Services.productsServices.Dtos;
 
@@ -13,9 +14,11 @@ namespace techYard.API.Controllers
     public class ProductsController : ControllerBase
     {
         readonly IProductServices _productServices;
-        public ProductsController(IProductServices productServices)
+        readonly IProductDetailsImagesServices productDetailsImagesServices;
+        public ProductsController(IProductServices productServices , IProductDetailsImagesServices _productDetailsImagesServices)
         {
             _productServices = productServices;
+            productDetailsImagesServices = _productDetailsImagesServices;
         }
 
         [HttpGet]
@@ -175,6 +178,82 @@ namespace techYard.API.Controllers
 
 
 
+        //[HttpPost]
+        //[Route("AddProduct")]
+        //public async Task<IActionResult> AddProduct([FromForm] productForAdditionDto productDto)
+        //{
+        //    // التحقق من وجود الصورة الرئيسية
+        //    if (productDto.imageUrl == null || productDto.imageUrl.Length == 0)
+        //    {
+        //        return BadRequest("Please upload a valid main image.");
+        //    }
+
+        //    // التحقق من وجود صورة hover
+        //    if (productDto.imageUrlInHover == null || productDto.imageUrlInHover.Length == 0)
+        //    {
+        //        return BadRequest("Please upload a valid hover image.");
+        //    }
+
+        //    // التأكد من وجود المجلد wwwroot/Images
+        //    var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images/products/");
+
+        //    if (!Directory.Exists(imagePath))
+        //    {
+        //        Directory.CreateDirectory(imagePath);
+        //    }
+
+        //    // معالجة الصورة الرئيسية
+        //    var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(productDto.imageUrl.FileName);
+        //    var fullPath = Path.Combine(imagePath, uniqueFileName);
+
+        //    using (var stream = new FileStream(fullPath, FileMode.Create))
+        //    {
+        //        await productDto.imageUrl.CopyToAsync(stream);
+        //    }
+
+        //    // معالجة الصورة المتداخلة (Hover)
+        //    var uniqueHoverFileName = Guid.NewGuid().ToString() + Path.GetExtension(productDto.imageUrlInHover.FileName);
+        //    var hoverFullPath = Path.Combine(imagePath, uniqueHoverFileName);
+
+        //    using (var stream = new FileStream(hoverFullPath, FileMode.Create))
+        //    {
+        //        await productDto.imageUrlInHover.CopyToAsync(stream);
+        //    }
+
+        //    // حفظ مسار الصورة النسبي في قاعدة البيانات
+        //    var product = new AddProductDto
+        //    {
+        //        Name = productDto.Name,
+        //        imageUrl = "Images/products/" + uniqueFileName,          // مسار نسبي للصورة الرئيسية
+        //        imageUrlInHover = "Images/products/" + uniqueHoverFileName, // مسار نسبي لصورة الـ hover
+        //        oldPrice = productDto.oldPrice,
+        //        discount = productDto.discount,
+        //        soldOut = productDto.soldOut,
+        //        popular = productDto.popular,
+        //        categoryId = productDto.categoryId,
+        //        // قم بإضافة خصائص أخرى حسب الحاجة
+        //    };
+
+        //    // إضافة المنتج إلى قاعدة البيانات
+        //    await _productServices.AddProduct(product);
+        //    return Ok(product);
+        //}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         [HttpPost]
         [Route("AddProduct")]
         public async Task<IActionResult> AddProduct([FromForm] productForAdditionDto productDto)
@@ -216,7 +295,7 @@ namespace techYard.API.Controllers
             {
                 await productDto.imageUrlInHover.CopyToAsync(stream);
             }
-
+            var listproductimage = await productDetailsImagesServices.uploadImages(productDto.ImagesUrl);
             // حفظ مسار الصورة النسبي في قاعدة البيانات
             var product = new AddProductDto
             {
@@ -228,6 +307,7 @@ namespace techYard.API.Controllers
                 soldOut = productDto.soldOut,
                 popular = productDto.popular,
                 categoryId = productDto.categoryId,
+                ProductDetailsImages = listproductimage,
                 // قم بإضافة خصائص أخرى حسب الحاجة
             };
 
@@ -235,6 +315,14 @@ namespace techYard.API.Controllers
             await _productServices.AddProduct(product);
             return Ok(product);
         }
+
+
+
+
+
+
+
+
 
 
     }

@@ -20,6 +20,14 @@ namespace techYard.Service.Services.productsServices.Dtos
         public string? model { get; set; }
         public string? OS { get; set; }
         public int? categoryId { get; set; }
+        public List<IFormFile> ImagesUrl { get; set; }
+
+
+
+
+
+
+
         //public Categories? category { get; set; }
         //public ICollection<ProductDetailsImages>? productDetailsImages { get; set; }
         //public ICollection<ProductFeatures>? ProductFeatures { get; set; }

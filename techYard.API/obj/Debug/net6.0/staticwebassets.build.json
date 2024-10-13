@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pi4eXJfNw6VDQ7gQ/9onV8SrM+8aTfG4Iu2p3ALpWoo=",
+  "Hash": "QY7zha2CeVYNOQExHQZiIOmWOSFdRltz4GL8exqaTlE=",
   "Source": "techYard.API",
   "BasePath": "_content/techYard.API",
   "Mode": "Default",
@@ -34,6 +34,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\category\\01f97314-b66f-4e0f-90b3-ee344d2bfd76.png"
+    },
+    {
+      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\50a88afc-b790-41ce-a351-57ad43f762df.png",
+      "SourceId": "techYard.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "BasePath": "_content/techYard.API",
+      "RelativePath": "Images/category/50a88afc-b790-41ce-a351-57ad43f762df.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\category\\50a88afc-b790-41ce-a351-57ad43f762df.png"
     },
     {
       "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\520c719f-4391-4282-be1e-ad74135f7868.png",
@@ -264,6 +283,25 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\0164ec57-86f6-40b0-af2b-d52be2c3e39e.png"
     },
     {
+      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\01cddd32-f30a-4b6c-b040-f2232a27552a.png",
+      "SourceId": "techYard.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "BasePath": "_content/techYard.API",
+      "RelativePath": "Images/products/01cddd32-f30a-4b6c-b040-f2232a27552a.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\products\\01cddd32-f30a-4b6c-b040-f2232a27552a.png"
+    },
+    {
       "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\079000eb-5a60-47c6-ac63-d9e1283055ce.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
@@ -338,6 +376,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\products\\2bbba3bc-445c-436f-a06e-639e357dfbbe.png"
+    },
+    {
+      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\2e2e3d74-0f04-48b4-b48b-ac9aa06412e9.png",
+      "SourceId": "techYard.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "BasePath": "_content/techYard.API",
+      "RelativePath": "Images/products/2e2e3d74-0f04-48b4-b48b-ac9aa06412e9.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\products\\2e2e3d74-0f04-48b4-b48b-ac9aa06412e9.png"
     },
     {
       "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\2f205d40-2eaa-45c0-a2bc-e4662c21f361.png",
