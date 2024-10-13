@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using techYard.Data.Context;
@@ -42,10 +43,42 @@ namespace techYard.Repository.Repositories
             return await _context.Set<TEntity>().ToListAsync();
         }
 
+        //public async Task<IReadOnlyList<TEntity>> GetAllAsync(params Expression<Func<TEntity, object>>[] includes)
+        //{
+        //    IQueryable<TEntity> query = _context.Set<TEntity>();
+
+        //    // تطبيق Include على كل علاقة يتم تمريرها
+        //    foreach (var include in includes)
+        //    {
+        //        query = query.Include(include);
+        //    }
+
+        //    return await query.ToListAsync();
+        //}
+
+
         public async Task<TEntity> GetByIdAsync(int? id)
         {
             return await _context.Set<TEntity>().FindAsync(id);
         }
+
+        //public async Task<TEntity> GetByIdAsync(int id, params Expression<Func<TEntity, object>>[] includes)
+        //{
+        //    // بدء الاستعلام عن الكيان بناءً على المعرف
+        //    IQueryable<TEntity> query = _context.Set<TEntity>();
+
+        //    // تطبيق Include على كل علاقة يتم تمريرها
+        //    foreach (var include in includes)
+        //    {
+        //        query = query.Include(include);
+        //    }
+
+        //    // استخدام FirstOrDefaultAsync للبحث عن الكيان بناءً على المعرف
+        //    return await query.FirstOrDefaultAsync(e => e.Id == id); // تأكد من أن TEntity يحتوي على خاصية Id
+        //}
+
+
+
 
         public async Task Update(TEntity new_entity)
         {

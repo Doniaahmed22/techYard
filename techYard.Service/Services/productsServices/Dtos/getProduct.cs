@@ -10,7 +10,7 @@ namespace techYard.Service.Services.productsServices.Dtos
     public class getProduct
     {
 
-        public int Id { get; set; }
+        public int Id { get; set; } 
         public string? Name { get; set; }
         public string? imageUrl { get; set; }
         public string? imageUrlInHover { get; set; }
@@ -19,10 +19,10 @@ namespace techYard.Service.Services.productsServices.Dtos
         public int? discount { get; set; }
         public bool? soldOut { get; set; }
         public bool? popular { get; set; }
-        public int? productDetailsImagesId { get; set; }
-        public ProductDetailsImages? productDetailsImages { get; set; }
         public int? categoryId { get; set; }
         public Categories? category { get; set; }
         public int? productFeaturesId { get; set; }
+        public ProductFeatures? productFeatures { get; set; }
+        public ICollection<ProductDetailsImages>? productDetailsImages { get; set; }
     }
 }

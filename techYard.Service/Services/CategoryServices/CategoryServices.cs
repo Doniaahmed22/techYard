@@ -61,7 +61,7 @@ namespace techYard.Service.Services.CategoryServices
         }
 
 
-        public async Task<categoryDto> UpdateCategory(int id, AddCategoryDto category)
+        public async Task<categoryDto> UpdateCategory(int id, categoryDto category)
         {
             var existingCategory = await _unitOfWork.Repository<Categories>().GetByIdAsync(id);
             if (existingCategory == null)

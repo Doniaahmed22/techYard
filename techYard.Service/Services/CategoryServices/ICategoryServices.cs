@@ -15,7 +15,7 @@ namespace techYard.Service.Services.CategoryServices
         Task<categoryDto> GetCategoryById(int id);
         Task AddCategory(AddCategoryDto categoryDto);
         Task<categoryDto> DeleteCategoryById(int id);
-        Task<categoryDto> UpdateCategory(int id, AddCategoryDto entity);
+        Task<categoryDto> UpdateCategory(int id, categoryDto entity);
 
 
 
