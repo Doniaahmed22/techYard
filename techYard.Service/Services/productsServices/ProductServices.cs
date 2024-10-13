@@ -37,41 +37,28 @@ namespace techYard.Service.Services.productsServices
         //    return _mapper.Map<IReadOnlyList<getProduct>>(products);
         //}
 
-        public async Task<IReadOnlyList<getProduct>> GetAllProducts()
-        {
-            // جلب المنتجات مع العلاقات المرتبطة (مثال على Category و ProductFeatures)
-            var products = await _unitOfWork.Repository<Products>().GetAllAsync();
-
-            // تحويل الكيانات إلى Dto باستخدام AutoMapper
-            return _mapper.Map<IReadOnlyList<getProduct>>(products);
-        }
-
-
-
         //public async Task<IReadOnlyList<getProduct>> GetAllProducts()
         //{
-        //    var products = await _unitOfWork.Repository<Products>().GetAllAsync(
-        //        p => p.category,
-        //        p => p.productFeatures
-        //    );
+        //    // جلب المنتجات مع العلاقات المرتبطة (مثال على Category و ProductFeatures)
+        //    var products = await _unitOfWork.Repository<Products>().GetAllAsync();
 
-        //    var result = products.Select(p => new getProduct
-        //    {
-        //        Id = p.Id,
-        //        Name = p.Name,
-        //        imageUrl = p.imageUrl,
-        //        imageUrlInHover = p.imageUrlInHover,
-        //        oldPrice = p.oldPrice,
-        //        NewPrice = p.NewPrice,
-        //        discount = p.discount,
-        //        soldOut = p.soldOut,
-        //        popular = p.popular,
-        //        category = new Categories { Id = p.category.Id, name = p.category.name },
-        //        productFeatures = new ProductFeatures { Id = p.productFeatures.Id, model = p.productFeatures.model }
-        //    }).ToList();
-
-        //    return result;
+        //    // تحويل الكيانات إلى Dto باستخدام AutoMapper
+        //    return _mapper.Map<IReadOnlyList<getProduct>>(products);
         //}
+
+
+
+        public async Task<IReadOnlyList<getProduct>> GetAllProducts()
+        {
+            var products = await _unitOfWork.Repository<Products>().GetAllAsync(
+                p => p.category,
+                p => p.productDetailsImages
+            );
+
+            _mapper.Map<Products>(products);
+
+            return products;
+        }
 
 
 

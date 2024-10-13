@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,17 +44,28 @@ namespace techYard.Repository.Repositories
             return await _context.Set<TEntity>().ToListAsync();
         }
 
-        //public async Task<IReadOnlyList<TEntity>> GetAllAsync(params Expression<Func<TEntity, object>>[] includes)
+        public async Task<IReadOnlyList<TEntity>> GetAllAsync(params Expression<Func<TEntity, object>>[] includes)
+        {
+            IQueryable<TEntity> query = _context.Set<TEntity>();
+
+            // تطبيق Include على كل علاقة يتم تمريرها
+            foreach (var include in includes)
+            {
+                query = query.Include(include);
+            }
+
+            return await query.ToListAsync();
+        }
+
+        //public IEnumerable<TEntity> GetAll(Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> include = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null)
         //{
         //    IQueryable<TEntity> query = _context.Set<TEntity>();
+        //    if (include != null)
+        //        query = include(query);
+        //    if (orderBy != null)
+        //        query = orderBy(query);
 
-        //    // تطبيق Include على كل علاقة يتم تمريرها
-        //    foreach (var include in includes)
-        //    {
-        //        query = query.Include(include);
-        //    }
-
-        //    return await query.ToListAsync();
+        //    return query.ToList();
         //}
 
 
