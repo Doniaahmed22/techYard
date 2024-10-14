@@ -1,6 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using techYard.API.Extensions;
 using techYard.Data.Context;
+using techYard.Data.Entities;
+using techYard.Service.Services.AccountServices;
 
 namespace techYard.API
 {
@@ -18,6 +21,21 @@ namespace techYard.API
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
+
+
+            builder.Services.AddIdentity<ApplicationUser, ApplicationRole>(options =>
+            {
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = true;
+                options.Password.RequireDigit = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequiredLength = 6;
+                options.User.RequireUniqueEmail = false;
+            })
+                .AddEntityFrameworkStores<techYardDbContext>()
+                .AddDefaultTokenProviders();
+            builder.Services.Configure<JWT>(builder.Configuration.GetSection("JWT"));
+
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
@@ -47,6 +65,7 @@ namespace techYard.API
 
             app.UseStaticFiles();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
 

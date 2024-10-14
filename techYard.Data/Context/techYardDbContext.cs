@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +9,9 @@ using techYard.Data.Entities;
 
 namespace techYard.Data.Context
 {
-    public class techYardDbContext : DbContext
+    public class techYardDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string>
     {
-        public techYardDbContext(DbContextOptions<techYardDbContext> options) : base(options)
+        public techYardDbContext(DbContextOptions<techYardDbContext> options) : base(options) 
         {
 
         }
