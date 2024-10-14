@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\techYard.API.csproj": {}
+    "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\techYard.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\techYard.API.csproj": {
+    "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\techYard.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\techYard.API.csproj",
+        "projectUniqueName": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\techYard.API.csproj",
         "projectName": "techYard.API",
-        "projectPath": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\techYard.API.csproj",
-        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\obj\\",
+        "projectPath": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\techYard.API.csproj",
+        "packagesPath": "C:\\Users\\Ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
+          "C:\\Users\\Ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,15 +22,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\DevExpress 24.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.Service\\techYard.Service.csproj": {
-                "projectPath": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.Service\\techYard.Service.csproj"
+              "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.Service\\techYard.Service.csproj": {
+                "projectPath": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.Service\\techYard.Service.csproj"
               }
             }
           }
@@ -43,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -83,25 +84,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.Data\\techYard.Data.csproj": {
+    "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.Data\\techYard.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.Data\\techYard.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.Data\\techYard.Data.csproj",
         "projectName": "techYard.Data",
-        "projectPath": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.Data\\techYard.Data.csproj",
-        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.Data\\obj\\",
+        "projectPath": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.Data\\techYard.Data.csproj",
+        "packagesPath": "C:\\Users\\Ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
+          "C:\\Users\\Ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -109,7 +106,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\DevExpress 24.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -122,6 +119,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -149,25 +151,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.Repository\\techYard.Repository.csproj": {
+    "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.Repository\\techYard.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.Repository\\techYard.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.Repository\\techYard.Repository.csproj",
         "projectName": "techYard.Repository",
-        "projectPath": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.Repository\\techYard.Repository.csproj",
-        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.Repository\\obj\\",
+        "projectPath": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.Repository\\techYard.Repository.csproj",
+        "packagesPath": "C:\\Users\\Ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.Repository\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
+          "C:\\Users\\Ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -175,15 +173,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\DevExpress 24.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.Data\\techYard.Data.csproj": {
-                "projectPath": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.Data\\techYard.Data.csproj"
+              "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.Data\\techYard.Data.csproj": {
+                "projectPath": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.Data\\techYard.Data.csproj"
               }
             }
           }
@@ -192,6 +190,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -213,25 +216,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.Service\\techYard.Service.csproj": {
+    "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.Service\\techYard.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.Service\\techYard.Service.csproj",
+        "projectUniqueName": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.Service\\techYard.Service.csproj",
         "projectName": "techYard.Service",
-        "projectPath": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.Service\\techYard.Service.csproj",
-        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.Service\\obj\\",
+        "projectPath": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.Service\\techYard.Service.csproj",
+        "packagesPath": "C:\\Users\\Ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.Service\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
+          "C:\\Users\\Ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -239,15 +238,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\DevExpress 24.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.Repository\\techYard.Repository.csproj": {
-                "projectPath": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.Repository\\techYard.Repository.csproj"
+              "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.Repository\\techYard.Repository.csproj": {
+                "projectPath": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.Repository\\techYard.Repository.csproj"
               }
             }
           }
@@ -256,6 +255,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -287,7 +291,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

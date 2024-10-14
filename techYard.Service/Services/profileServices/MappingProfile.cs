@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using techYard.Data.Entities;
 using techYard.Service.Services.CategoryServices.Dtos;
 using techYard.Service.Services.featuresServices.Dtos;
+using techYard.Service.Services.ProductImagesServices.Dtos;
 using techYard.Service.Services.productsServices.Dtos;
 
 namespace techYard.Service.Services.profileServices
@@ -52,6 +53,8 @@ namespace techYard.Service.Services.profileServices
 
 
 
+            CreateMap<ProductDetailsImages, GetProductDetailsImagesDto>()
+                .ReverseMap();
             //// خريطة تحويل من Products إلى getProduct مع تجاهل العلاقات الدورية
             //CreateMap<Products, getProduct>()
             //    .ForMember(dest => dest.category, opt => opt.Ignore())  // تجاهل الفئة لتجنب الدوران

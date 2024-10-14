@@ -50,14 +50,16 @@ namespace techYard.Service.Services.productsServices
 
         public async Task<IReadOnlyList<getProduct>> GetAllProducts()
         {
+            // جلب المنتجات مع تضمين الفئات والصور المرتبطة
             var products = await _unitOfWork.Repository<Products>().GetAllAsync(
-                p => p.category,
+                //p => p.ProductFeatures,
                 p => p.productDetailsImages
             );
 
-            _mapper.Map<Products>(products);
+            // تحويل الكيانات إلى DTO باستخدام AutoMapper
+            var result = _mapper.Map<IReadOnlyList<getProduct>>(products);
 
-            return products;
+            return result;
         }
 
 

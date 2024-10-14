@@ -23,3 +23,16 @@ C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.Data\obj\Debug\net6.0
 C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.Data\obj\Debug\net6.0\techYard.Data.pdb
 C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.Data\obj\Debug\net6.0\ref\techYard.Data.dll
 C:\Users\pc\faculty\globactionInternTask\TechYard\techYard.Data\obj\Debug\net6.0\techYard.Data.sourcelink.json
+C:\Users\Ahmed\Documents\M.A\work\techYard\techYard.Data\bin\Debug\net6.0\techYard.Data.deps.json
+C:\Users\Ahmed\Documents\M.A\work\techYard\techYard.Data\bin\Debug\net6.0\techYard.Data.dll
+C:\Users\Ahmed\Documents\M.A\work\techYard\techYard.Data\bin\Debug\net6.0\techYard.Data.pdb
+C:\Users\Ahmed\Documents\M.A\work\techYard\techYard.Data\obj\Debug\net6.0\techYard.Data.csproj.AssemblyReference.cache
+C:\Users\Ahmed\Documents\M.A\work\techYard\techYard.Data\obj\Debug\net6.0\techYard.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ahmed\Documents\M.A\work\techYard\techYard.Data\obj\Debug\net6.0\techYard.Data.AssemblyInfoInputs.cache
+C:\Users\Ahmed\Documents\M.A\work\techYard\techYard.Data\obj\Debug\net6.0\techYard.Data.AssemblyInfo.cs
+C:\Users\Ahmed\Documents\M.A\work\techYard\techYard.Data\obj\Debug\net6.0\techYard.Data.csproj.CoreCompileInputs.cache
+C:\Users\Ahmed\Documents\M.A\work\techYard\techYard.Data\obj\Debug\net6.0\techYard.Data.sourcelink.json
+C:\Users\Ahmed\Documents\M.A\work\techYard\techYard.Data\obj\Debug\net6.0\techYard.Data.dll
+C:\Users\Ahmed\Documents\M.A\work\techYard\techYard.Data\obj\Debug\net6.0\refint\techYard.Data.dll
+C:\Users\Ahmed\Documents\M.A\work\techYard\techYard.Data\obj\Debug\net6.0\techYard.Data.pdb
+C:\Users\Ahmed\Documents\M.A\work\techYard\techYard.Data\obj\Debug\net6.0\ref\techYard.Data.dll

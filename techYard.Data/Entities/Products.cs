@@ -18,7 +18,6 @@ namespace techYard.Data.Entities
         public string? model { get; set; }
         public string? OS { get; set; }
         public int? categoryId { get; set; }
-        public Categories? category { get; set; }
         public ICollection<ProductDetailsImages>? productDetailsImages { get; set; }
         public ICollection<ProductFeatures>? ProductFeatures { get; set; }
         public double? NewPrice

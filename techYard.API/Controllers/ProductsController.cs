@@ -23,7 +23,7 @@ namespace techYard.API.Controllers
 
         [HttpGet]
         [Route("GetAllProducts")]
-        public async Task<ActionResult<IEnumerable<getProduct>>> GetAllProducts()
+        public async Task<IActionResult> GetAllProducts()
         {
             var Products = await _productServices.GetAllProducts();
 

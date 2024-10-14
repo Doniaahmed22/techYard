@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using techYard.Data.Context;
 
@@ -11,9 +12,10 @@ using techYard.Data.Context;
 namespace techYard.Data.Migrations
 {
     [DbContext(typeof(techYardDbContext))]
-    partial class techYardDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241014084758_updateproduct")]
+    partial class updateproduct
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -60,49 +62,7 @@ namespace techYard.Data.Migrations
 
                     b.HasIndex("ProductsId");
 
-                    b.ToTable("productDetailsImages");
-                });
-
-            modelBuilder.Entity("techYard.Data.Entities.ProductFeatures", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int?>("ProductsId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ScreenSize")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("dimensions")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("graphicCard")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("processor")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ramSize")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ramType")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("storage")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("weight")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductsId");
-
-                    b.ToTable("productFeatures");
+                    b.ToTable("ProductDetailsImages");
                 });
 
             modelBuilder.Entity("techYard.Data.Entities.Products", b =>
@@ -150,20 +110,13 @@ namespace techYard.Data.Migrations
 
                     b.HasIndex("CategoriesId");
 
-                    b.ToTable("products");
+                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("techYard.Data.Entities.ProductDetailsImages", b =>
                 {
                     b.HasOne("techYard.Data.Entities.Products", null)
                         .WithMany("productDetailsImages")
-                        .HasForeignKey("ProductsId");
-                });
-
-            modelBuilder.Entity("techYard.Data.Entities.ProductFeatures", b =>
-                {
-                    b.HasOne("techYard.Data.Entities.Products", null)
-                        .WithMany("ProductFeatures")
                         .HasForeignKey("ProductsId");
                 });
 
@@ -181,8 +134,6 @@ namespace techYard.Data.Migrations
 
             modelBuilder.Entity("techYard.Data.Entities.Products", b =>
                 {
-                    b.Navigation("ProductFeatures");
-
                     b.Navigation("productDetailsImages");
                 });
 #pragma warning restore 612, 618
