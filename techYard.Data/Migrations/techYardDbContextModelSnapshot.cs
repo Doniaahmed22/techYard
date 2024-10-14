@@ -71,7 +71,7 @@ namespace techYard.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int?>("ProductId")
+                    b.Property<int?>("ProductsId")
                         .HasColumnType("int");
 
                     b.Property<string>("ScreenSize")
@@ -100,7 +100,7 @@ namespace techYard.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductId");
+                    b.HasIndex("ProductsId");
 
                     b.ToTable("productFeatures");
                 });
@@ -112,6 +112,9 @@ namespace techYard.Data.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int?>("CategoriesId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
@@ -145,7 +148,7 @@ namespace techYard.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("categoryId");
+                    b.HasIndex("CategoriesId");
 
                     b.ToTable("products");
                 });
@@ -163,20 +166,16 @@ namespace techYard.Data.Migrations
 
             modelBuilder.Entity("techYard.Data.Entities.ProductFeatures", b =>
                 {
-                    b.HasOne("techYard.Data.Entities.Products", "products")
+                    b.HasOne("techYard.Data.Entities.Products", null)
                         .WithMany("ProductFeatures")
-                        .HasForeignKey("ProductId");
-
-                    b.Navigation("products");
+                        .HasForeignKey("ProductsId");
                 });
 
             modelBuilder.Entity("techYard.Data.Entities.Products", b =>
                 {
-                    b.HasOne("techYard.Data.Entities.Categories", "category")
+                    b.HasOne("techYard.Data.Entities.Categories", null)
                         .WithMany("products")
-                        .HasForeignKey("categoryId");
-
-                    b.Navigation("category");
+                        .HasForeignKey("CategoriesId");
                 });
 
             modelBuilder.Entity("techYard.Data.Entities.Categories", b =>

@@ -12,10 +12,5 @@ namespace techYard.Data.Entities
         public string? dimensions { get; set; }
         public string? weight { get; set; }
         public string? ScreenSize { get; set; }
-       
-        public int? ProductId { get; set; }
-        //[ForeignKey(nameof(ProductId))]
-        //public Products? products { get; set; }
-
     }
 }

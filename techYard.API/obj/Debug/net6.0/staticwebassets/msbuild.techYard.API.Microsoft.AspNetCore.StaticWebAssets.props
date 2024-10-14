@@ -304,6 +304,7 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\products\0cdb6b5e-2f35-46ff-97b3-d70f6fc4a00c.png))</OriginalItemSpec>
     </StaticWebAsset>
+<<<<<<< HEAD
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\products\1b9d19d3-c5de-4f3c-9643-7a1c3a41658c.png))">
       <SourceType>Package</SourceType>
       <SourceId>techYard.API</SourceId>
@@ -320,6 +321,8 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\products\1b9d19d3-c5de-4f3c-9643-7a1c3a41658c.png))</OriginalItemSpec>
     </StaticWebAsset>
+=======
+>>>>>>> ba355fefffbaaed1db51752ca532f60559c12e4e
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\products\2a382625-8757-4cc7-8ee3-0588d14fbd79.png))">
       <SourceType>Package</SourceType>
       <SourceId>techYard.API</SourceId>
@@ -688,6 +691,7 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\products\ea44069f-1f3f-4173-80b4-4f1f98e5bfb7.png))</OriginalItemSpec>
     </StaticWebAsset>
+<<<<<<< HEAD
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\products\ede1919d-8e3b-49f8-aaa6-868527e40d41.png))">
       <SourceType>Package</SourceType>
       <SourceId>techYard.API</SourceId>
@@ -704,6 +708,8 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\products\ede1919d-8e3b-49f8-aaa6-868527e40d41.png))</OriginalItemSpec>
     </StaticWebAsset>
+=======
+>>>>>>> ba355fefffbaaed1db51752ca532f60559c12e4e
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\products\f1179b8d-6420-4c42-a41f-0e4138c89869.png))">
       <SourceType>Package</SourceType>
       <SourceId>techYard.API</SourceId>

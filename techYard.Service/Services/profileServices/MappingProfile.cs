@@ -62,6 +62,8 @@ namespace techYard.Service.Services.profileServices
 
 
 
+            CreateMap<ProductDetailsImages, GetProductDetailsImagesDto>()
+                .ReverseMap();
             //// خريطة تحويل من Products إلى getProduct مع تجاهل العلاقات الدورية
             //CreateMap<Products, getProduct>()
             //    .ForMember(dest => dest.category, opt => opt.Ignore())  // تجاهل الفئة لتجنب الدوران

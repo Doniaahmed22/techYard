@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "AxOOEzyEnEQviGCG7cytlnOfJ0W/dV8zA+twm2bly+k=",
+=======
+  "Hash": "oLU8PeNu6idsOUuaUcY6hEw+1sFVL9+LSzayGu4+igc=",
+>>>>>>> ba355fefffbaaed1db51752ca532f60559c12e4e
   "Source": "techYard.API",
   "BasePath": "_content/techYard.API",
   "Mode": "Default",
@@ -10,17 +14,17 @@
     {
       "Name": "techYard.API\\wwwroot",
       "Source": "techYard.API",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\01f97314-b66f-4e0f-90b3-ee344d2bfd76.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\01f97314-b66f-4e0f-90b3-ee344d2bfd76.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/category/01f97314-b66f-4e0f-90b3-ee344d2bfd76.png",
       "AssetKind": "All",
@@ -36,10 +40,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\category\\01f97314-b66f-4e0f-90b3-ee344d2bfd76.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\50a88afc-b790-41ce-a351-57ad43f762df.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\50a88afc-b790-41ce-a351-57ad43f762df.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/category/50a88afc-b790-41ce-a351-57ad43f762df.png",
       "AssetKind": "All",
@@ -55,10 +59,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\category\\50a88afc-b790-41ce-a351-57ad43f762df.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\520c719f-4391-4282-be1e-ad74135f7868.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\520c719f-4391-4282-be1e-ad74135f7868.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/category/520c719f-4391-4282-be1e-ad74135f7868.png",
       "AssetKind": "All",
@@ -74,10 +78,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\category\\520c719f-4391-4282-be1e-ad74135f7868.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\8bf669d7-922b-473e-9a56-2188850c1c05.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\8bf669d7-922b-473e-9a56-2188850c1c05.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/category/8bf669d7-922b-473e-9a56-2188850c1c05.png",
       "AssetKind": "All",
@@ -93,10 +97,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\category\\8bf669d7-922b-473e-9a56-2188850c1c05.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\c6e33b5f-d7bd-4f31-96a5-712df0085fd2.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\c6e33b5f-d7bd-4f31-96a5-712df0085fd2.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/category/c6e33b5f-d7bd-4f31-96a5-712df0085fd2.png",
       "AssetKind": "All",
@@ -112,10 +116,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\category\\c6e33b5f-d7bd-4f31-96a5-712df0085fd2.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\e0788ae1-1449-46e7-885e-ed76046ea608.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\e0788ae1-1449-46e7-885e-ed76046ea608.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/category/e0788ae1-1449-46e7-885e-ed76046ea608.png",
       "AssetKind": "All",
@@ -131,10 +135,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\category\\e0788ae1-1449-46e7-885e-ed76046ea608.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\iMac.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\iMac.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/category/iMac.png",
       "AssetKind": "All",
@@ -150,10 +154,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\category\\iMac.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\MacBook.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\MacBook.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/category/MacBook.png",
       "AssetKind": "All",
@@ -169,10 +173,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\category\\MacBook.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\MacMini.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\MacMini.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/category/MacMini.png",
       "AssetKind": "All",
@@ -188,10 +192,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\category\\MacMini.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\MacOS.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\MacOS.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/category/MacOS.png",
       "AssetKind": "All",
@@ -207,10 +211,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\category\\MacOS.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\MacPro.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\MacPro.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/category/MacPro.png",
       "AssetKind": "All",
@@ -226,10 +230,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\category\\MacPro.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\MacStudio.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\MacStudio.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/category/MacStudio.png",
       "AssetKind": "All",
@@ -245,10 +249,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\category\\MacStudio.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\Network.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\Network.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/category/Network.png",
       "AssetKind": "All",
@@ -264,10 +268,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\category\\Network.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\0164ec57-86f6-40b0-af2b-d52be2c3e39e.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\0164ec57-86f6-40b0-af2b-d52be2c3e39e.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/0164ec57-86f6-40b0-af2b-d52be2c3e39e.png",
       "AssetKind": "All",
@@ -283,10 +287,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\0164ec57-86f6-40b0-af2b-d52be2c3e39e.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\01cddd32-f30a-4b6c-b040-f2232a27552a.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\01cddd32-f30a-4b6c-b040-f2232a27552a.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/01cddd32-f30a-4b6c-b040-f2232a27552a.png",
       "AssetKind": "All",
@@ -302,6 +306,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\01cddd32-f30a-4b6c-b040-f2232a27552a.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\0291019d-deed-46bc-950d-f352bf3c83d1.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
@@ -322,9 +327,12 @@
     },
     {
       "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\079000eb-5a60-47c6-ac63-d9e1283055ce.png",
+=======
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\079000eb-5a60-47c6-ac63-d9e1283055ce.png",
+>>>>>>> ba355fefffbaaed1db51752ca532f60559c12e4e
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/079000eb-5a60-47c6-ac63-d9e1283055ce.png",
       "AssetKind": "All",
@@ -340,10 +348,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\079000eb-5a60-47c6-ac63-d9e1283055ce.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\0b010632-3245-4ea0-ac51-858e49942f48.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\0b010632-3245-4ea0-ac51-858e49942f48.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/0b010632-3245-4ea0-ac51-858e49942f48.png",
       "AssetKind": "All",
@@ -359,6 +367,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\0b010632-3245-4ea0-ac51-858e49942f48.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\0cdb6b5e-2f35-46ff-97b3-d70f6fc4a00c.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
@@ -398,9 +407,31 @@
     },
     {
       "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\2a382625-8757-4cc7-8ee3-0588d14fbd79.png",
+=======
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\0cdb6b5e-2f35-46ff-97b3-d70f6fc4a00c.png",
+>>>>>>> ba355fefffbaaed1db51752ca532f60559c12e4e
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
+      "BasePath": "_content/techYard.API",
+      "RelativePath": "Images/products/0cdb6b5e-2f35-46ff-97b3-d70f6fc4a00c.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\products\\0cdb6b5e-2f35-46ff-97b3-d70f6fc4a00c.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\2a382625-8757-4cc7-8ee3-0588d14fbd79.png",
+      "SourceId": "techYard.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/2a382625-8757-4cc7-8ee3-0588d14fbd79.png",
       "AssetKind": "All",
@@ -416,10 +447,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\2a382625-8757-4cc7-8ee3-0588d14fbd79.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\2bbba3bc-445c-436f-a06e-639e357dfbbe.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\2bbba3bc-445c-436f-a06e-639e357dfbbe.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/2bbba3bc-445c-436f-a06e-639e357dfbbe.png",
       "AssetKind": "All",
@@ -435,10 +466,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\2bbba3bc-445c-436f-a06e-639e357dfbbe.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\2e2e3d74-0f04-48b4-b48b-ac9aa06412e9.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\2e2e3d74-0f04-48b4-b48b-ac9aa06412e9.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/2e2e3d74-0f04-48b4-b48b-ac9aa06412e9.png",
       "AssetKind": "All",
@@ -454,10 +485,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\2e2e3d74-0f04-48b4-b48b-ac9aa06412e9.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\2f205d40-2eaa-45c0-a2bc-e4662c21f361.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\2f205d40-2eaa-45c0-a2bc-e4662c21f361.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/2f205d40-2eaa-45c0-a2bc-e4662c21f361.png",
       "AssetKind": "All",
@@ -473,10 +504,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\2f205d40-2eaa-45c0-a2bc-e4662c21f361.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\4e73dcad-0420-45be-be87-f769dd8df7cc.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\4e73dcad-0420-45be-be87-f769dd8df7cc.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/4e73dcad-0420-45be-be87-f769dd8df7cc.png",
       "AssetKind": "All",
@@ -492,10 +523,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\4e73dcad-0420-45be-be87-f769dd8df7cc.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\4f83a913-fc2c-4cd2-a2b9-d069592d601d.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\4f83a913-fc2c-4cd2-a2b9-d069592d601d.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/4f83a913-fc2c-4cd2-a2b9-d069592d601d.png",
       "AssetKind": "All",
@@ -511,6 +542,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\4f83a913-fc2c-4cd2-a2b9-d069592d601d.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\52947e99-4799-4692-abf6-2a60eaa2616b.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
@@ -531,9 +563,12 @@
     },
     {
       "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\67a9c9a6-f49b-4bc3-9104-6a45e8b9549a.png",
+=======
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\67a9c9a6-f49b-4bc3-9104-6a45e8b9549a.png",
+>>>>>>> ba355fefffbaaed1db51752ca532f60559c12e4e
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/67a9c9a6-f49b-4bc3-9104-6a45e8b9549a.png",
       "AssetKind": "All",
@@ -549,10 +584,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\67a9c9a6-f49b-4bc3-9104-6a45e8b9549a.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\798f9118-fcf7-49a2-8611-0d2ca266145b.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\798f9118-fcf7-49a2-8611-0d2ca266145b.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/798f9118-fcf7-49a2-8611-0d2ca266145b.png",
       "AssetKind": "All",
@@ -568,10 +603,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\798f9118-fcf7-49a2-8611-0d2ca266145b.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\7cef77b0-2e1e-4105-9278-fa247ff124a3.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\7cef77b0-2e1e-4105-9278-fa247ff124a3.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/7cef77b0-2e1e-4105-9278-fa247ff124a3.png",
       "AssetKind": "All",
@@ -587,6 +622,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\7cef77b0-2e1e-4105-9278-fa247ff124a3.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\7ede1aa4-681d-4e9c-8b2c-8d88c378e84b.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
@@ -607,9 +643,12 @@
     },
     {
       "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\8bddcc0d-4d2f-46ae-a433-b5351e976d17.png",
+=======
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\8bddcc0d-4d2f-46ae-a433-b5351e976d17.png",
+>>>>>>> ba355fefffbaaed1db51752ca532f60559c12e4e
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/8bddcc0d-4d2f-46ae-a433-b5351e976d17.png",
       "AssetKind": "All",
@@ -625,10 +664,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\8bddcc0d-4d2f-46ae-a433-b5351e976d17.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\8caadc07-db46-4c3d-b501-a8fc797b00d1.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\8caadc07-db46-4c3d-b501-a8fc797b00d1.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/8caadc07-db46-4c3d-b501-a8fc797b00d1.png",
       "AssetKind": "All",
@@ -644,10 +683,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\8caadc07-db46-4c3d-b501-a8fc797b00d1.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\92974c19-7fc6-4518-b112-b12314009c18.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\92974c19-7fc6-4518-b112-b12314009c18.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/92974c19-7fc6-4518-b112-b12314009c18.png",
       "AssetKind": "All",
@@ -663,6 +702,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\92974c19-7fc6-4518-b112-b12314009c18.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\982d783a-89f4-452b-ae08-57f9c713cda0.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
@@ -683,9 +723,31 @@
     },
     {
       "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\9b55f46b-149d-4a51-83e1-0250580bbf9a.png",
+=======
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\982d783a-89f4-452b-ae08-57f9c713cda0.png",
+>>>>>>> ba355fefffbaaed1db51752ca532f60559c12e4e
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
+      "BasePath": "_content/techYard.API",
+      "RelativePath": "Images/products/982d783a-89f4-452b-ae08-57f9c713cda0.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\products\\982d783a-89f4-452b-ae08-57f9c713cda0.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\9b55f46b-149d-4a51-83e1-0250580bbf9a.png",
+      "SourceId": "techYard.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/9b55f46b-149d-4a51-83e1-0250580bbf9a.png",
       "AssetKind": "All",
@@ -701,10 +763,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\9b55f46b-149d-4a51-83e1-0250580bbf9a.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\9f39b032-68a0-4670-b794-794085632bec.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\9f39b032-68a0-4670-b794-794085632bec.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/9f39b032-68a0-4670-b794-794085632bec.png",
       "AssetKind": "All",
@@ -720,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\9f39b032-68a0-4670-b794-794085632bec.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\a5332c76-991b-4ac5-b3c0-19b30286177e.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\a5332c76-991b-4ac5-b3c0-19b30286177e.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/a5332c76-991b-4ac5-b3c0-19b30286177e.png",
       "AssetKind": "All",
@@ -739,10 +801,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\a5332c76-991b-4ac5-b3c0-19b30286177e.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\a8e29f23-dc17-4b2d-bfdb-478d798b7022.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\a8e29f23-dc17-4b2d-bfdb-478d798b7022.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/a8e29f23-dc17-4b2d-bfdb-478d798b7022.png",
       "AssetKind": "All",
@@ -758,10 +820,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\a8e29f23-dc17-4b2d-bfdb-478d798b7022.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\b50f81d4-85bf-464a-b392-8eb628bac862.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\b50f81d4-85bf-464a-b392-8eb628bac862.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/b50f81d4-85bf-464a-b392-8eb628bac862.png",
       "AssetKind": "All",
@@ -777,10 +839,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\b50f81d4-85bf-464a-b392-8eb628bac862.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\bc6742e1-38fb-4de0-8fe9-9339276b70d1.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\bc6742e1-38fb-4de0-8fe9-9339276b70d1.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/bc6742e1-38fb-4de0-8fe9-9339276b70d1.png",
       "AssetKind": "All",
@@ -796,10 +858,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\bc6742e1-38fb-4de0-8fe9-9339276b70d1.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\cdab9512-ee30-4290-8f62-b05eb85cd246.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\cdab9512-ee30-4290-8f62-b05eb85cd246.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/cdab9512-ee30-4290-8f62-b05eb85cd246.png",
       "AssetKind": "All",
@@ -815,10 +877,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\cdab9512-ee30-4290-8f62-b05eb85cd246.png"
     },
     {
-      "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\ea44069f-1f3f-4173-80b4-4f1f98e5bfb7.png",
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\ea44069f-1f3f-4173-80b4-4f1f98e5bfb7.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/ea44069f-1f3f-4173-80b4-4f1f98e5bfb7.png",
       "AssetKind": "All",
@@ -834,6 +896,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\ea44069f-1f3f-4173-80b4-4f1f98e5bfb7.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\ede1919d-8e3b-49f8-aaa6-868527e40d41.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
@@ -857,6 +920,12 @@
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\f1179b8d-6420-4c42-a41f-0e4138c89869.png",
+      "SourceId": "techYard.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
+>>>>>>> ba355fefffbaaed1db51752ca532f60559c12e4e
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/f1179b8d-6420-4c42-a41f-0e4138c89869.png",
       "AssetKind": "All",
@@ -872,10 +941,17 @@
       "OriginalItemSpec": "wwwroot\\Images\\products\\f1179b8d-6420-4c42-a41f-0e4138c89869.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\f86f8f3a-e49c-4879-b737-b76db4995f5b.png",
       "SourceId": "techYard.API",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\f86f8f3a-e49c-4879-b737-b76db4995f5b.png",
+      "SourceId": "techYard.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\",
+>>>>>>> ba355fefffbaaed1db51752ca532f60559c12e4e
       "BasePath": "_content/techYard.API",
       "RelativePath": "Images/products/f86f8f3a-e49c-4879-b737-b76db4995f5b.png",
       "AssetKind": "All",
