@@ -11,9 +11,5 @@ namespace techYard.Data.Entities
     {
         public string? ImageUrl { get; set; }
 
-        //public int ProductId {  get; set; }
-        //[ForeignKey(nameof(ProductId))]
-        //public Products product { get; set; }
-
     }
 }

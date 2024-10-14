@@ -163,7 +163,7 @@ namespace techYard.API.Controllers
             existingProduct.discount = productDto.discount;
             existingProduct.soldOut = productDto.soldOut;
             existingProduct.popular = productDto.popular;
-            existingProduct.categoryId = productDto.categoryId;
+            existingProduct.categoriesId = productDto.categoriesId;
 
             // حفظ التعديلات في قاعدة البيانات
             await _productServices.UpdateProduct(id, existingProduct);
@@ -305,7 +305,9 @@ namespace techYard.API.Controllers
                 discount = productDto.discount,
                 soldOut = productDto.soldOut,
                 popular = productDto.popular,
-                categoryId = productDto.categoryId,
+                OS = productDto.OS,
+                model = productDto.model,
+                categoriesId = productDto.categoriesId,
                 ProductDetailsImages = listproductimage,
                 // قم بإضافة خصائص أخرى حسب الحاجة
             };

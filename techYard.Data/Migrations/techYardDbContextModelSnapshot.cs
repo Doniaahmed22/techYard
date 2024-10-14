@@ -53,12 +53,12 @@ namespace techYard.Data.Migrations
                     b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ProductId")
+                    b.Property<int?>("ProductsId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductId");
+                    b.HasIndex("ProductsId");
 
                     b.ToTable("productDetailsImages");
                 });
@@ -113,16 +113,13 @@ namespace techYard.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int?>("CategoriesId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("OS")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("categoryId")
+                    b.Property<int?>("categoriesId")
                         .HasColumnType("int");
 
                     b.Property<int?>("discount")
@@ -148,34 +145,34 @@ namespace techYard.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoriesId");
+                    b.HasIndex("categoriesId");
 
                     b.ToTable("products");
                 });
 
             modelBuilder.Entity("techYard.Data.Entities.ProductDetailsImages", b =>
                 {
-                    b.HasOne("techYard.Data.Entities.Products", "product")
+                    b.HasOne("techYard.Data.Entities.Products", null)
                         .WithMany("productDetailsImages")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("product");
+                        .HasForeignKey("ProductsId");
                 });
 
             modelBuilder.Entity("techYard.Data.Entities.ProductFeatures", b =>
                 {
-                    b.HasOne("techYard.Data.Entities.Products", null)
+                    b.HasOne("techYard.Data.Entities.Products", "Product")
                         .WithMany("ProductFeatures")
                         .HasForeignKey("ProductsId");
+
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("techYard.Data.Entities.Products", b =>
                 {
-                    b.HasOne("techYard.Data.Entities.Categories", null)
+                    b.HasOne("techYard.Data.Entities.Categories", "categories")
                         .WithMany("products")
-                        .HasForeignKey("CategoriesId");
+                        .HasForeignKey("categoriesId");
+
+                    b.Navigation("categories");
                 });
 
             modelBuilder.Entity("techYard.Data.Entities.Categories", b =>

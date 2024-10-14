@@ -20,7 +20,19 @@ namespace techYard.Service.Services.productsServices.Dtos
         public string? model { get; set; }
         public string? OS { get; set; }
         public IEnumerable<ProductDetailsImages>? ProductDetailsImages { get; set; } = Enumerable.Empty<ProductDetailsImages>();
-        public int? categoryId { get; set; }
+        public int? categoriesId { get; set; }
+        public double? NewPrice
+        {
+            set
+            {
+                if (oldPrice.HasValue && discount.HasValue)
+                {
+                    // Calculate the new price based on the discount percentage
+                    NewPrice = oldPrice - (oldPrice * (discount / 100));
+                }
+                NewPrice = oldPrice; // Or you could return oldPrice if discount is null
+            }
+        }
 
 
 

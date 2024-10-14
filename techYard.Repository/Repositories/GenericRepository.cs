@@ -69,29 +69,29 @@ namespace techYard.Repository.Repositories
         //}
 
 
-        public async Task<TEntity> GetByIdAsync(int? id)
-        {
-            return await _context.Set<TEntity>().FindAsync(id);
-        }
-
-
-
-
-
-        //public async Task<TEntity> GetByIdAsync(int id, params Expression<Func<TEntity, object>>[] includes)
+        //public async Task<TEntity> GetByIdAsync(int? id)
         //{
-        //    // بدء الاستعلام عن الكيان بناءً على المعرف
-        //    IQueryable<TEntity> query = _context.Set<TEntity>();
-
-        //    // تطبيق Include على كل علاقة يتم تمريرها
-        //    foreach (var include in includes)
-        //    {
-        //        query = query.Include(include);
-        //    }
-
-        //    // استخدام FirstOrDefaultAsync للبحث عن الكيان بناءً على المعرف
-        //    return await query.FirstOrDefaultAsync(e => e.Id == id); // تأكد من أن TEntity يحتوي على خاصية Id
+        //    return await _context.Set<TEntity>().FindAsync(id);
         //}
+
+
+
+
+
+        public async Task<TEntity> GetByIdAsync(int id, params Expression<Func<TEntity, object>>[] includes)
+        {
+            // بدء الاستعلام عن الكيان بناءً على المعرف
+            IQueryable<TEntity> query = _context.Set<TEntity>();
+
+            // تطبيق Include على كل علاقة يتم تمريرها
+            foreach (var include in includes)
+            {
+                query = query.Include(include);
+            }
+
+            // استخدام FirstOrDefaultAsync للبحث عن الكيان بناءً على المعرف
+            return await query.FirstOrDefaultAsync(e => e.Id == id); // تأكد من أن TEntity يحتوي على خاصية Id
+        }
 
 
 

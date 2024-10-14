@@ -17,7 +17,7 @@ namespace techYard.Service.Services.featuresServices.Dtos
         public string? dimensions { get; set; }
         public string? weight { get; set; }
         public string? ScreenSize { get; set; }
-        public int? ProductId { get; set; }
-        public Products? products { get; set; }
+        public int? ProductsId { get; set; }
+        //public Products? products { get; set; }
     }
 }

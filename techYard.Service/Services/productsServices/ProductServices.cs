@@ -37,69 +37,54 @@ namespace techYard.Service.Services.productsServices
         //    return _mapper.Map<IReadOnlyList<getProduct>>(products);
         //}
 
-        //public async Task<IReadOnlyList<getProduct>> GetAllProducts()
-        //{
-        //    // جلب المنتجات مع العلاقات المرتبطة (مثال على Category و ProductFeatures)
-        //    var products = await _unitOfWork.Repository<Products>().GetAllAsync();
-
-        //    // تحويل الكيانات إلى Dto باستخدام AutoMapper
-        //    return _mapper.Map<IReadOnlyList<getProduct>>(products);
-        //}
-
-
-
         public async Task<IReadOnlyList<getProduct>> GetAllProducts()
         {
-            // جلب المنتجات مع تضمين الفئات والصور المرتبطة
-            var products = await _unitOfWork.Repository<Products>().GetAllAsync(
-                p => p.ProductFeatures,
-                p => p.productDetailsImages
-            );
+            // جلب المنتجات مع العلاقات المرتبطة (مثال على Category و ProductFeatures)
+            var products = await _unitOfWork.Repository<Products>().GetAllAsync();
 
-            // تحويل الكيانات إلى DTO باستخدام AutoMapper
-            var result = _mapper.Map<IReadOnlyList<getProduct>>(products);
-
-            return result;
+            // تحويل الكيانات إلى Dto باستخدام AutoMapper
+            return _mapper.Map<IReadOnlyList<getProduct>>(products);
         }
 
 
 
-
-        public async Task<getProduct> GetProductById(int id)
-        {
-            var products = await _unitOfWork.Repository<Products>().GetByIdAsync(id);
-
-            return _mapper.Map<getProduct>(products);
-        }
-
-
-        //public async Task<getProduct?> GetProductById(int id)
+        //public async Task<IReadOnlyList<getProduct>> GetAllProducts()
         //{
-        //    var product = await _unitOfWork.Repository<Products>().GetAllAsync(
-        //        p => p.category,
-        //        p => p.productFeatures
+        //    // جلب المنتجات مع تضمين الفئات والصور المرتبطة
+        //    var products = await _unitOfWork.Repository<Products>().GetAllAsync(
+        //        p => p.ProductFeatures,
+        //        p => p.productDetailsImages
         //    );
 
-        //    var result = product
-        //        .Where(p => p.Id == id)
-        //        .Select(p => new getProduct
-        //        {
-        //            Id = p.Id,
-        //            Name = p.Name,
-        //            imageUrl = p.imageUrl,
-        //            imageUrlInHover = p.imageUrlInHover,
-        //            oldPrice = p.oldPrice,
-        //            NewPrice = p.NewPrice,
-        //            discount = p.discount,
-        //            soldOut = p.soldOut,
-        //            popular = p.popular,
-        //            category = new Categories { Id = p.category.Id, name = p.category.name },
-        //            productFeatures = new ProductFeatures { Id = p.productFeatures.Id, model = p.productFeatures.model }
-        //        })
-        //        .FirstOrDefault();
+        //    // تحويل الكيانات إلى DTO باستخدام AutoMapper
+        //    var result = _mapper.Map<IReadOnlyList<getProduct>>(products);
 
         //    return result;
         //}
+
+
+
+
+        //public async Task<getProduct> GetProductById(int id)
+        //{
+        //    var products = await _unitOfWork.Repository<Products>().GetByIdAsync(id);
+
+        //    return _mapper.Map<getProduct>(products);
+        //}
+
+
+        public async Task<getProduct?> GetProductById(int id)
+        {
+            var product = await _unitOfWork.Repository<Products>().GetByIdAsync(
+                id,
+                p => p.productDetailsImages,
+                p => p.ProductFeatures
+            );
+
+            var result = _mapper.Map<getProduct>(product);
+
+            return result;
+        }
 
 
 
@@ -123,8 +108,7 @@ namespace techYard.Service.Services.productsServices
             var Product = _mapper.Map<Products>(productDto);
             await _unitOfWork.Repository<Products>().AddAsync(Product);
             await _unitOfWork.CompleteAsync();
-            var AddedProduct = _mapper.Map(Product, productDto);
-            return AddedProduct;
+            return productDto;
         }
 
         public async Task<Products?> DeleteProduct(int id)

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,9 +18,11 @@ namespace techYard.Data.Entities
         public bool? popular { get; set; }
         public string? model { get; set; }
         public string? OS { get; set; }
-        public int? categoryId { get; set; }
-        public ICollection<ProductDetailsImages>? productDetailsImages { get; set; }
-        public ICollection<ProductFeatures>? ProductFeatures { get; set; }
+        public int? categoriesId { get; set; }
+        //[ForeignKey(nameof(categoriesId))]
+        //public Categories? categories { get; set; }
+        public ICollection<ProductDetailsImages>? productDetailsImages { get; set; } = new List<ProductDetailsImages>();
+        public ICollection<ProductFeatures>? ProductFeatures { get; set; } = new List<ProductFeatures>();
         public double? NewPrice
         {
             get
@@ -27,7 +30,7 @@ namespace techYard.Data.Entities
                 if (oldPrice.HasValue && discount.HasValue)
                 {
                     // Calculate the new price based on the discount percentage
-                    return oldPrice - (oldPrice * (discount.Value / 100));
+                    return oldPrice - (oldPrice * (discount / 100));
                 }
                 return null; // Or you could return oldPrice if discount is null
             }

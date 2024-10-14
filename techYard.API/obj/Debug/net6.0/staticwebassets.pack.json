@@ -1,224 +1,832 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\01f97314-b66f-4e0f-90b3-ee344d2bfd76.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\01f97314-b66f-4e0f-90b3-ee344d2bfd76.png",
       "PackagePath": "staticwebassets\\Images\\category\\01f97314-b66f-4e0f-90b3-ee344d2bfd76.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\50a88afc-b790-41ce-a351-57ad43f762df.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\06e48d6b-dae5-46de-b252-ec0a3c0c39b5.png",
+      "PackagePath": "staticwebassets\\Images\\category\\06e48d6b-dae5-46de-b252-ec0a3c0c39b5.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\24f70b4b-eec1-4852-87cc-c1f1b3207a6e.png",
+      "PackagePath": "staticwebassets\\Images\\category\\24f70b4b-eec1-4852-87cc-c1f1b3207a6e.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\2a53963a-ea6b-4a87-8315-0350ea062e79.png",
+      "PackagePath": "staticwebassets\\Images\\category\\2a53963a-ea6b-4a87-8315-0350ea062e79.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\370cc086-a317-4919-9d82-2d6db39441bc.png",
+      "PackagePath": "staticwebassets\\Images\\category\\370cc086-a317-4919-9d82-2d6db39441bc.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\4436e4fd-ada2-4011-aa3b-b9d478c4eda8.png",
+      "PackagePath": "staticwebassets\\Images\\category\\4436e4fd-ada2-4011-aa3b-b9d478c4eda8.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\4c01efd4-c32d-49ad-b0a5-fb03ef037543.png",
+      "PackagePath": "staticwebassets\\Images\\category\\4c01efd4-c32d-49ad-b0a5-fb03ef037543.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\50a88afc-b790-41ce-a351-57ad43f762df.png",
       "PackagePath": "staticwebassets\\Images\\category\\50a88afc-b790-41ce-a351-57ad43f762df.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\520c719f-4391-4282-be1e-ad74135f7868.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\520c719f-4391-4282-be1e-ad74135f7868.png",
       "PackagePath": "staticwebassets\\Images\\category\\520c719f-4391-4282-be1e-ad74135f7868.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\8bf669d7-922b-473e-9a56-2188850c1c05.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\70bb617b-2d9b-4646-8996-ff2452d11530.png",
+      "PackagePath": "staticwebassets\\Images\\category\\70bb617b-2d9b-4646-8996-ff2452d11530.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\733c2d78-61fb-44e6-bba0-7d01d4b649bd.png",
+      "PackagePath": "staticwebassets\\Images\\category\\733c2d78-61fb-44e6-bba0-7d01d4b649bd.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\8aab23cd-67b8-4364-a50a-9fbfdda06e93.png",
+      "PackagePath": "staticwebassets\\Images\\category\\8aab23cd-67b8-4364-a50a-9fbfdda06e93.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\8bf669d7-922b-473e-9a56-2188850c1c05.png",
       "PackagePath": "staticwebassets\\Images\\category\\8bf669d7-922b-473e-9a56-2188850c1c05.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\MacBook.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\99f425bf-dfd1-4ff0-a1d6-3c84bf932be1.png",
+      "PackagePath": "staticwebassets\\Images\\category\\99f425bf-dfd1-4ff0-a1d6-3c84bf932be1.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\MacBook.png",
       "PackagePath": "staticwebassets\\Images\\category\\MacBook.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\MacMini.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\MacMini.png",
       "PackagePath": "staticwebassets\\Images\\category\\MacMini.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\MacOS.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\MacOS.png",
       "PackagePath": "staticwebassets\\Images\\category\\MacOS.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\MacPro.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\MacPro.png",
       "PackagePath": "staticwebassets\\Images\\category\\MacPro.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\MacStudio.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\MacStudio.png",
       "PackagePath": "staticwebassets\\Images\\category\\MacStudio.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\Network.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\Network.png",
       "PackagePath": "staticwebassets\\Images\\category\\Network.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\c6e33b5f-d7bd-4f31-96a5-712df0085fd2.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\bf6ad43f-17a9-4b84-8c1e-0291a65deff4.png",
+      "PackagePath": "staticwebassets\\Images\\category\\bf6ad43f-17a9-4b84-8c1e-0291a65deff4.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\c6e33b5f-d7bd-4f31-96a5-712df0085fd2.png",
       "PackagePath": "staticwebassets\\Images\\category\\c6e33b5f-d7bd-4f31-96a5-712df0085fd2.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\e0788ae1-1449-46e7-885e-ed76046ea608.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\cf0e4668-49cf-48e2-b5a0-65964d5d8115.png",
+      "PackagePath": "staticwebassets\\Images\\category\\cf0e4668-49cf-48e2-b5a0-65964d5d8115.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\e0788ae1-1449-46e7-885e-ed76046ea608.png",
       "PackagePath": "staticwebassets\\Images\\category\\e0788ae1-1449-46e7-885e-ed76046ea608.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\category\\iMac.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\category\\iMac.png",
       "PackagePath": "staticwebassets\\Images\\category\\iMac.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\0164ec57-86f6-40b0-af2b-d52be2c3e39e.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\0164ec57-86f6-40b0-af2b-d52be2c3e39e.png",
       "PackagePath": "staticwebassets\\Images\\products\\0164ec57-86f6-40b0-af2b-d52be2c3e39e.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\01cddd32-f30a-4b6c-b040-f2232a27552a.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\0192a194-47a3-4452-bb2a-121652b7bccc.png",
+      "PackagePath": "staticwebassets\\Images\\products\\0192a194-47a3-4452-bb2a-121652b7bccc.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\01b0a222-a7e3-48ed-af17-acb64b803905.png",
+      "PackagePath": "staticwebassets\\Images\\products\\01b0a222-a7e3-48ed-af17-acb64b803905.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\01cddd32-f30a-4b6c-b040-f2232a27552a.png",
       "PackagePath": "staticwebassets\\Images\\products\\01cddd32-f30a-4b6c-b040-f2232a27552a.png"
     },
     {
-<<<<<<< HEAD
       "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\0291019d-deed-46bc-950d-f352bf3c83d1.png",
       "PackagePath": "staticwebassets\\Images\\products\\0291019d-deed-46bc-950d-f352bf3c83d1.png"
     },
     {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\03754827-4dda-4bd8-88da-98f22fa80d59.png",
+      "PackagePath": "staticwebassets\\Images\\products\\03754827-4dda-4bd8-88da-98f22fa80d59.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\03cb8d31-5eb0-4e89-85bd-68668243adeb.png",
+      "PackagePath": "staticwebassets\\Images\\products\\03cb8d31-5eb0-4e89-85bd-68668243adeb.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\043ed700-2ab6-4f2f-9105-3b86dd4b01dc.png",
+      "PackagePath": "staticwebassets\\Images\\products\\043ed700-2ab6-4f2f-9105-3b86dd4b01dc.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\04fc870d-31fd-4ee7-a00e-0bbece3b31b8.png",
+      "PackagePath": "staticwebassets\\Images\\products\\04fc870d-31fd-4ee7-a00e-0bbece3b31b8.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\066f6a85-8534-4484-86ef-d955cc52d42b.png",
+      "PackagePath": "staticwebassets\\Images\\products\\066f6a85-8534-4484-86ef-d955cc52d42b.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\06c5ea5e-530e-4572-923c-1e3e58bb4c1c.png",
+      "PackagePath": "staticwebassets\\Images\\products\\06c5ea5e-530e-4572-923c-1e3e58bb4c1c.png"
+    },
+    {
       "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\079000eb-5a60-47c6-ac63-d9e1283055ce.png",
-=======
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\079000eb-5a60-47c6-ac63-d9e1283055ce.png",
->>>>>>> ba355fefffbaaed1db51752ca532f60559c12e4e
       "PackagePath": "staticwebassets\\Images\\products\\079000eb-5a60-47c6-ac63-d9e1283055ce.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\0b010632-3245-4ea0-ac51-858e49942f48.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\08667e14-0a0e-47af-9da8-2fbaaac3c863.png",
+      "PackagePath": "staticwebassets\\Images\\products\\08667e14-0a0e-47af-9da8-2fbaaac3c863.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\0aa1fbb4-7ec1-472b-b48c-5cf007d7c3f7.png",
+      "PackagePath": "staticwebassets\\Images\\products\\0aa1fbb4-7ec1-472b-b48c-5cf007d7c3f7.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\0adafee1-658a-4d85-a39d-32e45e8a11b5.png",
+      "PackagePath": "staticwebassets\\Images\\products\\0adafee1-658a-4d85-a39d-32e45e8a11b5.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\0b010632-3245-4ea0-ac51-858e49942f48.png",
       "PackagePath": "staticwebassets\\Images\\products\\0b010632-3245-4ea0-ac51-858e49942f48.png"
     },
     {
-<<<<<<< HEAD
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\0c1e19fc-ff7a-4206-bcd7-a11321c625f8.png",
+      "PackagePath": "staticwebassets\\Images\\products\\0c1e19fc-ff7a-4206-bcd7-a11321c625f8.png"
+    },
+    {
       "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\0cdb6b5e-2f35-46ff-97b3-d70f6fc4a00c.png",
       "PackagePath": "staticwebassets\\Images\\products\\0cdb6b5e-2f35-46ff-97b3-d70f6fc4a00c.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\100737a0-dc00-4df9-9980-aedf08d57c5c.png",
+      "PackagePath": "staticwebassets\\Images\\products\\100737a0-dc00-4df9-9980-aedf08d57c5c.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\11f12391-5699-4603-b332-e0fff00364c7.png",
+      "PackagePath": "staticwebassets\\Images\\products\\11f12391-5699-4603-b332-e0fff00364c7.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\12ab96a1-fffa-44ba-a6d4-b00071779439.png",
+      "PackagePath": "staticwebassets\\Images\\products\\12ab96a1-fffa-44ba-a6d4-b00071779439.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\13e1ffa2-cf3b-4dd0-83dc-75e75c727c2c.png",
+      "PackagePath": "staticwebassets\\Images\\products\\13e1ffa2-cf3b-4dd0-83dc-75e75c727c2c.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\1513d2f3-afb6-46ca-a0af-ebb965f12c33.png",
+      "PackagePath": "staticwebassets\\Images\\products\\1513d2f3-afb6-46ca-a0af-ebb965f12c33.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\183538c3-e257-4f00-b12a-bb1a3e361bbe.png",
+      "PackagePath": "staticwebassets\\Images\\products\\183538c3-e257-4f00-b12a-bb1a3e361bbe.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\197bd72b-ac6c-4725-bc6a-5321a56cc62e.png",
+      "PackagePath": "staticwebassets\\Images\\products\\197bd72b-ac6c-4725-bc6a-5321a56cc62e.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\1a709b08-f381-4790-aae0-d0d381e6ac05.png",
+      "PackagePath": "staticwebassets\\Images\\products\\1a709b08-f381-4790-aae0-d0d381e6ac05.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\1b1a740a-ac99-4f32-bb7a-5b626cae107a.png",
+      "PackagePath": "staticwebassets\\Images\\products\\1b1a740a-ac99-4f32-bb7a-5b626cae107a.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\1b2f2f17-4dd6-4415-99fa-bd1bdfea5939.png",
+      "PackagePath": "staticwebassets\\Images\\products\\1b2f2f17-4dd6-4415-99fa-bd1bdfea5939.png"
     },
     {
       "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\1b9d19d3-c5de-4f3c-9643-7a1c3a41658c.png",
       "PackagePath": "staticwebassets\\Images\\products\\1b9d19d3-c5de-4f3c-9643-7a1c3a41658c.png"
     },
     {
-      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\2a382625-8757-4cc7-8ee3-0588d14fbd79.png",
-=======
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\0cdb6b5e-2f35-46ff-97b3-d70f6fc4a00c.png",
-      "PackagePath": "staticwebassets\\Images\\products\\0cdb6b5e-2f35-46ff-97b3-d70f6fc4a00c.png"
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\1c3252be-5509-4bf3-9196-05a3cd254562.png",
+      "PackagePath": "staticwebassets\\Images\\products\\1c3252be-5509-4bf3-9196-05a3cd254562.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\2a382625-8757-4cc7-8ee3-0588d14fbd79.png",
->>>>>>> ba355fefffbaaed1db51752ca532f60559c12e4e
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\1d4aca0f-595c-419c-afb1-2810f0718bcf.png",
+      "PackagePath": "staticwebassets\\Images\\products\\1d4aca0f-595c-419c-afb1-2810f0718bcf.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\1f606d94-41e2-4a31-95af-bab4e9b13058.png",
+      "PackagePath": "staticwebassets\\Images\\products\\1f606d94-41e2-4a31-95af-bab4e9b13058.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\2750a7de-fae3-4677-802a-6cd66177346b.png",
+      "PackagePath": "staticwebassets\\Images\\products\\2750a7de-fae3-4677-802a-6cd66177346b.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\28409486-e772-43ad-98ad-c3dbe5ee6b2a.png",
+      "PackagePath": "staticwebassets\\Images\\products\\28409486-e772-43ad-98ad-c3dbe5ee6b2a.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\2a382625-8757-4cc7-8ee3-0588d14fbd79.png",
       "PackagePath": "staticwebassets\\Images\\products\\2a382625-8757-4cc7-8ee3-0588d14fbd79.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\2bbba3bc-445c-436f-a06e-639e357dfbbe.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\2bbba3bc-445c-436f-a06e-639e357dfbbe.png",
       "PackagePath": "staticwebassets\\Images\\products\\2bbba3bc-445c-436f-a06e-639e357dfbbe.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\2e2e3d74-0f04-48b4-b48b-ac9aa06412e9.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\2d28ddb1-fb42-44a8-b185-26cc8fe44e5e.png",
+      "PackagePath": "staticwebassets\\Images\\products\\2d28ddb1-fb42-44a8-b185-26cc8fe44e5e.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\2e2e3d74-0f04-48b4-b48b-ac9aa06412e9.png",
       "PackagePath": "staticwebassets\\Images\\products\\2e2e3d74-0f04-48b4-b48b-ac9aa06412e9.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\2f205d40-2eaa-45c0-a2bc-e4662c21f361.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\2ea5a6a2-9314-4454-99c6-a7ee7cba4c02.png",
+      "PackagePath": "staticwebassets\\Images\\products\\2ea5a6a2-9314-4454-99c6-a7ee7cba4c02.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\2f205d40-2eaa-45c0-a2bc-e4662c21f361.png",
       "PackagePath": "staticwebassets\\Images\\products\\2f205d40-2eaa-45c0-a2bc-e4662c21f361.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\4e73dcad-0420-45be-be87-f769dd8df7cc.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\2f9ff869-f8da-4247-abc5-55646cceb3c2.png",
+      "PackagePath": "staticwebassets\\Images\\products\\2f9ff869-f8da-4247-abc5-55646cceb3c2.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\300fadc5-a065-415c-b7cb-c36b8019709a.png",
+      "PackagePath": "staticwebassets\\Images\\products\\300fadc5-a065-415c-b7cb-c36b8019709a.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\33aaebea-b253-4d84-bcbb-fa6838e72d3b.png",
+      "PackagePath": "staticwebassets\\Images\\products\\33aaebea-b253-4d84-bcbb-fa6838e72d3b.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\33f00131-8f9e-41e6-827c-ae1d2e8dcc3f.png",
+      "PackagePath": "staticwebassets\\Images\\products\\33f00131-8f9e-41e6-827c-ae1d2e8dcc3f.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\34100b0e-2a23-4555-ac52-4a83dd30b4b9.png",
+      "PackagePath": "staticwebassets\\Images\\products\\34100b0e-2a23-4555-ac52-4a83dd30b4b9.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\373d6680-996f-44c0-b367-68985aba17ac.png",
+      "PackagePath": "staticwebassets\\Images\\products\\373d6680-996f-44c0-b367-68985aba17ac.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\3786d460-1ce3-475d-8097-baa88ed537dd.png",
+      "PackagePath": "staticwebassets\\Images\\products\\3786d460-1ce3-475d-8097-baa88ed537dd.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\3a2b5b4e-4b3f-4e5e-a090-6ba649cdcdc5.png",
+      "PackagePath": "staticwebassets\\Images\\products\\3a2b5b4e-4b3f-4e5e-a090-6ba649cdcdc5.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\3b32319a-a201-4761-88b8-ae01ea7bd387.png",
+      "PackagePath": "staticwebassets\\Images\\products\\3b32319a-a201-4761-88b8-ae01ea7bd387.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\3ba99d63-adba-4b88-a5be-848420e468c4.png",
+      "PackagePath": "staticwebassets\\Images\\products\\3ba99d63-adba-4b88-a5be-848420e468c4.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\3d68c4fa-6d59-4bcb-96e6-451099275195.png",
+      "PackagePath": "staticwebassets\\Images\\products\\3d68c4fa-6d59-4bcb-96e6-451099275195.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\40c43e9b-7bda-41a5-8b42-2bbf8546fa33.png",
+      "PackagePath": "staticwebassets\\Images\\products\\40c43e9b-7bda-41a5-8b42-2bbf8546fa33.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\40e16126-e3c7-4c29-91ee-327b839f0c88.png",
+      "PackagePath": "staticwebassets\\Images\\products\\40e16126-e3c7-4c29-91ee-327b839f0c88.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\422954e0-2256-43fa-acdc-3e8546ebee8d.png",
+      "PackagePath": "staticwebassets\\Images\\products\\422954e0-2256-43fa-acdc-3e8546ebee8d.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\426b44cc-4e1e-4566-8dcb-940daaa20534.png",
+      "PackagePath": "staticwebassets\\Images\\products\\426b44cc-4e1e-4566-8dcb-940daaa20534.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\43649eed-49a9-49de-bb34-cdbfca2f204b.png",
+      "PackagePath": "staticwebassets\\Images\\products\\43649eed-49a9-49de-bb34-cdbfca2f204b.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\443e739b-a782-466d-8360-b2c7607f7771.png",
+      "PackagePath": "staticwebassets\\Images\\products\\443e739b-a782-466d-8360-b2c7607f7771.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\44addfc5-2a3d-4bae-a7e1-b406f64658ad.png",
+      "PackagePath": "staticwebassets\\Images\\products\\44addfc5-2a3d-4bae-a7e1-b406f64658ad.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\47b60593-123d-4423-8f8d-cb227e097c6d.png",
+      "PackagePath": "staticwebassets\\Images\\products\\47b60593-123d-4423-8f8d-cb227e097c6d.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\49c2aca4-b9ba-48d0-bf61-277c21f358e6.png",
+      "PackagePath": "staticwebassets\\Images\\products\\49c2aca4-b9ba-48d0-bf61-277c21f358e6.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\4ae90bf3-9377-483c-b9aa-f3b523789d38.png",
+      "PackagePath": "staticwebassets\\Images\\products\\4ae90bf3-9377-483c-b9aa-f3b523789d38.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\4b8bf872-1c55-4c39-8840-0351780cc901.png",
+      "PackagePath": "staticwebassets\\Images\\products\\4b8bf872-1c55-4c39-8840-0351780cc901.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\4cec58f3-655e-4bcc-82da-ed514f274570.png",
+      "PackagePath": "staticwebassets\\Images\\products\\4cec58f3-655e-4bcc-82da-ed514f274570.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\4e73dcad-0420-45be-be87-f769dd8df7cc.png",
       "PackagePath": "staticwebassets\\Images\\products\\4e73dcad-0420-45be-be87-f769dd8df7cc.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\4f83a913-fc2c-4cd2-a2b9-d069592d601d.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\4f83a913-fc2c-4cd2-a2b9-d069592d601d.png",
       "PackagePath": "staticwebassets\\Images\\products\\4f83a913-fc2c-4cd2-a2b9-d069592d601d.png"
     },
     {
-<<<<<<< HEAD
       "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\52947e99-4799-4692-abf6-2a60eaa2616b.png",
       "PackagePath": "staticwebassets\\Images\\products\\52947e99-4799-4692-abf6-2a60eaa2616b.png"
     },
     {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\535aed58-2ca2-4cf9-9f64-941ea97fb638.png",
+      "PackagePath": "staticwebassets\\Images\\products\\535aed58-2ca2-4cf9-9f64-941ea97fb638.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\535c3ecc-b97a-4caa-b4c8-804e0018d5df.png",
+      "PackagePath": "staticwebassets\\Images\\products\\535c3ecc-b97a-4caa-b4c8-804e0018d5df.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\54942c05-984b-4843-8e7c-4dc55be41ad0.png",
+      "PackagePath": "staticwebassets\\Images\\products\\54942c05-984b-4843-8e7c-4dc55be41ad0.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\55f50892-031f-4285-9638-a47e63ee5d03.png",
+      "PackagePath": "staticwebassets\\Images\\products\\55f50892-031f-4285-9638-a47e63ee5d03.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\56a70808-b3ee-4f64-b483-79d6fc6c0d63.png",
+      "PackagePath": "staticwebassets\\Images\\products\\56a70808-b3ee-4f64-b483-79d6fc6c0d63.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\5a301fa6-215a-484b-a4d6-d5f2ac601ba2.png",
+      "PackagePath": "staticwebassets\\Images\\products\\5a301fa6-215a-484b-a4d6-d5f2ac601ba2.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\60b9ddcb-7a6e-4e1e-aa43-1ee33a6d8981.png",
+      "PackagePath": "staticwebassets\\Images\\products\\60b9ddcb-7a6e-4e1e-aa43-1ee33a6d8981.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\61ac1b10-6bdb-48e4-bd70-8d963b294910.png",
+      "PackagePath": "staticwebassets\\Images\\products\\61ac1b10-6bdb-48e4-bd70-8d963b294910.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\622feee4-f16c-472f-9f86-3094ca9f4b1d.png",
+      "PackagePath": "staticwebassets\\Images\\products\\622feee4-f16c-472f-9f86-3094ca9f4b1d.png"
+    },
+    {
       "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\67a9c9a6-f49b-4bc3-9104-6a45e8b9549a.png",
-=======
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\67a9c9a6-f49b-4bc3-9104-6a45e8b9549a.png",
->>>>>>> ba355fefffbaaed1db51752ca532f60559c12e4e
       "PackagePath": "staticwebassets\\Images\\products\\67a9c9a6-f49b-4bc3-9104-6a45e8b9549a.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\798f9118-fcf7-49a2-8611-0d2ca266145b.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\68dc08fe-f0cb-4f86-838f-49300a83a2d1.png",
+      "PackagePath": "staticwebassets\\Images\\products\\68dc08fe-f0cb-4f86-838f-49300a83a2d1.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\697cc9de-3125-4064-a061-7b5bea09f6f0.png",
+      "PackagePath": "staticwebassets\\Images\\products\\697cc9de-3125-4064-a061-7b5bea09f6f0.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\69922dac-d3f1-4357-aadc-e692b4c65393.png",
+      "PackagePath": "staticwebassets\\Images\\products\\69922dac-d3f1-4357-aadc-e692b4c65393.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\69b07e27-f947-43e7-aaa8-4e92f8cb2833.png",
+      "PackagePath": "staticwebassets\\Images\\products\\69b07e27-f947-43e7-aaa8-4e92f8cb2833.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\6cd19fc3-c5ee-477e-8c32-d6e2614cafce.png",
+      "PackagePath": "staticwebassets\\Images\\products\\6cd19fc3-c5ee-477e-8c32-d6e2614cafce.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\6f53a23f-7448-4d86-ac33-7f3cd1f20791.png",
+      "PackagePath": "staticwebassets\\Images\\products\\6f53a23f-7448-4d86-ac33-7f3cd1f20791.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\7311c0a9-773e-4e25-b0b2-c5a510e0f7cc.png",
+      "PackagePath": "staticwebassets\\Images\\products\\7311c0a9-773e-4e25-b0b2-c5a510e0f7cc.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\73817058-6333-4099-80a2-6f6d6b361c8a.png",
+      "PackagePath": "staticwebassets\\Images\\products\\73817058-6333-4099-80a2-6f6d6b361c8a.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\74bdcca6-4a34-4449-b8c7-4df6861dbb2a.png",
+      "PackagePath": "staticwebassets\\Images\\products\\74bdcca6-4a34-4449-b8c7-4df6861dbb2a.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\77c7570b-2485-4a1b-8be2-9c202632d981.png",
+      "PackagePath": "staticwebassets\\Images\\products\\77c7570b-2485-4a1b-8be2-9c202632d981.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\78fab964-eddf-40c9-aa43-1b2901d806a2.png",
+      "PackagePath": "staticwebassets\\Images\\products\\78fab964-eddf-40c9-aa43-1b2901d806a2.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\798f9118-fcf7-49a2-8611-0d2ca266145b.png",
       "PackagePath": "staticwebassets\\Images\\products\\798f9118-fcf7-49a2-8611-0d2ca266145b.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\7cef77b0-2e1e-4105-9278-fa247ff124a3.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\7cd7b56e-eda5-4aba-805b-8109d29bc6a4.png",
+      "PackagePath": "staticwebassets\\Images\\products\\7cd7b56e-eda5-4aba-805b-8109d29bc6a4.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\7cef77b0-2e1e-4105-9278-fa247ff124a3.png",
       "PackagePath": "staticwebassets\\Images\\products\\7cef77b0-2e1e-4105-9278-fa247ff124a3.png"
     },
     {
-<<<<<<< HEAD
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\7d2dfbe2-887d-4b23-9f31-c8420fbac5f2.png",
+      "PackagePath": "staticwebassets\\Images\\products\\7d2dfbe2-887d-4b23-9f31-c8420fbac5f2.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\7e408437-bff0-4d11-9d93-75176d121397.png",
+      "PackagePath": "staticwebassets\\Images\\products\\7e408437-bff0-4d11-9d93-75176d121397.png"
+    },
+    {
       "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\7ede1aa4-681d-4e9c-8b2c-8d88c378e84b.png",
       "PackagePath": "staticwebassets\\Images\\products\\7ede1aa4-681d-4e9c-8b2c-8d88c378e84b.png"
     },
     {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\81b32aa1-7c8c-4092-bebd-9e28478b5fd3.png",
+      "PackagePath": "staticwebassets\\Images\\products\\81b32aa1-7c8c-4092-bebd-9e28478b5fd3.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\8403fb44-834b-4c42-aed2-8dfe18e5a6c6.png",
+      "PackagePath": "staticwebassets\\Images\\products\\8403fb44-834b-4c42-aed2-8dfe18e5a6c6.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\8991ab65-96b3-45c3-89d8-c9c2e3d68940.png",
+      "PackagePath": "staticwebassets\\Images\\products\\8991ab65-96b3-45c3-89d8-c9c2e3d68940.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\8a5ac1a7-a8b8-464e-9de8-f12ee7581f31.png",
+      "PackagePath": "staticwebassets\\Images\\products\\8a5ac1a7-a8b8-464e-9de8-f12ee7581f31.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\8b55a3e6-5661-48ae-bc82-6c54e119d326.png",
+      "PackagePath": "staticwebassets\\Images\\products\\8b55a3e6-5661-48ae-bc82-6c54e119d326.png"
+    },
+    {
       "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\8bddcc0d-4d2f-46ae-a433-b5351e976d17.png",
-=======
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\8bddcc0d-4d2f-46ae-a433-b5351e976d17.png",
->>>>>>> ba355fefffbaaed1db51752ca532f60559c12e4e
       "PackagePath": "staticwebassets\\Images\\products\\8bddcc0d-4d2f-46ae-a433-b5351e976d17.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\8caadc07-db46-4c3d-b501-a8fc797b00d1.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\8c8ccc98-6d7f-4d57-a3bf-6f9aa0eeec4b.png",
+      "PackagePath": "staticwebassets\\Images\\products\\8c8ccc98-6d7f-4d57-a3bf-6f9aa0eeec4b.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\8caadc07-db46-4c3d-b501-a8fc797b00d1.png",
       "PackagePath": "staticwebassets\\Images\\products\\8caadc07-db46-4c3d-b501-a8fc797b00d1.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\92974c19-7fc6-4518-b112-b12314009c18.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\8cc81bce-fdea-4f63-a3d3-bf52ee23fb54.png",
+      "PackagePath": "staticwebassets\\Images\\products\\8cc81bce-fdea-4f63-a3d3-bf52ee23fb54.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\8d91492a-cf61-46e6-9eba-955d404452f5.png",
+      "PackagePath": "staticwebassets\\Images\\products\\8d91492a-cf61-46e6-9eba-955d404452f5.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\9158cc49-8d54-4788-b383-956153409744.png",
+      "PackagePath": "staticwebassets\\Images\\products\\9158cc49-8d54-4788-b383-956153409744.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\915e1524-9f8e-4329-bfd7-0dd991522459.png",
+      "PackagePath": "staticwebassets\\Images\\products\\915e1524-9f8e-4329-bfd7-0dd991522459.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\918e7ee8-be83-457c-b90f-4dc7696a1f84.png",
+      "PackagePath": "staticwebassets\\Images\\products\\918e7ee8-be83-457c-b90f-4dc7696a1f84.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\921620c4-45c5-40de-9b71-98aa3f1e4fb5.png",
+      "PackagePath": "staticwebassets\\Images\\products\\921620c4-45c5-40de-9b71-98aa3f1e4fb5.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\922c5345-c8ff-4778-9848-c846f870250a.png",
+      "PackagePath": "staticwebassets\\Images\\products\\922c5345-c8ff-4778-9848-c846f870250a.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\925c9e58-31c7-4683-8372-01e70b95367d.png",
+      "PackagePath": "staticwebassets\\Images\\products\\925c9e58-31c7-4683-8372-01e70b95367d.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\92974c19-7fc6-4518-b112-b12314009c18.png",
       "PackagePath": "staticwebassets\\Images\\products\\92974c19-7fc6-4518-b112-b12314009c18.png"
     },
     {
-<<<<<<< HEAD
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\9328b5f6-c544-4653-8817-0a4002f68336.png",
+      "PackagePath": "staticwebassets\\Images\\products\\9328b5f6-c544-4653-8817-0a4002f68336.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\94073354-b1c3-4054-a0d5-45b11ba46896.png",
+      "PackagePath": "staticwebassets\\Images\\products\\94073354-b1c3-4054-a0d5-45b11ba46896.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\950eb03a-3f9a-48c9-8e28-8fbeb6bdc41a.png",
+      "PackagePath": "staticwebassets\\Images\\products\\950eb03a-3f9a-48c9-8e28-8fbeb6bdc41a.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\9771c7b4-8010-411f-8ca5-c1b443d7ef35.png",
+      "PackagePath": "staticwebassets\\Images\\products\\9771c7b4-8010-411f-8ca5-c1b443d7ef35.png"
+    },
+    {
       "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\982d783a-89f4-452b-ae08-57f9c713cda0.png",
       "PackagePath": "staticwebassets\\Images\\products\\982d783a-89f4-452b-ae08-57f9c713cda0.png"
     },
     {
-      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\9b55f46b-149d-4a51-83e1-0250580bbf9a.png",
-=======
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\982d783a-89f4-452b-ae08-57f9c713cda0.png",
-      "PackagePath": "staticwebassets\\Images\\products\\982d783a-89f4-452b-ae08-57f9c713cda0.png"
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\9994a55b-daea-48bb-937c-acef39fd9452.png",
+      "PackagePath": "staticwebassets\\Images\\products\\9994a55b-daea-48bb-937c-acef39fd9452.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\9b55f46b-149d-4a51-83e1-0250580bbf9a.png",
->>>>>>> ba355fefffbaaed1db51752ca532f60559c12e4e
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\9ab9b5f9-f442-450b-85f0-3d465e5521c9.png",
+      "PackagePath": "staticwebassets\\Images\\products\\9ab9b5f9-f442-450b-85f0-3d465e5521c9.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\9addfec0-0bb9-434c-853c-c567967f32d3.png",
+      "PackagePath": "staticwebassets\\Images\\products\\9addfec0-0bb9-434c-853c-c567967f32d3.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\9af540ea-29df-40c6-91e5-952a25ef137a.png",
+      "PackagePath": "staticwebassets\\Images\\products\\9af540ea-29df-40c6-91e5-952a25ef137a.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\9b55f46b-149d-4a51-83e1-0250580bbf9a.png",
       "PackagePath": "staticwebassets\\Images\\products\\9b55f46b-149d-4a51-83e1-0250580bbf9a.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\9f39b032-68a0-4670-b794-794085632bec.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\9c448a9c-337d-46fd-a9a4-f09e3fd3143b.png",
+      "PackagePath": "staticwebassets\\Images\\products\\9c448a9c-337d-46fd-a9a4-f09e3fd3143b.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\9c798324-1ed6-4805-92be-1b7a7582ae3f.png",
+      "PackagePath": "staticwebassets\\Images\\products\\9c798324-1ed6-4805-92be-1b7a7582ae3f.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\9cd1e953-eab5-456a-9909-d19bd0766c04.png",
+      "PackagePath": "staticwebassets\\Images\\products\\9cd1e953-eab5-456a-9909-d19bd0766c04.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\9f39b032-68a0-4670-b794-794085632bec.png",
       "PackagePath": "staticwebassets\\Images\\products\\9f39b032-68a0-4670-b794-794085632bec.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\a5332c76-991b-4ac5-b3c0-19b30286177e.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\9f77bcdc-f519-4833-904c-15f40b2e4f63.png",
+      "PackagePath": "staticwebassets\\Images\\products\\9f77bcdc-f519-4833-904c-15f40b2e4f63.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\a137eeda-3eed-460b-8c82-29c3876d2c75.png",
+      "PackagePath": "staticwebassets\\Images\\products\\a137eeda-3eed-460b-8c82-29c3876d2c75.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\a140c446-fcba-47e5-95b8-bd795df708e1.png",
+      "PackagePath": "staticwebassets\\Images\\products\\a140c446-fcba-47e5-95b8-bd795df708e1.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\a1ded245-a5bc-4fb6-bbda-e83a129198b4.png",
+      "PackagePath": "staticwebassets\\Images\\products\\a1ded245-a5bc-4fb6-bbda-e83a129198b4.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\a258ee90-b812-455e-8f46-7b972535f57b.png",
+      "PackagePath": "staticwebassets\\Images\\products\\a258ee90-b812-455e-8f46-7b972535f57b.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\a2c6db5c-b121-4432-9831-cef3cda67c5d.png",
+      "PackagePath": "staticwebassets\\Images\\products\\a2c6db5c-b121-4432-9831-cef3cda67c5d.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\a3ea48be-647e-4b4f-99c0-6e2bedd9ce24.png",
+      "PackagePath": "staticwebassets\\Images\\products\\a3ea48be-647e-4b4f-99c0-6e2bedd9ce24.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\a5014d47-af6a-42aa-9747-217dd93bc34b.png",
+      "PackagePath": "staticwebassets\\Images\\products\\a5014d47-af6a-42aa-9747-217dd93bc34b.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\a5332c76-991b-4ac5-b3c0-19b30286177e.png",
       "PackagePath": "staticwebassets\\Images\\products\\a5332c76-991b-4ac5-b3c0-19b30286177e.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\a8e29f23-dc17-4b2d-bfdb-478d798b7022.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\a5d9e298-1a5b-4bdd-98e0-3df69a12d602.png",
+      "PackagePath": "staticwebassets\\Images\\products\\a5d9e298-1a5b-4bdd-98e0-3df69a12d602.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\a7d1dc02-070b-4c4d-9d16-c07ed40b3649.png",
+      "PackagePath": "staticwebassets\\Images\\products\\a7d1dc02-070b-4c4d-9d16-c07ed40b3649.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\a8e29f23-dc17-4b2d-bfdb-478d798b7022.png",
       "PackagePath": "staticwebassets\\Images\\products\\a8e29f23-dc17-4b2d-bfdb-478d798b7022.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\b50f81d4-85bf-464a-b392-8eb628bac862.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\aac8e066-e90a-4ccc-9705-ea6e411415e5.png",
+      "PackagePath": "staticwebassets\\Images\\products\\aac8e066-e90a-4ccc-9705-ea6e411415e5.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\af3af154-52d3-43b5-bd06-4c34c098b8e0.png",
+      "PackagePath": "staticwebassets\\Images\\products\\af3af154-52d3-43b5-bd06-4c34c098b8e0.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\b00c2171-dc4b-40c0-8082-f06bff9ac288.png",
+      "PackagePath": "staticwebassets\\Images\\products\\b00c2171-dc4b-40c0-8082-f06bff9ac288.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\b50f81d4-85bf-464a-b392-8eb628bac862.png",
       "PackagePath": "staticwebassets\\Images\\products\\b50f81d4-85bf-464a-b392-8eb628bac862.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\bc6742e1-38fb-4de0-8fe9-9339276b70d1.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\b588e524-b848-42df-b6b0-c2ec19998892.png",
+      "PackagePath": "staticwebassets\\Images\\products\\b588e524-b848-42df-b6b0-c2ec19998892.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\b6162c12-f974-455e-becc-b8c0a2e56b45.png",
+      "PackagePath": "staticwebassets\\Images\\products\\b6162c12-f974-455e-becc-b8c0a2e56b45.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\b63a4f58-475d-4f07-8b35-0d53ec3f1a26.png",
+      "PackagePath": "staticwebassets\\Images\\products\\b63a4f58-475d-4f07-8b35-0d53ec3f1a26.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\b6fe5da4-3eac-4ba5-86a0-5b81b9bdc94e.png",
+      "PackagePath": "staticwebassets\\Images\\products\\b6fe5da4-3eac-4ba5-86a0-5b81b9bdc94e.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\b7849b98-5b19-4c0e-86d3-e9f41071199e.png",
+      "PackagePath": "staticwebassets\\Images\\products\\b7849b98-5b19-4c0e-86d3-e9f41071199e.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\b7bd10b5-1ad0-48c7-b27b-f4e0b379fa56.png",
+      "PackagePath": "staticwebassets\\Images\\products\\b7bd10b5-1ad0-48c7-b27b-f4e0b379fa56.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\b8b30a32-9982-47c8-bfda-c123b8d9a7d4.png",
+      "PackagePath": "staticwebassets\\Images\\products\\b8b30a32-9982-47c8-bfda-c123b8d9a7d4.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\b9f928f9-d093-4823-b17d-234e25c8a9cd.png",
+      "PackagePath": "staticwebassets\\Images\\products\\b9f928f9-d093-4823-b17d-234e25c8a9cd.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\ba467964-d7c1-4271-afee-1e1fb6add28e.png",
+      "PackagePath": "staticwebassets\\Images\\products\\ba467964-d7c1-4271-afee-1e1fb6add28e.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\bb80fa41-9040-40b0-8414-70a7c940e914.png",
+      "PackagePath": "staticwebassets\\Images\\products\\bb80fa41-9040-40b0-8414-70a7c940e914.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\bc6742e1-38fb-4de0-8fe9-9339276b70d1.png",
       "PackagePath": "staticwebassets\\Images\\products\\bc6742e1-38fb-4de0-8fe9-9339276b70d1.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\cdab9512-ee30-4290-8f62-b05eb85cd246.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\bf92a1b3-6042-4971-ba6e-e7fbf03c8211.png",
+      "PackagePath": "staticwebassets\\Images\\products\\bf92a1b3-6042-4971-ba6e-e7fbf03c8211.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\c30deb93-9eb3-4c31-b427-956cc1b46467.png",
+      "PackagePath": "staticwebassets\\Images\\products\\c30deb93-9eb3-4c31-b427-956cc1b46467.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\c6f6adf7-9a18-48e6-9d4e-59c96528fc78.png",
+      "PackagePath": "staticwebassets\\Images\\products\\c6f6adf7-9a18-48e6-9d4e-59c96528fc78.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\c8abfd7d-a1bd-45a3-a146-ac24401b756a.png",
+      "PackagePath": "staticwebassets\\Images\\products\\c8abfd7d-a1bd-45a3-a146-ac24401b756a.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\cc9ddd43-0986-4633-a895-b77e58370de3.png",
+      "PackagePath": "staticwebassets\\Images\\products\\cc9ddd43-0986-4633-a895-b77e58370de3.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\cdab9512-ee30-4290-8f62-b05eb85cd246.png",
       "PackagePath": "staticwebassets\\Images\\products\\cdab9512-ee30-4290-8f62-b05eb85cd246.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\ea44069f-1f3f-4173-80b4-4f1f98e5bfb7.png",
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\ce3ac22a-6f1a-4104-ad24-d2478523a897.png",
+      "PackagePath": "staticwebassets\\Images\\products\\ce3ac22a-6f1a-4104-ad24-d2478523a897.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\ce71a3fc-59e4-49be-a2f4-26db8f651215.png",
+      "PackagePath": "staticwebassets\\Images\\products\\ce71a3fc-59e4-49be-a2f4-26db8f651215.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\cec4df6e-1281-4c77-b2cb-da0c1cc09a0f.png",
+      "PackagePath": "staticwebassets\\Images\\products\\cec4df6e-1281-4c77-b2cb-da0c1cc09a0f.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\d071ce38-d81a-4703-81df-ab3b0af6d079.png",
+      "PackagePath": "staticwebassets\\Images\\products\\d071ce38-d81a-4703-81df-ab3b0af6d079.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\d17b1fcb-792b-4073-9616-5fc4c69c0e08.png",
+      "PackagePath": "staticwebassets\\Images\\products\\d17b1fcb-792b-4073-9616-5fc4c69c0e08.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\d737a48e-7c94-4769-bf72-2f5ab775c91e.png",
+      "PackagePath": "staticwebassets\\Images\\products\\d737a48e-7c94-4769-bf72-2f5ab775c91e.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\d874fb66-515c-4928-87bc-32dc4f501feb.png",
+      "PackagePath": "staticwebassets\\Images\\products\\d874fb66-515c-4928-87bc-32dc4f501feb.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\e8602968-3dde-4c83-8b86-e14eb48cd000.png",
+      "PackagePath": "staticwebassets\\Images\\products\\e8602968-3dde-4c83-8b86-e14eb48cd000.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\e9b757ac-d589-49ff-8e89-3b03af2e20f7.png",
+      "PackagePath": "staticwebassets\\Images\\products\\e9b757ac-d589-49ff-8e89-3b03af2e20f7.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\ea44069f-1f3f-4173-80b4-4f1f98e5bfb7.png",
       "PackagePath": "staticwebassets\\Images\\products\\ea44069f-1f3f-4173-80b4-4f1f98e5bfb7.png"
     },
     {
-<<<<<<< HEAD
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\eab811aa-10d2-4f1f-b7db-69d64d727a4c.png",
+      "PackagePath": "staticwebassets\\Images\\products\\eab811aa-10d2-4f1f-b7db-69d64d727a4c.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\eb4bf174-5ead-4a83-8f3d-7416cf967d1b.png",
+      "PackagePath": "staticwebassets\\Images\\products\\eb4bf174-5ead-4a83-8f3d-7416cf967d1b.png"
+    },
+    {
       "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\ede1919d-8e3b-49f8-aaa6-868527e40d41.png",
       "PackagePath": "staticwebassets\\Images\\products\\ede1919d-8e3b-49f8-aaa6-868527e40d41.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\f0264885-8978-43d6-b970-3125f2a2bc68.png",
+      "PackagePath": "staticwebassets\\Images\\products\\f0264885-8978-43d6-b970-3125f2a2bc68.png"
     },
     {
       "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\f1179b8d-6420-4c42-a41f-0e4138c89869.png",
       "PackagePath": "staticwebassets\\Images\\products\\f1179b8d-6420-4c42-a41f-0e4138c89869.png"
     },
     {
-      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\f86f8f3a-e49c-4879-b737-b76db4995f5b.png",
-=======
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\f1179b8d-6420-4c42-a41f-0e4138c89869.png",
-      "PackagePath": "staticwebassets\\Images\\products\\f1179b8d-6420-4c42-a41f-0e4138c89869.png"
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\f58cfe95-d1c1-40a3-bff0-63649c569eb0.png",
+      "PackagePath": "staticwebassets\\Images\\products\\f58cfe95-d1c1-40a3-bff0-63649c569eb0.png"
     },
     {
-      "Id": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\techYard\\techYard.API\\wwwroot\\Images\\products\\f86f8f3a-e49c-4879-b737-b76db4995f5b.png",
->>>>>>> ba355fefffbaaed1db51752ca532f60559c12e4e
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\f637addd-a196-4c1f-955a-1aef6b39c208.png",
+      "PackagePath": "staticwebassets\\Images\\products\\f637addd-a196-4c1f-955a-1aef6b39c208.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\f71135b3-9b0c-470f-9d5c-4a5ac80d50f1.png",
+      "PackagePath": "staticwebassets\\Images\\products\\f71135b3-9b0c-470f-9d5c-4a5ac80d50f1.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\f72433c6-1641-477d-b08a-3911f3f3eb11.png",
+      "PackagePath": "staticwebassets\\Images\\products\\f72433c6-1641-477d-b08a-3911f3f3eb11.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\f85b3e7a-bf3e-4cd5-8fc3-d89ac364e4c0.png",
+      "PackagePath": "staticwebassets\\Images\\products\\f85b3e7a-bf3e-4cd5-8fc3-d89ac364e4c0.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\f86f8f3a-e49c-4879-b737-b76db4995f5b.png",
       "PackagePath": "staticwebassets\\Images\\products\\f86f8f3a-e49c-4879-b737-b76db4995f5b.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\f9f94bd8-44c1-45e7-ad80-b70de382730c.png",
+      "PackagePath": "staticwebassets\\Images\\products\\f9f94bd8-44c1-45e7-ad80-b70de382730c.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\fa769f31-d99b-44d6-8d07-bb37c0257a6f.png",
+      "PackagePath": "staticwebassets\\Images\\products\\fa769f31-d99b-44d6-8d07-bb37c0257a6f.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\faca0ffa-b41d-4327-813a-814b0c12c9c5.png",
+      "PackagePath": "staticwebassets\\Images\\products\\faca0ffa-b41d-4327-813a-814b0c12c9c5.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\faculty\\globactionInternTask\\TechYard\\techYard.API\\wwwroot\\Images\\products\\fd102ece-bce9-4604-abe9-535e38ea694c.png",
+      "PackagePath": "staticwebassets\\Images\\products\\fd102ece-bce9-4604-abe9-535e38ea694c.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.techYard.API.props",

@@ -19,7 +19,7 @@ namespace techYard.Service.Services.productsServices.Dtos
         public bool? popular { get; set; }
         public string? model { get; set; }
         public string? OS { get; set; }
-        public int? categoryId { get; set; }
+        public int? categoriesId { get; set; }
         public List<IFormFile> ImagesUrl { get; set; }
 
 
