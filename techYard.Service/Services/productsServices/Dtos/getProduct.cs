@@ -9,7 +9,6 @@ namespace techYard.Service.Services.productsServices.Dtos
 {
     public class getProduct
     {
-
         public int Id { get; set; }
         public string? Name { get; set; }
         public string? imageUrl { get; set; }
@@ -36,7 +35,5 @@ namespace techYard.Service.Services.productsServices.Dtos
                 return null; // Or you could return oldPrice if discount is null
             }
         }
-
-
     }
 }

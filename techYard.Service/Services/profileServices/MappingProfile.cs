@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using techYard.Data.Entities;
 using techYard.Service.Services.CategoryServices.Dtos;
 using techYard.Service.Services.featuresServices.Dtos;
+using techYard.Service.Services.ProductImagesServices.Dtos;
 using techYard.Service.Services.productsServices.Dtos;
 
 namespace techYard.Service.Services.profileServices
@@ -49,6 +50,15 @@ namespace techYard.Service.Services.profileServices
             CreateMap<Products, getProduct>()
                 .ForMember(dest => dest.imageUrl, opt => opt.MapFrom<ProductResolveUrl>())
                 .ForMember(dest => dest.imageUrlInHover, opt => opt.MapFrom<ProductHoverImageUrlResolver>());
+
+
+            CreateMap<ProductDetailsImages, GetProductDetailsImagesDto>();
+            CreateMap<GetProductDetailsImagesDto, ProductDetailsImages>();
+
+
+
+
+
 
 
 

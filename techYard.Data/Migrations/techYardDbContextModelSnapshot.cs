@@ -53,12 +53,12 @@ namespace techYard.Data.Migrations
                     b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("ProductsId")
+                    b.Property<int>("ProductId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductsId");
+                    b.HasIndex("ProductId");
 
                     b.ToTable("productDetailsImages");
                 });
@@ -86,9 +86,6 @@ namespace techYard.Data.Migrations
                     b.Property<string>("processor")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("productsId")
-                        .HasColumnType("int");
-
                     b.Property<string>("ramSize")
                         .HasColumnType("nvarchar(max)");
 
@@ -103,7 +100,7 @@ namespace techYard.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("productsId");
+                    b.HasIndex("ProductId");
 
                     b.ToTable("productFeatures");
                 });
@@ -155,16 +152,20 @@ namespace techYard.Data.Migrations
 
             modelBuilder.Entity("techYard.Data.Entities.ProductDetailsImages", b =>
                 {
-                    b.HasOne("techYard.Data.Entities.Products", null)
+                    b.HasOne("techYard.Data.Entities.Products", "product")
                         .WithMany("productDetailsImages")
-                        .HasForeignKey("ProductsId");
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("product");
                 });
 
             modelBuilder.Entity("techYard.Data.Entities.ProductFeatures", b =>
                 {
                     b.HasOne("techYard.Data.Entities.Products", "products")
                         .WithMany("ProductFeatures")
-                        .HasForeignKey("productsId");
+                        .HasForeignKey("ProductId");
 
                     b.Navigation("products");
                 });

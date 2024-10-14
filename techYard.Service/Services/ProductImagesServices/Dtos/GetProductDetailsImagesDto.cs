@@ -14,6 +14,6 @@ namespace techYard.Service.Services.ProductImagesServices.Dtos
 
         public int ProductId { get; set; }
 
-        public Products products { get; set; }
+        //public Products products { get; set; }
     }
 }

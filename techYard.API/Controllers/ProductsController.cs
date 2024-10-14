@@ -33,7 +33,6 @@ namespace techYard.API.Controllers
 
         [HttpGet]
         [Route("GetProductById/{id}")]
-        //[Authorize(Roles = "Admin")]
         public async Task<ActionResult<getProduct>> GetProductById(int id)
         {
             var Product = await _productServices.GetProductById(id);

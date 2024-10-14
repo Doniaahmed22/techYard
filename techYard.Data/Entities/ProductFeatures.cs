@@ -1,4 +1,6 @@
-﻿namespace techYard.Data.Entities
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace techYard.Data.Entities
 {
     public class ProductFeatures : BaseEntity
     {
@@ -10,7 +12,10 @@
         public string? dimensions { get; set; }
         public string? weight { get; set; }
         public string? ScreenSize { get; set; }
+       
         public int? ProductId { get; set; }
-        public Products? products { get; set; }
+        //[ForeignKey(nameof(ProductId))]
+        //public Products? products { get; set; }
+
     }
 }
