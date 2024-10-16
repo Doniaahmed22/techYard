@@ -5,6 +5,7 @@ using techYard.Service.Services.CategoryServices.Dtos;
 using techYard.Service.Services.CategoryServices;
 using techYard.Service.Services.featuresServices.Dtos;
 using techYard.Service.Services.featuresServices;
+using Microsoft.AspNetCore.Authorization;
 
 namespace techYard.API.Controllers
 {
@@ -21,6 +22,7 @@ namespace techYard.API.Controllers
 
         [HttpGet]
         [Route("GetAllProductsFeatures")]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<GetFeatureDto>>> GetAllProductsFeatures()
         {
             var features = await _featureServices.GetAllProductsFeatures();
@@ -29,6 +31,7 @@ namespace techYard.API.Controllers
 
         [HttpGet]
         [Route("GetProductFeaturesById/{id}")]
+        [Authorize]
         public async Task<ActionResult> GetProductFeaturesById(int id)
         {
             var feature = await _featureServices.GetProductFeaturesById(id);
@@ -41,6 +44,7 @@ namespace techYard.API.Controllers
 
 
         [HttpDelete("DeleteProductFeatures/{id}")]
+        [Authorize]
         public async Task<IActionResult> DeleteProductFeatures(int id)
         {
             var feature = await _featureServices.DeleteProductFeatureById(id);
@@ -56,6 +60,7 @@ namespace techYard.API.Controllers
 
         [HttpPut]
         [Route("UpdateProductFeatures")]
+        [Authorize]
         public async Task<IActionResult> UpdateProductFeatures(int id, AddFeatureDto featureDto)
         {
             if (featureDto == null)
@@ -74,7 +79,7 @@ namespace techYard.API.Controllers
 
         [HttpPost]
         [Route("AddProductFeatures")]
-
+        [Authorize]
         public async Task<ActionResult<AddFeatureDto>> AddProductFeatures(AddFeatureDto featureDto)
         {  
             if(featureDto == null)

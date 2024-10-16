@@ -20,23 +20,8 @@ namespace techYard.Data.Entities
 
         public DateTime RegistrationDate { get; set; } = DateTime.Now; // يتم ضبط تاريخ التسجيل تلقائيًا.
 
-        public string? Description { get; set; }
-
-        public int? yearsExperience { get; set; }
-
-        public string? City { get; set; }
-
-        public string? academicSpecialization { get; set; }
-
-        public string? Education { get; set; }
-
-        public string? BankName { get; set; }
-
-        public string? AccountNumber { get; set; }
-
-        public string? BeneficiaryName { get; set; }
+        public string? ProfileImagePath { get; set; } = "Images/Profile/Profile.jpeg";
 
 
-        
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using techYard.Data.Entities;
 using techYard.Service.Services.CategoryServices.Dtos;
@@ -23,6 +24,7 @@ namespace techYard.API.Controllers
 
         [HttpGet]
         [Route("GetAllProducts")]
+        [Authorize]
         public async Task<IActionResult> GetAllProducts()
         {
             var Products = await _productServices.GetAllProducts();
@@ -33,6 +35,7 @@ namespace techYard.API.Controllers
 
         [HttpGet]
         [Route("GetProductById/{id}")]
+        [Authorize]
         public async Task<ActionResult<getProduct>> GetProductById(int id)
         {
             var Product = await _productServices.GetProductById(id);
@@ -42,6 +45,7 @@ namespace techYard.API.Controllers
 
 
         [HttpDelete("DeleteProduct/{id}")]
+        [Authorize]
         public async Task<IActionResult> DeleteProduct(int id)
         {
             if (id <= 0)
@@ -99,6 +103,7 @@ namespace techYard.API.Controllers
 
         [HttpPost]
         [Route("UpdateProduct/{id}")]
+        [Authorize]
         public async Task<IActionResult> UpdateProduct(int id, [FromForm] productForAdditionDto productDto)
         {
             // تحقق من وجود المنتج أولاً
@@ -175,86 +180,9 @@ namespace techYard.API.Controllers
 
 
 
-
-
-        //[HttpPost]
-        //[Route("AddProduct")]
-        //public async Task<IActionResult> AddProduct([FromForm] productForAdditionDto productDto)
-        //{
-        //    // التحقق من وجود الصورة الرئيسية
-        //    if (productDto.imageUrl == null || productDto.imageUrl.Length == 0)
-        //    {
-        //        return BadRequest("Please upload a valid main image.");
-        //    }
-
-        //    // التحقق من وجود صورة hover
-        //    if (productDto.imageUrlInHover == null || productDto.imageUrlInHover.Length == 0)
-        //    {
-        //        return BadRequest("Please upload a valid hover image.");
-        //    }
-
-        //    // التأكد من وجود المجلد wwwroot/Images
-        //    var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images/products/");
-
-        //    if (!Directory.Exists(imagePath))
-        //    {
-        //        Directory.CreateDirectory(imagePath);
-        //    }
-
-        //    // معالجة الصورة الرئيسية
-        //    var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(productDto.imageUrl.FileName);
-        //    var fullPath = Path.Combine(imagePath, uniqueFileName);
-
-        //    using (var stream = new FileStream(fullPath, FileMode.Create))
-        //    {
-        //        await productDto.imageUrl.CopyToAsync(stream);
-        //    }
-
-        //    // معالجة الصورة المتداخلة (Hover)
-        //    var uniqueHoverFileName = Guid.NewGuid().ToString() + Path.GetExtension(productDto.imageUrlInHover.FileName);
-        //    var hoverFullPath = Path.Combine(imagePath, uniqueHoverFileName);
-
-        //    using (var stream = new FileStream(hoverFullPath, FileMode.Create))
-        //    {
-        //        await productDto.imageUrlInHover.CopyToAsync(stream);
-        //    }
-
-        //    // حفظ مسار الصورة النسبي في قاعدة البيانات
-        //    var product = new AddProductDto
-        //    {
-        //        Name = productDto.Name,
-        //        imageUrl = "Images/products/" + uniqueFileName,          // مسار نسبي للصورة الرئيسية
-        //        imageUrlInHover = "Images/products/" + uniqueHoverFileName, // مسار نسبي لصورة الـ hover
-        //        oldPrice = productDto.oldPrice,
-        //        discount = productDto.discount,
-        //        soldOut = productDto.soldOut,
-        //        popular = productDto.popular,
-        //        categoryId = productDto.categoryId,
-        //        // قم بإضافة خصائص أخرى حسب الحاجة
-        //    };
-
-        //    // إضافة المنتج إلى قاعدة البيانات
-        //    await _productServices.AddProduct(product);
-        //    return Ok(product);
-        //}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         [HttpPost]
         [Route("AddProduct")]
+        [Authorize]
         public async Task<IActionResult> AddProduct([FromForm] productForAdditionDto productDto)
         {
             // التحقق من وجود الصورة الرئيسية

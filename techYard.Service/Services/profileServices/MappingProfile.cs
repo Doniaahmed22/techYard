@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using techYard.Data.Entities;
+using techYard.Service.Services.AccountServices.Dtos;
 using techYard.Service.Services.CategoryServices.Dtos;
 using techYard.Service.Services.featuresServices.Dtos;
 using techYard.Service.Services.ProductImagesServices.Dtos;
@@ -64,6 +65,21 @@ namespace techYard.Service.Services.profileServices
 
             CreateMap<ProductDetailsImages, GetProductDetailsImagesDto>()
                 .ReverseMap();
+
+
+
+            CreateMap<ApplicationUser, AuthDTO>();
+            CreateMap<AuthDTO, ApplicationUser>();
+
+            CreateMap<ApplicationUser, RegisterCustomer>();
+            CreateMap<RegisterCustomer, ApplicationUser>();
+
+            CreateMap<ApplicationRole, RoleDTO>();
+            CreateMap<RoleDTO, ApplicationRole>();
+
+
+
+
             //// خريطة تحويل من Products إلى getProduct مع تجاهل العلاقات الدورية
             //CreateMap<Products, getProduct>()
             //    .ForMember(dest => dest.category, opt => opt.Ignore())  // تجاهل الفئة لتجنب الدوران

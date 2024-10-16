@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Identity;
 using techYard.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using techYard.Repository.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 
 namespace techYard.API.Controllers
 {
@@ -25,6 +26,8 @@ namespace techYard.API.Controllers
 
         [HttpGet]
         [Route("GetAllCategories")]
+        [Authorize]
+
         public async Task<ActionResult<IEnumerable<categoryDto>>> GetAllCategories()
         {
             var categories = await _categoryServices.GetAllCategories();
@@ -33,6 +36,8 @@ namespace techYard.API.Controllers
 
         [HttpGet]
         [Route("GetCategoryById/{id}")]
+        [Authorize]
+
         public async Task<ActionResult> GetProductById(int id)
         {
             var category = await _categoryServices.GetCategoryById(id);
@@ -44,20 +49,11 @@ namespace techYard.API.Controllers
         }
 
 
-        //[HttpDelete("DeleteCategory/{id}")]
-        //public async Task<IActionResult> DeleteCategory(int id)
-        //{
-        //    var category = await _categoryServices.DeleteCategoryById(id);
-        //    if(category == null)
-        //    {
-        //        return NotFound("Invalid Id");
-        //    }
-        //    return Ok();
-        //}
-
 
 
         [HttpDelete("DeleteCategory/{id}")]
+        [Authorize]
+
         public async Task<IActionResult> DeleteCategory(int id)
         {
             if (id <= 0)
@@ -112,6 +108,8 @@ namespace techYard.API.Controllers
 
         [HttpPost]
         [Route("UpdateCategory/{id}")]
+        [Authorize]
+
         public async Task<IActionResult> UpdateCategory(int id, [FromForm] categoryAdditionDto categoryDto)
         {
             // تحقق من وجود الفئة أولاً
@@ -180,6 +178,7 @@ namespace techYard.API.Controllers
 
         [HttpPost]
         [Route("AddCategory")]
+        [Authorize]
 
         public async Task<IActionResult> AddCategory([FromForm] categoryAdditionDto categoryDto)
         {
@@ -222,47 +221,6 @@ namespace techYard.API.Controllers
 
 
 
-        //[HttpPost]
-        //[Route("AddCategory")]
-        //public async Task<IActionResult> AddCategory([FromForm] string name, [FromForm] IFormFile imageFile)
-        //{
-        //    if (string.IsNullOrEmpty(name))
-        //    {
-        //        return BadRequest("Name mustn't be empty");
-        //    }
-
-        //    if (imageFile == null || imageFile.Length == 0)
-        //    {
-        //        return BadRequest("Image file is required");
-        //    }
-
-        //    // حدد مسار لحفظ الصورة
-        //    var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images/category", imageFile.FileName);
-
-        //    // حفظ الصورة في المسار المحدد
-        //    using (var stream = new FileStream(imagePath, FileMode.Create))
-        //    {
-        //        await imageFile.CopyToAsync(stream);
-        //    }
-
-        //    // هنا يمكنك حفظ بيانات الفئة (الاسم ورابط الصورة) في قاعدة البيانات
-        //    var category = new AddCategoryDto
-        //    {
-        //        name = name,
-        //        imageUrl = "/Images/category" + imageFile.FileName // يمكنك تعديل الرابط حسب الحاجة
-        //    };
-
-        //    await _categoryServices.AddCategory(category);
-
-        //    return Ok(new { Name = name, ImageUrl = category.imageUrl });
-        //}
-
-
-
-
-
-
-
-
+   
     }
 }

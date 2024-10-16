@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -21,5 +22,19 @@ namespace techYard.Data.Context
         public DbSet<ProductDetailsImages> productDetailsImages {  get; set; }
         public DbSet<ProductFeatures> productFeatures {  get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.HasDefaultSchema("dbo");
+            modelBuilder.Entity<ApplicationUser>().ToTable("Users", "dbo");
+            modelBuilder.Entity<ApplicationRole>().ToTable("Role", "dbo");
+            modelBuilder.Entity<IdentityUserRole<string>>().ToTable("UserRole", "dbo");
+            modelBuilder.Entity<IdentityUserClaim<string>>().ToTable("UserClaim", "dbo");
+            modelBuilder.Entity<IdentityUserLogin<string>>().ToTable("UserLogin", "dbo");
+            modelBuilder.Entity<IdentityUserToken<string>>().ToTable("UserTokens", "dbo");
+            modelBuilder.Entity<IdentityRoleClaim<string>>().ToTable("RoleClaims", "dbo");
+
+
+        }
     }
 }

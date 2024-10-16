@@ -10,7 +10,6 @@ namespace techYard.Data.Entities
     public class ApplicationRole : IdentityRole
     {
         public string Description { get; set; }
-        public string ArName { get; set; }
 
     }
 }

@@ -1,5 +1,6 @@
 ﻿using techYard.Repository.Interfaces;
 using techYard.Repository.Repositories;
+using techYard.Service.Services.AccountServices;
 using techYard.Service.Services.CategoryServices;
 using techYard.Service.Services.featuresServices;
 using techYard.Service.Services.ProductImagesServices;
@@ -18,6 +19,7 @@ namespace techYard.API.Extensions
             services.AddScoped<ICategoryServices, CategoryServices>();
             services.AddScoped<IProductFeatureServices, ProductFeatureServices>();
             services.AddScoped<IProductDetailsImagesServices, ProductDetailsImagesServices>();
+            services.AddScoped<IAccountService, AccountService>();
 
             services.AddAutoMapper(typeof(MappingProfile));
 

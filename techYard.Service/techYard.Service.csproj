@@ -16,8 +16,4 @@
     <ProjectReference Include="..\techYard.Repository\techYard.Repository.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Services\AccountServices\Dtos\" />
-  </ItemGroup>
-
 </Project>

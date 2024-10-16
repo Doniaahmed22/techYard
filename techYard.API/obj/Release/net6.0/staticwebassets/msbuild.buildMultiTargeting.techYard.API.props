@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\techYard.API.props" />
+</Project>
