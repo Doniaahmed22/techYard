@@ -19,7 +19,10 @@ namespace techYard.Service.Services.AccountServices
 
         Task<bool> IsPhoneExistAsync(string phoneNumber, string userId = null);
 
+        Task<IdentityResult> AddAdmin(RegisterCustomer model);
+
         Task<IdentityResult> RegisterCustomer(RegisterCustomer model);
+
 
         Task<(bool IsSuccess, string Token, string ErrorMessage)> Login(Login model);
 

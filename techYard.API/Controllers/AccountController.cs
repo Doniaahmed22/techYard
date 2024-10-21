@@ -28,6 +28,55 @@ namespace techYard.API.Controllers
         }
 
 
+
+        
+
+        [HttpPost("AddAdmin")]
+        public async Task<IActionResult> AddAdmin([FromBody] RegisterCustomer model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest("Invalid model");
+            }
+
+            try
+            {
+                var result = await _accountService.AddAdmin(model);
+
+                if (result.Succeeded)
+                {
+                    return Ok(new
+                    {
+                        status = true,
+                        Data = model // Adjust if necessary
+                    });
+                }
+
+                return BadRequest(new
+                {
+                    status = false,
+                    ErrorCode = 500,
+                    ErrorMessage = "Admin addition failed.",
+                    Data = result.Errors.Select(e => e.Description).ToArray()
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new
+                {
+                    status = false,
+                    ErrorCode = 500,
+                    ErrorMessage = ex.Message
+                });
+            }
+        }
+
+
+
+
+
+
+
         [HttpPost("register")]
         public async Task<IActionResult> RegisterCustomer([FromBody] RegisterCustomer model)
         {
@@ -67,6 +116,7 @@ namespace techYard.API.Controllers
                 });
             }
         }
+
 
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] Login model)

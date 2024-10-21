@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
@@ -10,14 +11,17 @@ namespace techYard.Repository.Interfaces
 {
     public interface IGenericRepository<TEntity> where TEntity : BaseEntity
     {
-        //Task<TEntity> GetByIdAsync(int? id);
         Task<IReadOnlyList<TEntity>> GetAllAsync();
-
         Task<TEntity> GetByIdAsync(int id, params Expression<Func<TEntity, object>>[] includes);
-
-        //Task<IReadOnlyList<TEntity>> GetAllAsync(params Expression<Func<TEntity, object>>[] includes);
         Task AddAsync(TEntity entity);
         Task Update(TEntity new_entity);
         Task<TEntity> Delete(int id);
+        Task<ProductsInCart> IsProductAndUserAlreadyExist(int productId, string userId);
+        Task<IReadOnlyList<ProductsInCart>> GetCartsByUserId(string userId);
+        Task<IReadOnlyList<ProductsInCart>> GetAllProductsFromTheCart();
+        Task<IReadOnlyList<ProductsInCart>> GetAllUsersFromTheCart();
+        Task<IReadOnlyList<ProductsInCart>> GetAllCartsAsync();
+
+
     }
 }

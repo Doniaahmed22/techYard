@@ -366,6 +366,33 @@ namespace techYard.Data.Migrations
                     b.ToTable("products", "dbo");
                 });
 
+            modelBuilder.Entity("techYard.Data.Entities.ProductsInCart", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("productsInCart", "dbo");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("techYard.Data.Entities.ApplicationRole", null)
@@ -438,6 +465,30 @@ namespace techYard.Data.Migrations
                         .HasForeignKey("categoriesId");
                 });
 
+            modelBuilder.Entity("techYard.Data.Entities.ProductsInCart", b =>
+                {
+                    b.HasOne("techYard.Data.Entities.Products", "Product")
+                        .WithMany("ProductsInCart")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("techYard.Data.Entities.ApplicationUser", "User")
+                        .WithMany("ProductsInCart")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("techYard.Data.Entities.ApplicationUser", b =>
+                {
+                    b.Navigation("ProductsInCart");
+                });
+
             modelBuilder.Entity("techYard.Data.Entities.Categories", b =>
                 {
                     b.Navigation("products");
@@ -446,6 +497,8 @@ namespace techYard.Data.Migrations
             modelBuilder.Entity("techYard.Data.Entities.Products", b =>
                 {
                     b.Navigation("ProductFeatures");
+
+                    b.Navigation("ProductsInCart");
 
                     b.Navigation("productDetailsImages");
                 });

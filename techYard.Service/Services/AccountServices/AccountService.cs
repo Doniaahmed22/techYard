@@ -85,6 +85,33 @@ namespace techYard.Service.Services.AccountServices
             return result;
         }
 
+
+        public async Task<IdentityResult> AddAdmin (RegisterCustomer model)
+        {
+            if (await IsEmailExistAsync(model.Email) == true)
+            {
+                throw new InvalidOperationException("This Email Already Exist Try Another One");
+            }
+            var user = mapper.Map<ApplicationUser>(model);
+            user.ProfileImagePath = "Images/Profile/Profile.jpeg";
+            user.PhoneNumberConfirmed = true;
+            user.EmailConfirmed = true;
+            user.UserName = model.PhoneNumber;
+            var result = await _userManager.CreateAsync(user, model.Password);
+
+            if (result.Succeeded)
+            {
+                await _userManager.AddToRoleAsync(user, "Admin");
+            }
+            else
+            {
+                // Handle potential errors by throwing an exception or logging details
+                throw new InvalidOperationException("Failed to create user: " + string.Join(", ", result.Errors.Select(e => e.Description)));
+            }
+
+            return result;
+        }
+
         public async Task<(bool IsSuccess, string Token, string ErrorMessage)> Login(Login model)
         {
             try
@@ -279,6 +306,9 @@ namespace techYard.Service.Services.AccountServices
         {
             throw new NotImplementedException();
         }
+
+
+
 
         #endregion Random number and string
     }

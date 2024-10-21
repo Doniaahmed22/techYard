@@ -178,8 +178,6 @@ namespace techYard.API.Controllers
 
 
 
-
-
         [HttpPost]
         [Route("AddProduct")]
         [Authorize]

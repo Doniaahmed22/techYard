@@ -10,6 +10,7 @@ using techYard.Data.Context;
 using techYard.Data.Entities;
 using techYard.Repository.Interfaces;
 
+
 namespace techYard.Repository.Repositories
 {
     public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : BaseEntity
@@ -57,27 +58,6 @@ namespace techYard.Repository.Repositories
             return await query.ToListAsync();
         }
 
-        //public IEnumerable<TEntity> GetAll(Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> include = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null)
-        //{
-        //    IQueryable<TEntity> query = _context.Set<TEntity>();
-        //    if (include != null)
-        //        query = include(query);
-        //    if (orderBy != null)
-        //        query = orderBy(query);
-
-        //    return query.ToList();
-        //}
-
-
-        //public async Task<TEntity> GetByIdAsync(int? id)
-        //{
-        //    return await _context.Set<TEntity>().FindAsync(id);
-        //}
-
-
-
-
-
         public async Task<TEntity> GetByIdAsync(int id, params Expression<Func<TEntity, object>>[] includes)
         {
             // بدء الاستعلام عن الكيان بناءً على المعرف
@@ -93,8 +73,7 @@ namespace techYard.Repository.Repositories
             return await query.FirstOrDefaultAsync(e => e.Id == id); // تأكد من أن TEntity يحتوي على خاصية Id
         }
 
-
-
+        
 
         public async Task Update(TEntity new_entity)
         {
@@ -102,5 +81,61 @@ namespace techYard.Repository.Repositories
             //await _unitOfWork.CompleteAsync();
 
         }
+
+
+        public async Task<ProductsInCart> IsProductAndUserAlreadyExist(int productId, string userId)
+        {
+            var productInCart = await _context.Set<ProductsInCart>()
+            .FirstOrDefaultAsync(p => p.ProductId == productId && p.UserId == userId);
+
+            return productInCart;
+        }
+
+
+
+        public async Task<IReadOnlyList<ProductsInCart>> GetCartsByUserId(string userId)
+        {
+            var productsInCart = await _context.Set<ProductsInCart>().Where(p => p.UserId == userId).Include(p=> p.Product).ToListAsync();
+
+            return productsInCart;
+        }
+
+
+
+        public async Task<IReadOnlyList<ProductsInCart>> GetAllProductsFromTheCart()
+        {
+            var productsInCart = await _context.Set<ProductsInCart>().Include(p=> p.Product).ToListAsync();
+
+            return productsInCart;
+        }
+
+
+        public async Task<IReadOnlyList<ProductsInCart>> GetAllUsersFromTheCart()
+        {
+            var UsersInCart = await _context.Set<ProductsInCart>().Include(p => p.User).ToListAsync();
+
+            return UsersInCart;
+        }
+
+
+
+
+
+
+
+
+
+
+        public async Task<IReadOnlyList<ProductsInCart>> GetAllCartsAsync()
+        {
+            return await _context.Set<ProductsInCart>()
+                .Include(pc => pc.Product) // تأكد من تضمين المنتج
+                .Include(pc => pc.User) // تأكد من تضمين المستخدم
+                .ToListAsync();
+        }
+
+
+
+
     }
 }

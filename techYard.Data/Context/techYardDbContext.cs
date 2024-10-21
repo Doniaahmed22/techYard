@@ -21,6 +21,7 @@ namespace techYard.Data.Context
         public DbSet<Categories> categories {  get; set; }
         public DbSet<ProductDetailsImages> productDetailsImages {  get; set; }
         public DbSet<ProductFeatures> productFeatures {  get; set; }
+        public DbSet<ProductsInCart> productsInCart {  get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

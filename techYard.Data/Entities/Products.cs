@@ -36,5 +36,12 @@ namespace techYard.Data.Entities
             }
         }
 
+
+
+
+
+        //public ICollection<ProductsInCart> ProductsInCart { get; set; }
+
+
     }
 }

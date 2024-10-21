@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using techYard.Data.Entities;
 using techYard.Service.Services.AccountServices.Dtos;
+using techYard.Service.Services.CartServices.Dtos;
 using techYard.Service.Services.CategoryServices.Dtos;
 using techYard.Service.Services.featuresServices.Dtos;
 using techYard.Service.Services.ProductImagesServices.Dtos;
@@ -77,7 +78,20 @@ namespace techYard.Service.Services.profileServices
             CreateMap<ApplicationRole, RoleDTO>();
             CreateMap<RoleDTO, ApplicationRole>();
 
+            CreateMap<ProductsInCart, AddCart>();
+            CreateMap<AddCart, ProductsInCart>();
 
+            CreateMap<ProductsInCart, GetCart>();
+            CreateMap<GetCart, ProductsInCart>();
+
+            CreateMap<ProductsInCart, GetProductsInCart>();
+            CreateMap<GetProductsInCart, ProductsInCart>();
+
+            CreateMap<ProductsInCart, GetAllProductsFromCart>();
+            CreateMap<GetAllProductsFromCart, ProductsInCart>();
+
+            CreateMap<ProductsInCart, GetAllUsersFromCart>();
+            CreateMap<GetAllUsersFromCart, ProductsInCart>();
 
 
             //// خريطة تحويل من Products إلى getProduct مع تجاهل العلاقات الدورية

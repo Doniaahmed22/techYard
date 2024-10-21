@@ -23,5 +23,12 @@ namespace techYard.Data.Entities
         public string? ProfileImagePath { get; set; } = "Images/Profile/Profile.jpeg";
 
 
+
+        //public ICollection<ProductsInCart> ProductsInCart { get; set; }
+
+
+
+
+
     }
 }
