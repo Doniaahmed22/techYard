@@ -238,6 +238,25 @@ namespace techYard.Data.Migrations
                     b.ToTable("Users", "dbo");
                 });
 
+            modelBuilder.Entity("techYard.Data.Entities.Cart", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("carts", "dbo");
+                });
+
             modelBuilder.Entity("techYard.Data.Entities.Categories", b =>
                 {
                     b.Property<int>("Id")
@@ -269,12 +288,12 @@ namespace techYard.Data.Migrations
                     b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("ProductsId")
+                    b.Property<int>("ProductId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductsId");
+                    b.HasIndex("ProductId");
 
                     b.ToTable("productDetailsImages", "dbo");
                 });
@@ -288,6 +307,7 @@ namespace techYard.Data.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<int?>("ProductsId")
+                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<string>("ScreenSize")
@@ -374,21 +394,20 @@ namespace techYard.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<int>("CartId")
+                        .HasColumnType("int");
+
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
 
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductId");
+                    b.HasIndex("CartId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("ProductId");
 
                     b.ToTable("productsInCart", "dbo");
                 });
@@ -444,47 +463,74 @@ namespace techYard.Data.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("techYard.Data.Entities.ProductDetailsImages", b =>
+            modelBuilder.Entity("techYard.Data.Entities.Cart", b =>
                 {
-                    b.HasOne("techYard.Data.Entities.Products", null)
-                        .WithMany("productDetailsImages")
-                        .HasForeignKey("ProductsId");
-                });
-
-            modelBuilder.Entity("techYard.Data.Entities.ProductFeatures", b =>
-                {
-                    b.HasOne("techYard.Data.Entities.Products", null)
-                        .WithMany("ProductFeatures")
-                        .HasForeignKey("ProductsId");
-                });
-
-            modelBuilder.Entity("techYard.Data.Entities.Products", b =>
-                {
-                    b.HasOne("techYard.Data.Entities.Categories", null)
-                        .WithMany("products")
-                        .HasForeignKey("categoriesId");
-                });
-
-            modelBuilder.Entity("techYard.Data.Entities.ProductsInCart", b =>
-                {
-                    b.HasOne("techYard.Data.Entities.Products", "Product")
-                        .WithMany("ProductsInCart")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("techYard.Data.Entities.ApplicationUser", "User")
-                        .WithMany("ProductsInCart")
+                        .WithMany("Carts")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Product");
-
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("techYard.Data.Entities.ProductDetailsImages", b =>
+                {
+                    b.HasOne("techYard.Data.Entities.Products", "Product")
+                        .WithMany("productDetailsImages")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("techYard.Data.Entities.ProductFeatures", b =>
+                {
+                    b.HasOne("techYard.Data.Entities.Products", "Products")
+                        .WithMany("ProductFeatures")
+                        .HasForeignKey("ProductsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("techYard.Data.Entities.Products", b =>
+                {
+                    b.HasOne("techYard.Data.Entities.Categories", "categories")
+                        .WithMany("products")
+                        .HasForeignKey("categoriesId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.Navigation("categories");
+                });
+
+            modelBuilder.Entity("techYard.Data.Entities.ProductsInCart", b =>
+                {
+                    b.HasOne("techYard.Data.Entities.Cart", "Cart")
+                        .WithMany("ProductsInCart")
+                        .HasForeignKey("CartId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("techYard.Data.Entities.Products", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Cart");
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("techYard.Data.Entities.ApplicationUser", b =>
+                {
+                    b.Navigation("Carts");
+                });
+
+            modelBuilder.Entity("techYard.Data.Entities.Cart", b =>
                 {
                     b.Navigation("ProductsInCart");
                 });
@@ -497,8 +543,6 @@ namespace techYard.Data.Migrations
             modelBuilder.Entity("techYard.Data.Entities.Products", b =>
                 {
                     b.Navigation("ProductFeatures");
-
-                    b.Navigation("ProductsInCart");
 
                     b.Navigation("productDetailsImages");
                 });

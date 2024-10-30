@@ -9,16 +9,14 @@ namespace techYard.Data.Entities
 {
     public class ProductsInCart : BaseEntity
     {
-
+        [ForeignKey(nameof(Product))]
         public int ProductId { get; set; }
-        [ForeignKey(nameof(ProductId))]
-        public Products? Product { get; set; }
+        public Products Product { get; set; }
 
-        public string UserId { get; set; }
-        [ForeignKey(nameof(UserId))]
-        public ApplicationUser? User { get; set; }
+        [ForeignKey(nameof(Cart))]
+        public int CartId { get; set; }
+        public Cart Cart { get; set; }
 
-        public int Quantity { get; set; } 
-
+        public int Quantity { get; set; }
     }
 }

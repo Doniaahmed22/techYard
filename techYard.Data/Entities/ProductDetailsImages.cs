@@ -10,6 +10,9 @@ namespace techYard.Data.Entities
     public class ProductDetailsImages:BaseEntity
     {
         public string? ImageUrl { get; set; }
+        [ForeignKey(nameof(Product))]
+        public int ProductId { get; set; }
+        public Products Product { get; set; }
 
     }
 }

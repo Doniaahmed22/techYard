@@ -12,17 +12,9 @@ namespace techYard.Service.Services.CartServices
 {
     public interface ICartService
     {
-        Task<IReadOnlyList<GetCart>> GetAllProductsInCart();
-        Task<GetCart> GetProductInCartByCartId(int id);
-        Task<GetCart> AddProductInCart(AddCart cartDto);
-        Task<GetCart> DeleteProductFromCartById(int id);
-        Task<GetCart> UpdateProductInCart(int id, AddCart entity);
-        Task<GetCart> IsProductAndUserAlreadyExist(int productId, string userId);
-        Task<IReadOnlyList<GetProductsInCart>> GetProductInCartByUserId(string UserId);
-        Task<IReadOnlyList<GetAllProductsFromCart>> GetAllProductsFromTheCart();
-        Task<IReadOnlyList<GetAllUsersFromCart>> GetAllUsersFromTheCart();
-        Task<IReadOnlyList<UserProductsDto>> GetUsersWithProductsAsync();
-
-
+        Task<CartDto> GetCartByUserIdAsync(string userId);
+        Task AddProductToCartAsync(string userId, int productId, int quantity);
+        Task RemoveProductFromCartAsync(string userId, int productId);
+        Task ClearCartAsync(string userId);
     }
 }

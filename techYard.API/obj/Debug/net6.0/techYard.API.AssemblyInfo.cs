@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("techYard.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+009b25d238910c2b25b83ba63823d0bc9355411e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc32eb60f247b90bcf202f0e69eb74071636e145")]
 [assembly: System.Reflection.AssemblyProductAttribute("techYard.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("techYard.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

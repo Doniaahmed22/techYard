@@ -24,159 +24,148 @@ namespace techYard.API.Controllers
 
         [HttpGet]
         [Route("GetAllProducts")]
-        [Authorize]
         public async Task<IActionResult> GetAllProducts()
         {
-            var Products = await _productServices.GetAllProducts();
-
-            return Ok(Products);
+            var products = await _productServices.GetAllProductsAsync();
+            return Ok(products);
         }
-
 
         [HttpGet]
         [Route("GetProductById/{id}")]
-        [Authorize]
         public async Task<ActionResult<getProduct>> GetProductById(int id)
         {
-            var Product = await _productServices.GetProductById(id);
-            return Ok(Product);
+            var product = await _productServices.GetProductByIdAsync(id);
+            if (product == null) return NotFound();
+            return Ok(product);
         }
 
+        //[HttpDelete("DeleteProduct/{id}")]
+        //[Authorize]
+        //public async Task<IActionResult> DeleteProduct(int id)
+        //{
+        //    if (id <= 0)
+        //    {
+        //        return NotFound("Invalid Id");
+        //    }
 
+        //    var product = await _productServices.GetProductById(id);
+        //    if (product == null)
+        //    {
+        //        return NotFound("Product not found.");
+        //    }
 
-        [HttpDelete("DeleteProduct/{id}")]
-        [Authorize]
-        public async Task<IActionResult> DeleteProduct(int id)
-        {
-            if (id <= 0)
-            {
-                return NotFound("Invalid Id");
-            }
+        //    try
+        //    {
+        //        // التحقق من أن المسار المخزن في قاعدة البيانات نسبي
+        //        string CleanPath(string path)
+        //        {
+        //            if (path.StartsWith("http"))
+        //            {
+        //                // استخراج الجزء النسبي فقط من المسار
+        //                var uri = new Uri(path);
+        //                return uri.AbsolutePath.TrimStart('/');
+        //            }
+        //            return path;
+        //        }
 
-            var product = await _productServices.GetProductById(id);
-            if (product == null)
-            {
-                return NotFound("Product not found.");
-            }
+        //        // حذف الصورة الرئيسية
+        //        var mainImagePath = CleanPath(product.imageUrl);
+        //        var fullMainImagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", mainImagePath);
+        //        if (System.IO.File.Exists(fullMainImagePath))
+        //        {
+        //            System.IO.File.Delete(fullMainImagePath);
+        //        }
 
-            try
-            {
-                // التحقق من أن المسار المخزن في قاعدة البيانات نسبي
-                string CleanPath(string path)
-                {
-                    if (path.StartsWith("http"))
-                    {
-                        // استخراج الجزء النسبي فقط من المسار
-                        var uri = new Uri(path);
-                        return uri.AbsolutePath.TrimStart('/');
-                    }
-                    return path;
-                }
+        //        // حذف صورة الهوفر
+        //        var hoverImagePath = CleanPath(product.imageUrlInHover);
+        //        var fullHoverImagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", hoverImagePath);
+        //        if (System.IO.File.Exists(fullHoverImagePath))
+        //        {
+        //            System.IO.File.Delete(fullHoverImagePath);
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine($"Error deleting images: {ex.Message}");
+        //        return StatusCode(500, "An error occurred while deleting the product images.");
+        //    }
 
-                // حذف الصورة الرئيسية
-                var mainImagePath = CleanPath(product.imageUrl);
-                var fullMainImagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", mainImagePath);
-                if (System.IO.File.Exists(fullMainImagePath))
-                {
-                    System.IO.File.Delete(fullMainImagePath);
-                }
+        //    return Ok($"Product with ID {id} deleted successfully.");
+        //}
 
-                // حذف صورة الهوفر
-                var hoverImagePath = CleanPath(product.imageUrlInHover);
-                var fullHoverImagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", hoverImagePath);
-                if (System.IO.File.Exists(fullHoverImagePath))
-                {
-                    System.IO.File.Delete(fullHoverImagePath);
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error deleting images: {ex.Message}");
-                return StatusCode(500, "An error occurred while deleting the product images.");
-            }
+        //[HttpPost]
+        //[Route("UpdateProduct/{id}")]
+        //[Authorize]
+        //public async Task<IActionResult> UpdateProduct(int id, [FromForm] productForAdditionDto productDto)
+        //{
+        //    // تحقق من وجود المنتج أولاً
+        //    var existingProduct = await _productServices.GetProductById(id);
+        //    if (existingProduct == null)
+        //    {
+        //        return NotFound($"Product with ID {id} not found.");
+        //    }
 
-            await _productServices.DeleteProduct(id);
-            return Ok($"Product with ID {id} deleted successfully.");
-        }
+        //    // التأكد من وجود المجلد wwwroot/Images
+        //    var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images/products/");
 
+        //    // تأكد من إنشاء المجلد إذا لم يكن موجودًا
+        //    if (!Directory.Exists(imagePath))
+        //    {
+        //        Directory.CreateDirectory(imagePath);
+        //    }
 
+        //    // التعامل مع الصورة الرئيسية
+        //    if (productDto.imageUrl != null && productDto.imageUrl.Length > 0)
+        //    {
+        //        // معالجة الصورة الرئيسية
+        //        var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(productDto.imageUrl.FileName);
+        //        var fullPath = Path.Combine(imagePath, uniqueFileName);
 
-        [HttpPost]
-        [Route("UpdateProduct/{id}")]
-        [Authorize]
-        public async Task<IActionResult> UpdateProduct(int id, [FromForm] productForAdditionDto productDto)
-        {
-            // تحقق من وجود المنتج أولاً
-            var existingProduct = await _productServices.GetProductById(id);
-            if (existingProduct == null)
-            {
-                return NotFound($"Product with ID {id} not found.");
-            }
+        //        using (var stream = new FileStream(fullPath, FileMode.Create))
+        //        {
+        //            await productDto.imageUrl.CopyToAsync(stream);
+        //        }
 
-            // التأكد من وجود المجلد wwwroot/Images
-            var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images/products/");
+        //        existingProduct.imageUrl = "Images/products/" + uniqueFileName; // مسار نسبي للصورة الرئيسية
+        //    }
+        //    else if (string.IsNullOrEmpty(existingProduct.imageUrl))
+        //    {
+        //        // إذا لم يتم تقديم صورة جديدة، نحتفظ بالصورة القديمة فقط إذا لم تكن موجودة
+        //        return BadRequest("Please provide a main image or ensure the existing image is available.");
+        //    }
 
-            // تأكد من إنشاء المجلد إذا لم يكن موجودًا
-            if (!Directory.Exists(imagePath))
-            {
-                Directory.CreateDirectory(imagePath);
-            }
+        //    // التعامل مع صورة hover
+        //    if (productDto.imageUrlInHover != null && productDto.imageUrlInHover.Length > 0)
+        //    {
+        //        // معالجة الصورة المتداخلة (Hover)
+        //        var uniqueHoverFileName = Guid.NewGuid().ToString() + Path.GetExtension(productDto.imageUrlInHover.FileName);
+        //        var hoverFullPath = Path.Combine(imagePath, uniqueHoverFileName);
 
-            // التعامل مع الصورة الرئيسية
-            if (productDto.imageUrl != null && productDto.imageUrl.Length > 0)
-            {
-                // معالجة الصورة الرئيسية
-                var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(productDto.imageUrl.FileName);
-                var fullPath = Path.Combine(imagePath, uniqueFileName);
+        //        using (var stream = new FileStream(hoverFullPath, FileMode.Create))
+        //        {
+        //            await productDto.imageUrlInHover.CopyToAsync(stream);
+        //        }
 
-                using (var stream = new FileStream(fullPath, FileMode.Create))
-                {
-                    await productDto.imageUrl.CopyToAsync(stream);
-                }
+        //        existingProduct.imageUrlInHover = "Images/products/" + uniqueHoverFileName; // مسار نسبي لصورة الـ hover
+        //    }
+        //    else if (string.IsNullOrEmpty(existingProduct.imageUrlInHover))
+        //    {
+        //        // إذا لم يتم تقديم صورة جديدة، نحتفظ بالصورة القديمة فقط إذا لم تكن موجودة
+        //        return BadRequest("Please provide a hover image or ensure the existing hover image is available.");
+        //    }
 
-                existingProduct.imageUrl = "Images/products/" + uniqueFileName; // مسار نسبي للصورة الرئيسية
-            }
-            else if (string.IsNullOrEmpty(existingProduct.imageUrl))
-            {
-                // إذا لم يتم تقديم صورة جديدة، نحتفظ بالصورة القديمة فقط إذا لم تكن موجودة
-                return BadRequest("Please provide a main image or ensure the existing image is available.");
-            }
+        //    // تحديث باقي خصائص المنتج
+        //    existingProduct.Name = productDto.Name;
+        //    existingProduct.oldPrice = productDto.oldPrice;
+        //    existingProduct.discount = productDto.discount;
+        //    existingProduct.soldOut = productDto.soldOut;
+        //    existingProduct.popular = productDto.popular;
+        //    existingProduct.categoriesId = productDto.categoriesId;
 
-            // التعامل مع صورة hover
-            if (productDto.imageUrlInHover != null && productDto.imageUrlInHover.Length > 0)
-            {
-                // معالجة الصورة المتداخلة (Hover)
-                var uniqueHoverFileName = Guid.NewGuid().ToString() + Path.GetExtension(productDto.imageUrlInHover.FileName);
-                var hoverFullPath = Path.Combine(imagePath, uniqueHoverFileName);
+        //    // حفظ التعديلات في قاعدة البيانات
 
-                using (var stream = new FileStream(hoverFullPath, FileMode.Create))
-                {
-                    await productDto.imageUrlInHover.CopyToAsync(stream);
-                }
-
-                existingProduct.imageUrlInHover = "Images/products/" + uniqueHoverFileName; // مسار نسبي لصورة الـ hover
-            }
-            else if (string.IsNullOrEmpty(existingProduct.imageUrlInHover))
-            {
-                // إذا لم يتم تقديم صورة جديدة، نحتفظ بالصورة القديمة فقط إذا لم تكن موجودة
-                return BadRequest("Please provide a hover image or ensure the existing hover image is available.");
-            }
-
-            // تحديث باقي خصائص المنتج
-            existingProduct.Name = productDto.Name;
-            existingProduct.oldPrice = productDto.oldPrice;
-            existingProduct.discount = productDto.discount;
-            existingProduct.soldOut = productDto.soldOut;
-            existingProduct.popular = productDto.popular;
-            existingProduct.categoriesId = productDto.categoriesId;
-
-            // حفظ التعديلات في قاعدة البيانات
-            await _productServices.UpdateProduct(id, existingProduct);
-
-            return Ok(existingProduct);
-        }
-
-
+        //    return Ok(existingProduct);
+        //}
 
         [HttpPost]
         [Route("AddProduct")]
@@ -239,18 +228,7 @@ namespace techYard.API.Controllers
             };
 
             // إضافة المنتج إلى قاعدة البيانات
-            await _productServices.AddProduct(product);
             return Ok(product);
         }
-
-
-
-
-
-
-
-
-
-
     }
 }

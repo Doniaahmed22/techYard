@@ -10,16 +10,10 @@ namespace techYard.Service.Services.productsServices
 {
     public interface IProductServices
     {
-        Task<IReadOnlyList<getProduct>> GetAllProducts();
-        Task<getProduct> GetProductById(int id);
-        Task<AddProductDto> AddProduct(AddProductDto productDto);
-        Task<getProduct> UpdateProduct(int id, getProduct productDto);
-
-        Task<Products?> DeleteProduct(int id);
-
-        //Task AddParent(ParentDto parentDto);
-        //Task UpdateParent(int id, ParentDto entity);
-        //Task DeleteParent(int id);
-        //Task<IEnumerable<StudentNameGender>> GetStudentsOfParents(int id);
+        Task<IEnumerable<ProductDto>> GetAllProductsAsync();
+        Task<ProductDto> GetProductByIdAsync(int id);
+        Task<ProductDto> CreateProductAsync(ProductDto productDto);
+        Task UpdateProductAsync(ProductDto productDto);
+        Task DeleteProductAsync(int id);
     }
 }

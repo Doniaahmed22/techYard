@@ -32,8 +32,7 @@ namespace techYard.Service.Services.profileServices
                 .ForMember(dest => dest.imageUrlInHover, options => options.MapFrom(src => src.imageUrlInHover));
 
             // خريطة تحويل من Categories إلى categoryDto مع استخدام المحلل ProductUrlResolver
-            CreateMap<Categories, categoryDto>()
-                .ForMember(dest => dest.imageUrl, options => options.MapFrom<ProductUrlResolver>());
+            CreateMap<Categories, categoryDto>().ReverseMap();
 
             // خريطة تحويل من categoryDto إلى Categories
             CreateMap<categoryDto, Categories>();

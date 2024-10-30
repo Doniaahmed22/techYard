@@ -4,6 +4,7 @@ using techYard.Service.Services.AccountServices;
 using techYard.Service.Services.CartServices;
 using techYard.Service.Services.CategoryServices;
 using techYard.Service.Services.featuresServices;
+using techYard.Service.Services.FileHandlingService;
 using techYard.Service.Services.ProductImagesServices;
 using techYard.Service.Services.productsServices;
 using techYard.Service.Services.profileServices;
@@ -16,11 +17,12 @@ namespace techYard.API.Extensions
         {
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IProductServices, ProductServices>();
-            services.AddScoped<ICategoryServices, CategoryServices>();
+            services.AddScoped<ICategoryServices, CategoryService>();
             services.AddScoped<IProductFeatureServices, ProductFeatureServices>();
             services.AddScoped<IProductDetailsImagesServices, ProductDetailsImagesServices>();
             services.AddScoped<IAccountService, AccountService>();
-            services.AddScoped<ICartService, CartService>();
+            //services.AddScoped<ICartService, CartService>();
+            services.AddScoped<IFileHandling, FileHandlingService>();
 
             services.AddAutoMapper(typeof(MappingProfile));
 

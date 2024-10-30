@@ -22,7 +22,6 @@ namespace techYard.API.Controllers
 
         [HttpGet]
         [Route("GetAllProductsFeatures")]
-        [Authorize]
         public async Task<ActionResult<IEnumerable<GetFeatureDto>>> GetAllProductsFeatures()
         {
             var features = await _featureServices.GetAllProductsFeatures();
@@ -31,7 +30,6 @@ namespace techYard.API.Controllers
 
         [HttpGet]
         [Route("GetProductFeaturesById/{id}")]
-        [Authorize]
         public async Task<ActionResult> GetProductFeaturesById(int id)
         {
             var feature = await _featureServices.GetProductFeaturesById(id);
@@ -41,7 +39,6 @@ namespace techYard.API.Controllers
             }
             return Ok(feature);
         }
-
 
         [HttpDelete("DeleteProductFeatures/{id}")]
         [Authorize]
@@ -54,9 +51,6 @@ namespace techYard.API.Controllers
             }
             return Ok();
         }
-
-
-
 
         [HttpPut]
         [Route("UpdateProductFeatures")]
@@ -75,7 +69,6 @@ namespace techYard.API.Controllers
             }
             return Ok();
         }
-
 
         [HttpPost]
         [Route("AddProductFeatures")]

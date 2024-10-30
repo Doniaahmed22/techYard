@@ -10,14 +10,10 @@ namespace techYard.Service.Services.CategoryServices
 {
     public interface ICategoryServices
     {
-
-        Task<IReadOnlyList<categoryDto>> GetAllCategories();
-        Task<categoryDto> GetCategoryById(int id);
-        Task AddCategory(AddCategoryDto categoryDto);
-        Task<categoryDto> DeleteCategoryById(int id);
-        Task<categoryDto> UpdateCategory(int id, categoryDto entity);
-
-
-
+        Task<IEnumerable<categoryDto>> GetAllCategoriesAsync();
+        Task<categoryDto> GetCategoryByIdAsync(int id);
+        Task<categoryDto> CreateCategoryAsync(categoryDto categoryDto);
+        Task<categoryDto> UpdateCategoryAsync(int id, categoryDto categoryDto);
+        Task<bool> DeleteCategoryAsync(int id);
     }
 }

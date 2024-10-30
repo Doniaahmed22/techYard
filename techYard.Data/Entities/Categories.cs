@@ -10,6 +10,5 @@ namespace techYard.Data.Entities
         public string name { get; set; }
         public string? imageUrl { get; set; }
         public ICollection<Products>? products { get; set; } =new List<Products>();
-
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,9 +10,9 @@ namespace techYard.Service.Services.CategoryServices.Dtos
 {
     public class categoryDto
     {
-        public int Id { get; set; }
-        public string name { get; set; }
-        public string? imageUrl { get; set; }
-        public ICollection<Products>? products { get; set; }
+        public int? Id { get; set; }
+        public string Name { get; set; }
+        public string? ImageUrl { get; set; }
+        public IFormFile? Image { get; set; }
     }
 }

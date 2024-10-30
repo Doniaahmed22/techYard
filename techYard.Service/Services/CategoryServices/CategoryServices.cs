@@ -8,115 +8,82 @@ using techYard.Data.Context;
 using techYard.Data.Entities;
 using techYard.Repository.Interfaces;
 using techYard.Service.Services.CategoryServices.Dtos;
+using techYard.Service.Services.FileHandlingService;
 using techYard.Service.Services.productsServices.Dtos;
 
 namespace techYard.Service.Services.CategoryServices
 {
-    public class CategoryServices : ICategoryServices
+    public class CategoryService : ICategoryServices
     {
-        readonly IUnitOfWork _unitOfWork;
-        readonly IMapper _mapper;
-        readonly techYardDbContext _context;
-        public CategoryServices(IUnitOfWork unitOfWork, IMapper mapper, techYardDbContext context)
+        private readonly IMapper _mapper;
+        private readonly IUnitOfWork _unitOfWork;
+        private readonly IFileHandling _fileHandling; // Assuming an existing IFileHandling service for image handling
+
+        public CategoryService(IMapper mapper, IUnitOfWork unitOfWork, IFileHandling fileHandling)
         {
             _mapper = mapper;
             _unitOfWork = unitOfWork;
-            _context = context;
+            _fileHandling = fileHandling;
         }
 
-        public async Task<IReadOnlyList<categoryDto>> GetAllCategories()
+        public async Task<IEnumerable<categoryDto>> GetAllCategoriesAsync()
         {
             var categories = await _unitOfWork.Repository<Categories>().GetAllAsync();
-            return _mapper.Map<IReadOnlyList<categoryDto>>(categories);
+            return _mapper.Map<IEnumerable<categoryDto>>(categories);
         }
 
-
-
-        //public async Task<IReadOnlyList<categoryDto>> GetAllCategories()
-        //{
-        //    var categories = await _unitOfWork.Repository<Categories>()
-        //        .GetAllAsync();  // تأكد من جلب الـ Products
-
-        //    return _mapper.Map<IReadOnlyList<categoryDto>>(categories);
-        //}
-
-
-
-
-
-        //public async Task<categoryDto> GetCategoryById(int id)
-        //{
-        //    var category = await _unitOfWork.Repository<Categories>().GetByIdAsync(id);
-        //    if(category == null)
-        //    {
-        //        return null;
-        //    }
-        //    return _mapper.Map<categoryDto>(category);
-        //}
-
-
-
-        public async Task<categoryDto?> GetCategoryById(int id)
-        {
-            // جلب الفئة بناءً على الـ ID مع المنتجات المرتبطة
-            var category = await _unitOfWork.Repository<Categories>().GetByIdAsync(
-                id,
-                p=>p.products
-            );
-
-            if (category == null) return null;
-
-            var categoryDto = _mapper.Map<categoryDto>(category);
-
-            return categoryDto;
-        }
-
-
-
-
-
-
-
-
-
-
-        public async Task AddCategory(AddCategoryDto categoryDto)
-        {
-            var Category = _mapper.Map<Categories>(categoryDto);
-            await _unitOfWork.Repository<Categories>().AddAsync(Category);
-            await _unitOfWork.CompleteAsync();
-        }
-
-        public async Task<categoryDto> DeleteCategoryById (int id)
+        public async Task<categoryDto> GetCategoryByIdAsync(int id)
         {
             var category = await _unitOfWork.Repository<Categories>().GetByIdAsync(id);
-            if (category == null)
+            return _mapper.Map<categoryDto>(category);
+        }
+
+        public async Task<categoryDto> CreateCategoryAsync(categoryDto categoryDto)
+        {
+            var category = _mapper.Map<Categories>(categoryDto);
+
+            if (categoryDto.Image != null)
             {
-                return null;
+                category.imageUrl = await _fileHandling.SaveFileAsync(categoryDto.Image);
             }
+
+            await _unitOfWork.Repository<Categories>().AddAsync(category);
+            await _unitOfWork.CompleteAsync();
+
+            return _mapper.Map<categoryDto>(category);
+        }
+
+        public async Task<categoryDto> UpdateCategoryAsync(int id, categoryDto categoryDto)
+        {
+            var category = await _unitOfWork.Repository<Categories>().GetByIdAsync(id);
+
+            if (category == null)
+                return null;
+
+            _mapper.Map(categoryDto, category);
+
+            if (categoryDto.Image != null)
+            {
+                category.imageUrl = await _fileHandling.SaveFileAsync(categoryDto.Image);
+            }
+
+            await _unitOfWork.Repository<Categories>().Update(category);
+            await _unitOfWork.CompleteAsync();
+
+            return _mapper.Map<categoryDto>(category);
+        }
+
+        public async Task<bool> DeleteCategoryAsync(int id)
+        {
+            var category = await _unitOfWork.Repository<Categories>().GetByIdAsync(id);
+
+            if (category == null)
+                return false;
+
             await _unitOfWork.Repository<Categories>().Delete(id);
             await _unitOfWork.CompleteAsync();
-            return new categoryDto { };
-            
+
+            return true;
         }
-
-
-        public async Task<categoryDto> UpdateCategory(int id, categoryDto category)
-        {
-            var existingCategory = await _unitOfWork.Repository<Categories>().GetByIdAsync(id);
-            if (existingCategory == null)
-            {
-                return null;
-            }
-
-            _mapper.Map(category, existingCategory);
-            await _unitOfWork.Repository<Categories>().Update(existingCategory);
-            await _unitOfWork.CompleteAsync();
-            return new categoryDto { };
-
-        }
-
-
-
     }
 }

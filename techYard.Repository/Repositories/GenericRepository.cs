@@ -86,7 +86,7 @@ namespace techYard.Repository.Repositories
         public async Task<ProductsInCart> IsProductAndUserAlreadyExist(int productId, string userId)
         {
             var productInCart = await _context.Set<ProductsInCart>()
-            .FirstOrDefaultAsync(p => p.ProductId == productId && p.UserId == userId);
+            .FirstOrDefaultAsync(p => p.ProductId == productId);
 
             return productInCart;
         }
@@ -95,7 +95,7 @@ namespace techYard.Repository.Repositories
 
         public async Task<IReadOnlyList<ProductsInCart>> GetCartsByUserId(string userId)
         {
-            var productsInCart = await _context.Set<ProductsInCart>().Where(p => p.UserId == userId).Include(p=> p.Product).ToListAsync();
+            var productsInCart = await _context.Set<ProductsInCart>().Include(p=> p.Product).ToListAsync();
 
             return productsInCart;
         }
@@ -112,7 +112,7 @@ namespace techYard.Repository.Repositories
 
         public async Task<IReadOnlyList<ProductsInCart>> GetAllUsersFromTheCart()
         {
-            var UsersInCart = await _context.Set<ProductsInCart>().Include(p => p.User).ToListAsync();
+            var UsersInCart = await _context.Set<ProductsInCart>().ToListAsync();
 
             return UsersInCart;
         }
@@ -130,7 +130,6 @@ namespace techYard.Repository.Repositories
         {
             return await _context.Set<ProductsInCart>()
                 .Include(pc => pc.Product) // تأكد من تضمين المنتج
-                .Include(pc => pc.User) // تأكد من تضمين المستخدم
                 .ToListAsync();
         }
 

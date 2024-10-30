@@ -18,9 +18,9 @@ namespace techYard.Data.Entities
         public bool? popular { get; set; }
         public string? model { get; set; }
         public string? OS { get; set; }
+        [ForeignKey(nameof(categories))]
         public int? categoriesId { get; set; }
-        //[ForeignKey(nameof(categoriesId))]
-        //public Categories? categories { get; set; }
+        public Categories? categories { get; set; }
         public ICollection<ProductDetailsImages>? productDetailsImages { get; set; } = new List<ProductDetailsImages>();
         public ICollection<ProductFeatures>? ProductFeatures { get; set; } = new List<ProductFeatures>();
         public double? NewPrice
