@@ -16,7 +16,7 @@ namespace techYard.API.Extensions
         public static IServiceCollection AddTechYardServices(this IServiceCollection services)
         {
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddScoped<IProductServices, ProductServices>();
+            services.AddScoped<IProductServices, ProductService>();
             services.AddScoped<ICategoryServices, CategoryService>();
             services.AddScoped<IProductFeatureServices, ProductFeatureServices>();
             services.AddScoped<IProductDetailsImagesServices, ProductDetailsImagesServices>();

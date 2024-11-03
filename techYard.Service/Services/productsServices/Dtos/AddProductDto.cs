@@ -38,7 +38,7 @@ namespace techYard.Service.Services.productsServices.Dtos
 
         //public Categories? category { get; set; }
         //public ICollection<ProductDetailsImages>? productDetailsImages { get; set; }
-        //public ICollection<ProductFeatures>? ProductFeatures { get; set; }
+        //public ICollection<ProductFeature>? ProductFeature { get; set; }
         //public double? NewPrice
         //{
         //    get

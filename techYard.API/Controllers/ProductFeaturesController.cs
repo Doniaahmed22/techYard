@@ -72,7 +72,6 @@ namespace techYard.API.Controllers
 
         [HttpPost]
         [Route("AddProductFeatures")]
-        [Authorize]
         public async Task<ActionResult<AddFeatureDto>> AddProductFeatures(AddFeatureDto featureDto)
         {  
             if(featureDto == null)

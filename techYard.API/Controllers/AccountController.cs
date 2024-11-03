@@ -71,12 +71,6 @@ namespace techYard.API.Controllers
             }
         }
 
-
-
-
-
-
-
         [HttpPost("register")]
         public async Task<IActionResult> RegisterCustomer([FromBody] RegisterCustomer model)
         {
@@ -117,7 +111,6 @@ namespace techYard.API.Controllers
             }
         }
 
-
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] Login model)
         {
@@ -157,10 +150,6 @@ namespace techYard.API.Controllers
                 ErrorMessage = result.ErrorMessage
             });
         }
-
-
-
-
 
         [HttpPost("UpdateProfileImage")]
         [Authorize]
@@ -211,20 +200,8 @@ namespace techYard.API.Controllers
             return Ok(new { Message = "Profile image updated successfully!" });
         }
 
-
-
-
-
-
-
-
-
-
-
-
         [HttpPost("logout")]
         [Authorize]
-
         public async Task<IActionResult> Logout()
         {
             try
@@ -260,7 +237,6 @@ namespace techYard.API.Controllers
                 });
             }
         }
-
 
         [HttpPost("AddRole")]
         public async Task<IActionResult> Create(RoleDTO roleModel)

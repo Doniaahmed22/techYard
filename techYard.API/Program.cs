@@ -47,8 +47,12 @@ namespace techYard.API
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddTechYardServices();
+            builder.Services.AddHttpContextAccessor();
 
-
+            // Configure CORS
+            builder.Services.AddCors(options => {
+                options.AddPolicy("CORSPolicy", builder => builder.AllowAnyMethod().AllowAnyHeader().AllowCredentials().SetIsOriginAllowed((hosts) => true));
+            });
 
             var app = builder.Build();
 
@@ -66,6 +70,7 @@ namespace techYard.API
             }
 
             app.UseStaticFiles(); // للسماح بتقديم الملفات الثابتة مثل الصور
+            app.UseCors("CORSPolicy");
 
 
             app.UseHttpsRedirection();

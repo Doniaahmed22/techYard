@@ -15,5 +15,7 @@ namespace techYard.Service.Services.CategoryServices
         Task<categoryDto> CreateCategoryAsync(categoryDto categoryDto);
         Task<categoryDto> UpdateCategoryAsync(int id, categoryDto categoryDto);
         Task<bool> DeleteCategoryAsync(int id);
+        Task<IEnumerable<ProductDto>> GetProductsByCategoryIdAsync(int categoryId);
+
     }
 }

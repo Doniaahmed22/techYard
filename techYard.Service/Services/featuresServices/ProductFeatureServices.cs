@@ -57,9 +57,7 @@ namespace techYard.Service.Services.featuresServices
             await _unitOfWork.Repository<ProductFeatures>().Delete(id);
             await _unitOfWork.CompleteAsync();
             return new GetFeatureDto { };
-
         }
-
 
         public async Task<GetFeatureDto> UpdateProductFeatures(int id, AddFeatureDto featureDto)
         {

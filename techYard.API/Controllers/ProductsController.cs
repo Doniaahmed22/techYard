@@ -35,200 +35,57 @@ namespace techYard.API.Controllers
         public async Task<ActionResult<getProduct>> GetProductById(int id)
         {
             var product = await _productServices.GetProductByIdAsync(id);
-            if (product == null) return NotFound();
-            return Ok(product);
+            return product == null ? NotFound() : Ok(product);
         }
 
-        //[HttpDelete("DeleteProduct/{id}")]
-        //[Authorize]
-        //public async Task<IActionResult> DeleteProduct(int id)
-        //{
-        //    if (id <= 0)
-        //    {
-        //        return NotFound("Invalid Id");
-        //    }
-
-        //    var product = await _productServices.GetProductById(id);
-        //    if (product == null)
-        //    {
-        //        return NotFound("Product not found.");
-        //    }
-
-        //    try
-        //    {
-        //        // التحقق من أن المسار المخزن في قاعدة البيانات نسبي
-        //        string CleanPath(string path)
-        //        {
-        //            if (path.StartsWith("http"))
-        //            {
-        //                // استخراج الجزء النسبي فقط من المسار
-        //                var uri = new Uri(path);
-        //                return uri.AbsolutePath.TrimStart('/');
-        //            }
-        //            return path;
-        //        }
-
-        //        // حذف الصورة الرئيسية
-        //        var mainImagePath = CleanPath(product.imageUrl);
-        //        var fullMainImagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", mainImagePath);
-        //        if (System.IO.File.Exists(fullMainImagePath))
-        //        {
-        //            System.IO.File.Delete(fullMainImagePath);
-        //        }
-
-        //        // حذف صورة الهوفر
-        //        var hoverImagePath = CleanPath(product.imageUrlInHover);
-        //        var fullHoverImagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", hoverImagePath);
-        //        if (System.IO.File.Exists(fullHoverImagePath))
-        //        {
-        //            System.IO.File.Delete(fullHoverImagePath);
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Console.WriteLine($"Error deleting images: {ex.Message}");
-        //        return StatusCode(500, "An error occurred while deleting the product images.");
-        //    }
-
-        //    return Ok($"Product with ID {id} deleted successfully.");
-        //}
-
-        //[HttpPost]
-        //[Route("UpdateProduct/{id}")]
-        //[Authorize]
-        //public async Task<IActionResult> UpdateProduct(int id, [FromForm] productForAdditionDto productDto)
-        //{
-        //    // تحقق من وجود المنتج أولاً
-        //    var existingProduct = await _productServices.GetProductById(id);
-        //    if (existingProduct == null)
-        //    {
-        //        return NotFound($"Product with ID {id} not found.");
-        //    }
-
-        //    // التأكد من وجود المجلد wwwroot/Images
-        //    var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images/products/");
-
-        //    // تأكد من إنشاء المجلد إذا لم يكن موجودًا
-        //    if (!Directory.Exists(imagePath))
-        //    {
-        //        Directory.CreateDirectory(imagePath);
-        //    }
-
-        //    // التعامل مع الصورة الرئيسية
-        //    if (productDto.imageUrl != null && productDto.imageUrl.Length > 0)
-        //    {
-        //        // معالجة الصورة الرئيسية
-        //        var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(productDto.imageUrl.FileName);
-        //        var fullPath = Path.Combine(imagePath, uniqueFileName);
-
-        //        using (var stream = new FileStream(fullPath, FileMode.Create))
-        //        {
-        //            await productDto.imageUrl.CopyToAsync(stream);
-        //        }
-
-        //        existingProduct.imageUrl = "Images/products/" + uniqueFileName; // مسار نسبي للصورة الرئيسية
-        //    }
-        //    else if (string.IsNullOrEmpty(existingProduct.imageUrl))
-        //    {
-        //        // إذا لم يتم تقديم صورة جديدة، نحتفظ بالصورة القديمة فقط إذا لم تكن موجودة
-        //        return BadRequest("Please provide a main image or ensure the existing image is available.");
-        //    }
-
-        //    // التعامل مع صورة hover
-        //    if (productDto.imageUrlInHover != null && productDto.imageUrlInHover.Length > 0)
-        //    {
-        //        // معالجة الصورة المتداخلة (Hover)
-        //        var uniqueHoverFileName = Guid.NewGuid().ToString() + Path.GetExtension(productDto.imageUrlInHover.FileName);
-        //        var hoverFullPath = Path.Combine(imagePath, uniqueHoverFileName);
-
-        //        using (var stream = new FileStream(hoverFullPath, FileMode.Create))
-        //        {
-        //            await productDto.imageUrlInHover.CopyToAsync(stream);
-        //        }
-
-        //        existingProduct.imageUrlInHover = "Images/products/" + uniqueHoverFileName; // مسار نسبي لصورة الـ hover
-        //    }
-        //    else if (string.IsNullOrEmpty(existingProduct.imageUrlInHover))
-        //    {
-        //        // إذا لم يتم تقديم صورة جديدة، نحتفظ بالصورة القديمة فقط إذا لم تكن موجودة
-        //        return BadRequest("Please provide a hover image or ensure the existing hover image is available.");
-        //    }
-
-        //    // تحديث باقي خصائص المنتج
-        //    existingProduct.Name = productDto.Name;
-        //    existingProduct.oldPrice = productDto.oldPrice;
-        //    existingProduct.discount = productDto.discount;
-        //    existingProduct.soldOut = productDto.soldOut;
-        //    existingProduct.popular = productDto.popular;
-        //    existingProduct.categoriesId = productDto.categoriesId;
-
-        //    // حفظ التعديلات في قاعدة البيانات
-
-        //    return Ok(existingProduct);
-        //}
-
-        [HttpPost]
-        [Route("AddProduct")]
-        [Authorize]
-        public async Task<IActionResult> AddProduct([FromForm] productForAdditionDto productDto)
+        [HttpPost("AddProduct")]
+        public async Task<IActionResult> CreateProduct([FromForm] ProductDto productDto )
         {
-            // التحقق من وجود الصورة الرئيسية
-            if (productDto.imageUrl == null || productDto.imageUrl.Length == 0)
+            if (!ModelState.IsValid)
             {
-                return BadRequest("Please upload a valid main image.");
+                return BadRequest(ModelState);
             }
+            var createdProduct = await _productServices.CreateProductAsync(productDto);
+            return CreatedAtAction(nameof(GetProductById), new { id = createdProduct.Id }, createdProduct);
+        }
 
-            // التحقق من وجود صورة hover
-            if (productDto.imageUrlInHover == null || productDto.imageUrlInHover.Length == 0)
+        [HttpPut("UpdateProduct/{id}")]
+        public async Task<IActionResult> UpdateProduct(int id, [FromForm] ProductDto productDto)
+        {
+            if (!ModelState.IsValid)
             {
-                return BadRequest("Please upload a valid hover image.");
+                return BadRequest(ModelState);
             }
+            var updatedProduct = await _productServices.UpdateProductAsync(id, productDto);
+            return updatedProduct == null ? NotFound() : Ok(updatedProduct);
+        }
 
-            // التأكد من وجود المجلد wwwroot/Images
-            var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images/products/");
+        [HttpDelete("DeleteProduct/{id}")]
+        public async Task<IActionResult> DeleteProduct(int id)
+        {
+            var result = await _productServices.DeleteProductAsync(id);
+            return result ? NoContent() : NotFound();
+        }
 
-            if (!Directory.Exists(imagePath))
-            {
-                Directory.CreateDirectory(imagePath);
-            }
+        [HttpGet("Laptops")]
+        public async Task<ActionResult<IEnumerable<ProductDto>>> GetLaptops()
+        {
+            var laptops = await _productServices.GetLaptopsAsync();
+            return Ok(laptops);
+        }
 
-            // معالجة الصورة الرئيسية
-            var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(productDto.imageUrl.FileName);
-            var fullPath = Path.Combine(imagePath, uniqueFileName);
+        [HttpGet("Desktops")]
+        public async Task<ActionResult<IEnumerable<ProductDto>>> GetDesktops()
+        {
+            var desktops = await _productServices.GetDesktopsAsync();
+            return Ok(desktops);
+        }
 
-            using (var stream = new FileStream(fullPath, FileMode.Create))
-            {
-                await productDto.imageUrl.CopyToAsync(stream);
-            }
-
-            // معالجة الصورة المتداخلة (Hover)
-            var uniqueHoverFileName = Guid.NewGuid().ToString() + Path.GetExtension(productDto.imageUrlInHover.FileName);
-            var hoverFullPath = Path.Combine(imagePath, uniqueHoverFileName);
-
-            using (var stream = new FileStream(hoverFullPath, FileMode.Create))
-            {
-                await productDto.imageUrlInHover.CopyToAsync(stream);
-            }
-            var listproductimage = await productDetailsImagesServices.uploadImages(productDto.ImagesUrl);
-            // حفظ مسار الصورة النسبي في قاعدة البيانات
-            var product = new AddProductDto
-            {
-                Name = productDto.Name,
-                imageUrl = "Images/products/" + uniqueFileName,          // مسار نسبي للصورة الرئيسية
-                imageUrlInHover = "Images/products/" + uniqueHoverFileName, // مسار نسبي لصورة الـ hover
-                oldPrice = productDto.oldPrice,
-                discount = productDto.discount,
-                soldOut = productDto.soldOut,
-                popular = productDto.popular,
-                OS = productDto.OS,
-                model = productDto.model,
-                categoriesId = productDto.categoriesId,
-                ProductDetailsImages = listproductimage,
-                // قم بإضافة خصائص أخرى حسب الحاجة
-            };
-
-            // إضافة المنتج إلى قاعدة البيانات
-            return Ok(product);
+        [HttpGet("Accessories")]
+        public async Task<ActionResult<IEnumerable<ProductDto>>> GetAccessories()
+        {
+            var accessories = await _productServices.GetAccessoriesAsync();
+            return Ok(accessories);
         }
     }
 }

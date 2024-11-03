@@ -67,5 +67,13 @@ namespace techYard.API.Controllers
             var createdCategory = await _categoryService.CreateCategoryAsync(categoryDto);
             return Ok(createdCategory);
         }
+
+        [HttpGet("GetProductsByCategory/{categoryId}")]
+        public async Task<ActionResult<IEnumerable<ProductDto>>> GetProductsByCategory(int categoryId)
+        {
+            var products = await _categoryService.GetProductsByCategoryIdAsync(categoryId);
+            if (products == null || !products.Any()) return NotFound();
+            return Ok(products);
+        }
     }
 }

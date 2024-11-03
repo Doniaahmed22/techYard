@@ -30,6 +30,7 @@ namespace techYard.Service.Services.profileServices
             // خريطة تحويل من Products إلى AddProductDto
             CreateMap<Products, AddProductDto>()
                 .ForMember(dest => dest.imageUrlInHover, options => options.MapFrom(src => src.imageUrlInHover));
+            CreateMap<Products, ProductDto>().ReverseMap();
 
             // خريطة تحويل من Categories إلى categoryDto مع استخدام المحلل ProductUrlResolver
             CreateMap<Categories, categoryDto>().ReverseMap();
@@ -39,11 +40,11 @@ namespace techYard.Service.Services.profileServices
             CreateMap<AddCategoryDto, Categories>();
             CreateMap<Categories, AddCategoryDto>();
 
-            // خريطة تحويل من AddFeatureDto إلى ProductFeatures
+            // خريطة تحويل من AddFeatureDto إلى ProductFeature
             CreateMap<AddFeatureDto, ProductFeatures>();
             CreateMap<ProductFeatures, AddFeatureDto>();
 
-            // خريطة تحويل من GetFeatureDto إلى ProductFeatures
+            // خريطة تحويل من GetFeatureDto إلى ProductFeature
             CreateMap<GetFeatureDto, ProductFeatures>();
             CreateMap<ProductFeatures, GetFeatureDto>();
 
@@ -98,8 +99,8 @@ namespace techYard.Service.Services.profileServices
             //    .ForMember(dest => dest.category, opt => opt.Ignore())  // تجاهل الفئة لتجنب الدوران
             //    .ForMember(dest => dest.productFeatures, opt => opt.Ignore());  // تجاهل الميزات
 
-            //// خريطة تحويل من ProductFeatures إلى GetFeatureDto مع تجاهل المنتجات
-            //CreateMap<ProductFeatures, GetFeatureDto>()
+            //// خريطة تحويل من ProductFeature إلى GetFeatureDto مع تجاهل المنتجات
+            //CreateMap<ProductFeature, GetFeatureDto>()
             //    .ForMember(dest => dest.products, opt => opt.Ignore());
 
             //// خريطة تحويل من Categories إلى categoryDto مع تجاهل المنتجات

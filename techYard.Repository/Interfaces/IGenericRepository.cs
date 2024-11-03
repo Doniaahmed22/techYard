@@ -21,7 +21,7 @@ namespace techYard.Repository.Interfaces
         Task<IReadOnlyList<ProductsInCart>> GetAllProductsFromTheCart();
         Task<IReadOnlyList<ProductsInCart>> GetAllUsersFromTheCart();
         Task<IReadOnlyList<ProductsInCart>> GetAllCartsAsync();
-
-
+        IEnumerable<TEntity> AddRange(IEnumerable<TEntity> entities);
+        Task<IEnumerable<TEntity>> AddRangeAsync(IEnumerable<TEntity> entities);
     }
 }

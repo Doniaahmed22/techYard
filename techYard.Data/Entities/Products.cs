@@ -10,6 +10,7 @@ namespace techYard.Data.Entities
     public class Products : BaseEntity
     {
         public string? Name { get; set; }
+        public string Description { get; set; }
         public string? imageUrl { get; set; }
         public string? imageUrlInHover { get; set; }
         public double? oldPrice { get; set; }
@@ -35,13 +36,5 @@ namespace techYard.Data.Entities
                 return null; // Or you could return oldPrice if discount is null
             }
         }
-
-
-
-
-
-        //public ICollection<ProductsInCart> ProductsInCart { get; set; }
-
-
     }
 }

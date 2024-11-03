@@ -73,7 +73,17 @@ namespace techYard.Repository.Repositories
             return await query.FirstOrDefaultAsync(e => e.Id == id); // تأكد من أن TEntity يحتوي على خاصية Id
         }
 
-        
+        public IEnumerable<TEntity> AddRange(IEnumerable<TEntity> entities)
+        {
+            _context.Set<TEntity>().AddRange(entities);
+            return entities;
+        }
+
+        public async Task<IEnumerable<TEntity>> AddRangeAsync(IEnumerable<TEntity> entities)
+        {
+            await _context.Set<TEntity>().AddRangeAsync(entities);
+            return entities;
+        }
 
         public async Task Update(TEntity new_entity)
         {

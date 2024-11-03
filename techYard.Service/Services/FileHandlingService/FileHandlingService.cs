@@ -11,10 +11,12 @@ namespace techYard.Service.Services.FileHandlingService
     public class FileHandlingService : IFileHandling
     {
         private readonly IWebHostEnvironment _environment;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public FileHandlingService(IWebHostEnvironment environment)
+        public FileHandlingService(IWebHostEnvironment environment, IHttpContextAccessor httpContextAccessor)
         {
             _environment = environment;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         public async Task<string> SaveFileAsync(IFormFile file, string folderPath = "uploads")
@@ -53,7 +55,11 @@ namespace techYard.Service.Services.FileHandlingService
 
         public string GetFileUrl(string filePath)
         {
-            return Path.Combine("/", filePath).Replace("\\", "/");
+            var request = _httpContextAccessor.HttpContext.Request;
+            var baseUrl = $"{request.Scheme}://{request.Host.Value}/";
+            var fullPath = Path.Combine(_environment.WebRootPath, filePath).Replace("\\", "/");
+
+            return $"{baseUrl}{filePath}";
         }
     }
 }
