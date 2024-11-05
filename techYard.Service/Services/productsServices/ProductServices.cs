@@ -1,18 +1,17 @@
 ﻿using AutoMapper;
+using Microsoft.Extensions.Caching.Memory;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using techYard.Data.Entities;
 using techYard.Repository.Interfaces;
-using techYard.Repository.Repositories;
 using techYard.Service.Services.CategoryServices;
 using techYard.Service.Services.CategoryServices.Dtos;
 using techYard.Service.Services.featuresServices.Dtos;
 using techYard.Service.Services.FileHandlingService;
-using techYard.Service.Services.ProductImagesServices.Dtos;
 using techYard.Service.Services.productsServices.Dtos;
+using techYard.Service.Services.profileServices;
 
 namespace techYard.Service.Services.productsServices
 {
@@ -22,47 +21,54 @@ namespace techYard.Service.Services.productsServices
         private readonly IMapper _mapper;
         private readonly IUnitOfWork _unitOfWork;
         private readonly ICategoryServices _categoryServices;
+        private readonly IMemoryCache _cache;
 
-        public ProductService(IFileHandling fileHandling, IMapper mapper, IUnitOfWork unitOfWork, ICategoryServices categoryServices)
+        private const string ProductsCacheKey = nameof(CacheMemory.Products);
+
+        public ProductService(IFileHandling fileHandling, IMapper mapper, IUnitOfWork unitOfWork, ICategoryServices categoryServices, IMemoryCache cache)
         {
             _fileHandling = fileHandling;
             _mapper = mapper;
             _unitOfWork = unitOfWork;
             _categoryServices = categoryServices;
+            _cache = cache;
         }
 
         public async Task<IEnumerable<ProductDto>> GetAllProductsAsync()
         {
-            var products = _mapper.Map<IEnumerable<ProductDto>>(await _unitOfWork.Repository<Products>().GetAllAsync());
-            foreach (var product in products)
+            if (!_cache.TryGetValue(ProductsCacheKey, out IEnumerable<ProductDto> cachedProducts))
             {
-                product.ImageUrl = _fileHandling.GetFileUrl(product.ImageUrl);
-                product.ImageUrlInHover = _fileHandling.GetFileUrl(product.ImageUrlInHover);
-                product.categoryDto = _mapper.Map<categoryDto>(await _unitOfWork.Repository<Categories>().GetByIdAsync(product.categoriesId));
-                var productFeatures = _unitOfWork.Repository<ProductFeatures>().GetAllAsync().Result.Where(a => a.ProductsId == product.Id).ToList();
-                product.ProductFeature = _mapper.Map<List<GetFeatureDto>>(productFeatures);
-                product.ProductDetailsImages = _unitOfWork.Repository<ProductDetailsImages>().GetAllAsync().Result
-                    .Where(a => a.ProductId == product.Id)
-                    .Select(a => _fileHandling.GetFileUrl(a.ImageUrl))
-                    .ToList();
+                var products = await _unitOfWork.Repository<Products>().GetAllAsync();
+                cachedProducts = _mapper.Map<IEnumerable<ProductDto>>(products);
 
+                foreach (var product in cachedProducts)
+                {
+                    product.ImageUrl = _fileHandling.GetFileUrl(product.ImageUrl);
+                    product.ImageUrlInHover = _fileHandling.GetFileUrl(product.ImageUrlInHover);
+                    product.categoryDto = _mapper.Map<categoryDto>(await _unitOfWork.Repository<Categories>().GetByIdAsync(product.categoriesId));
+                    var productFeatures = _unitOfWork.Repository<ProductFeatures>().GetAllAsync().Result.Where(a => a.ProductsId == product.Id).ToList();
+                    product.ProductFeature = _mapper.Map<List<GetFeatureDto>>(productFeatures);
+                    product.ProductDetailsImages = _unitOfWork.Repository<ProductDetailsImages>().GetAllAsync().Result
+                        .Where(a => a.ProductId == product.Id)
+                        .Select(a => _fileHandling.GetFileUrl(a.ImageUrl))
+                        .ToList();
+                }
+
+                // Set cache options
+                var cacheOptions = new MemoryCacheEntryOptions()
+                    .SetSlidingExpiration(TimeSpan.FromMinutes(30)); // Adjust as needed
+
+                // Cache the product list
+                _cache.Set(ProductsCacheKey, cachedProducts, cacheOptions);
             }
-            return products;
+
+            return cachedProducts;
         }
 
         public async Task<ProductDto> GetProductByIdAsync(int id)
         {
-            var product = _mapper.Map<ProductDto>(await _unitOfWork.Repository<Products>().GetByIdAsync(id));
-            product.ImageUrl = _fileHandling.GetFileUrl(product.ImageUrl);
-            product.ImageUrlInHover = _fileHandling.GetFileUrl(product.ImageUrlInHover);
-            product.categoryDto = _mapper.Map<categoryDto>(await _unitOfWork.Repository<Categories>().GetByIdAsync(product.categoriesId));
-            product.categoryDto.ImageUrl = _fileHandling.GetFileUrl(product.categoryDto.ImageUrl);
-            product.ProductFeature = _mapper.Map<List<GetFeatureDto>>(_unitOfWork.Repository<ProductFeatures>().GetAllAsync().Result.Where(a => a.ProductsId == product.Id).ToList());
-            product.ProductDetailsImages = _unitOfWork.Repository<ProductDetailsImages>().GetAllAsync().Result
-                .Where(a => a.ProductId == product.Id)
-                .Select(a => _fileHandling.GetFileUrl(a.ImageUrl))
-                .ToList(); 
-            return product;
+            var products = await GetAllProductsAsync(); // Retrieve from cache if available
+            return products.FirstOrDefault(p => p.Id == id);
         }
 
         public async Task<ProductDto> CreateProductAsync(ProductDto productDto)
@@ -77,18 +83,21 @@ namespace techYard.Service.Services.productsServices
 
             foreach (var image in productDto.ProductDetailsImage)
             {
-               var imageurl= await _fileHandling.SaveFileAsync(image);
-               ProductDetailsImages productDetailsImages = new ProductDetailsImages() 
-               {
-                   ImageUrl = imageurl,
-                   Product = product,
-                   ProductId = product.Id
-               };
+                var imageurl = await _fileHandling.SaveFileAsync(image);
+                ProductDetailsImages productDetailsImages = new ProductDetailsImages()
+                {
+                    ImageUrl = imageurl,
+                    Product = product,
+                    ProductId = product.Id
+                };
                 product.productDetailsImages.Add(productDetailsImages);
                 await _unitOfWork.Repository<ProductDetailsImages>().AddAsync(productDetailsImages);
             }
             await _unitOfWork.Repository<Products>().AddAsync(product);
             await _unitOfWork.CompleteAsync();
+
+            // Clear cache to ensure updated data is fetched on next retrieval
+            _cache.Remove(ProductsCacheKey);
 
             return _mapper.Map<ProductDto>(product);
         }
@@ -106,14 +115,18 @@ namespace techYard.Service.Services.productsServices
 
             if (productDto.ImageInHover != null)
                 product.imageUrlInHover = await _fileHandling.SaveFileAsync(productDto.ImageInHover);
+
             product.productDetailsImages.Clear();
-            foreach(var feature in _mapper.Map<List<ProductDetailsImages>>(productDto.ProductDetailsImage))
+            foreach (var feature in _mapper.Map<List<ProductDetailsImages>>(productDto.ProductDetailsImage))
             {
                 product.productDetailsImages.Add(feature);
             }
 
             await _unitOfWork.Repository<Products>().Update(product);
             await _unitOfWork.CompleteAsync();
+
+            // Clear cache to ensure updated data is fetched on next retrieval
+            _cache.Remove(ProductsCacheKey);
 
             return _mapper.Map<ProductDto>(product);
         }
@@ -126,87 +139,90 @@ namespace techYard.Service.Services.productsServices
 
             _unitOfWork.Repository<Products>().Delete(id);
             await _unitOfWork.CompleteAsync();
+
+            // Clear cache to ensure updated data is fetched on next retrieval
+            _cache.Remove(ProductsCacheKey);
+
             return true;
         }
 
         public async Task<IEnumerable<ProductDto>> GetLaptopsAsync()
         {
-            var laptopCategories = await _categoryServices.GetAllCategoriesAsync();
-            var laptopCategoryIds = laptopCategories
-                .Where(c => c.Name.Equals("MacBook", StringComparison.OrdinalIgnoreCase))
-                .Select(c => c.Id)
-                .ToList();
+            var cacheKey = ProductsCacheKey + "_Laptops";
 
-            var laptops = _mapper.Map<IEnumerable<ProductDto>>(
-                await _unitOfWork.Repository<Products>().GetAllAsync()
-            ).Where(p => laptopCategoryIds.Contains(p.categoriesId));
-
-            foreach (var product in laptops)
+            if (!_cache.TryGetValue(cacheKey, out IEnumerable<ProductDto> cachedLaptops))
             {
-                product.ImageUrl = _fileHandling.GetFileUrl(product.ImageUrl);
-                product.ImageUrlInHover = _fileHandling.GetFileUrl(product.ImageUrlInHover);
-                product.categoryDto = _mapper.Map<categoryDto>(await _unitOfWork.Repository<Categories>().GetByIdAsync(product.categoriesId));
-                product.ProductDetailsImages = _unitOfWork.Repository<ProductDetailsImages>().GetAllAsync().Result
-                    .Where(a => a.ProductId == product.Id)
-                    .Select(a => _fileHandling.GetFileUrl(a.ImageUrl))
+                var laptopCategories = await _categoryServices.GetAllCategoriesAsync();
+                var laptopCategoryIds = laptopCategories
+                    .Where(c => c.Name.Equals("MacBook", StringComparison.OrdinalIgnoreCase))
+                    .Select(c => c.Id)
                     .ToList();
+
+                var laptops = await GetAllProductsAsync();
+                cachedLaptops = laptops.Where(p => laptopCategoryIds.Contains(p.categoriesId)).ToList();
+
+                // Set cache options
+                var cacheOptions = new MemoryCacheEntryOptions()
+                    .SetSlidingExpiration(TimeSpan.FromMinutes(30)); // Adjust as needed
+
+                // Cache the laptop products
+                _cache.Set(cacheKey, cachedLaptops, cacheOptions);
             }
 
-            return laptops;
+            return cachedLaptops;
         }
 
         public async Task<IEnumerable<ProductDto>> GetDesktopsAsync()
         {
-            var desktopCategories = await _categoryServices.GetAllCategoriesAsync();
-            var desktopCategoryIds = desktopCategories
-                .Where(c => new List<string> { "iMac", "Mac Pro", "Mac Studio", "Mac Mini" }
-                .Contains(c.Name, StringComparer.OrdinalIgnoreCase))
-                .Select(c => c.Id)
-                .ToList();
+            var cacheKey = ProductsCacheKey + "_Desktops";
 
-            var desktops = _mapper.Map<IEnumerable<ProductDto>>(
-                await _unitOfWork.Repository<Products>().GetAllAsync()
-            ).Where(p => desktopCategoryIds.Contains(p.categoriesId));
-
-            foreach (var product in desktops)
+            if (!_cache.TryGetValue(cacheKey, out IEnumerable<ProductDto> cachedDesktops))
             {
-                product.ImageUrl = _fileHandling.GetFileUrl(product.ImageUrl);
-                product.ImageUrlInHover = _fileHandling.GetFileUrl(product.ImageUrlInHover);
-                product.categoryDto = _mapper.Map<categoryDto>(await _unitOfWork.Repository<Categories>().GetByIdAsync(product.categoriesId));
-                product.ProductDetailsImages = _unitOfWork.Repository<ProductDetailsImages>().GetAllAsync().Result
-                    .Where(a => a.ProductId == product.Id)
-                    .Select(a => _fileHandling.GetFileUrl(a.ImageUrl))
+                var desktopCategories = await _categoryServices.GetAllCategoriesAsync();
+                var desktopCategoryIds = desktopCategories
+                    .Where(c => new List<string> { "iMac", "Mac Pro", "Mac Studio", "Mac Mini" }
+                    .Contains(c.Name, StringComparer.OrdinalIgnoreCase))
+                    .Select(c => c.Id)
                     .ToList();
+
+                var desktops = await GetAllProductsAsync();
+                cachedDesktops = desktops.Where(p => desktopCategoryIds.Contains(p.categoriesId)).ToList();
+
+                // Set cache options
+                var cacheOptions = new MemoryCacheEntryOptions()
+                    .SetSlidingExpiration(TimeSpan.FromMinutes(30)); // Adjust as needed
+
+                // Cache the desktop products
+                _cache.Set(cacheKey, cachedDesktops, cacheOptions);
             }
 
-            return desktops;
+            return cachedDesktops;
         }
 
         public async Task<IEnumerable<ProductDto>> GetAccessoriesAsync()
         {
-            var accessoryCategories = await _categoryServices.GetAllCategoriesAsync();
-            var accessoryCategoryIds = accessoryCategories
-                .Where(c => c.Name.Equals("Accessories", StringComparison.OrdinalIgnoreCase))
-                .Select(c => c.Id)
-                .ToList();
+            var cacheKey = ProductsCacheKey + "_Accessories";
 
-            var accessories = _mapper.Map<IEnumerable<ProductDto>>(
-                await _unitOfWork.Repository<Products>().GetAllAsync()
-            ).Where(p => accessoryCategoryIds.Contains(p.categoriesId));
-
-            foreach (var product in accessories)
+            if (!_cache.TryGetValue(cacheKey, out IEnumerable<ProductDto> cachedAccessories))
             {
-                product.ImageUrl = _fileHandling.GetFileUrl(product.ImageUrl);
-                product.ImageUrlInHover = _fileHandling.GetFileUrl(product.ImageUrlInHover);
-                product.categoryDto = _mapper.Map<categoryDto>(await _unitOfWork.Repository<Categories>().GetByIdAsync(product.categoriesId));
-                product.ProductDetailsImages = _unitOfWork.Repository<ProductDetailsImages>().GetAllAsync().Result
-                    .Where(a => a.ProductId == product.Id)
-                    .Select(a => _fileHandling.GetFileUrl(a.ImageUrl))
+                var accessoryCategories = await _categoryServices.GetAllCategoriesAsync();
+                var accessoryCategoryIds = accessoryCategories
+                    .Where(c => c.Name.Equals("Accessories", StringComparison.OrdinalIgnoreCase))
+                    .Select(c => c.Id)
                     .ToList();
+
+                var accessories = await GetAllProductsAsync();
+                cachedAccessories = accessories.Where(p => accessoryCategoryIds.Contains(p.categoriesId)).ToList();
+
+                // Set cache options
+                var cacheOptions = new MemoryCacheEntryOptions()
+                    .SetSlidingExpiration(TimeSpan.FromMinutes(30)); // Adjust as needed
+
+                // Cache the accessory products
+                _cache.Set(cacheKey, cachedAccessories, cacheOptions);
             }
 
-            return accessories;
+            return cachedAccessories;
         }
     }
 }
-

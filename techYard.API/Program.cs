@@ -16,6 +16,7 @@ namespace techYard.API
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddMemoryCache();
 
             builder.Services.AddDbContext<techYardDbContext>(options =>
             {

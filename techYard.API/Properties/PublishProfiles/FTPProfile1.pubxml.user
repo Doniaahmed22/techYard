@@ -7,7 +7,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUOcNMYXwzUy7RoVRnHPqhwAAAAACAAAAAAAQZgAAAAEAACAAAAB5Feze8qV3fTt7ZHqk6ArB5XseF0J3XpASu0kg0tKdiQAAAAAOgAAAAAIAACAAAAD/D2hmYvC6kdPkpZOQsqyR2yQqJR4DU8qfo0o87gnCXiAAAADBPGS58t4NxrpLqfbchXTyv5T6y2oTIJm2RzshGCEMpkAAAADsUbqg9ERW3gNewunHOZrhycfzNiEEFFPvmzvxj+fQlWFssWYNr21nSyuGiszQ5ciIYap/pFsDgh8oaDcwdIH3</EncryptedPassword>
     <_PublishTargetUrl>ftp://155.254.244.35/www.techyardhub.somee.com</_PublishTargetUrl>
-    <History>True|2024-11-03T14:44:54.0766126Z||;True|2024-11-03T14:40:31.8409163+02:00||;False|2024-11-03T14:38:46.4399160+02:00||;False|2024-11-03T14:14:14.1045922+02:00||;False|2024-11-03T14:11:05.0075042+02:00||;False|2024-11-03T14:08:49.4044595+02:00||;False|2024-11-03T14:07:08.5460045+02:00||;False|2024-10-31T14:18:40.8203570+03:00||;True|2024-10-31T13:25:29.7452473+03:00||;True|2024-10-31T12:32:41.1613370+03:00||;True|2024-10-31T12:15:41.7979160+03:00||;True|2024-10-31T12:04:15.7959020+03:00||;False|2024-10-31T11:59:43.4468017+03:00||;True|2024-10-31T11:15:01.5578197+03:00||;False|2024-10-31T11:13:08.4077187+03:00||;False|2024-10-31T11:06:00.4008278+03:00||;</History>
+    <History>True|2024-11-04T09:24:17.9002833Z||;False|2024-11-04T11:22:56.7597918+02:00||;False|2024-11-04T11:22:28.8949449+02:00||;False|2024-11-04T11:15:58.7173937+02:00||;True|2024-11-03T16:44:54.0766126+02:00||;True|2024-11-03T14:40:31.8409163+02:00||;False|2024-11-03T14:38:46.4399160+02:00||;False|2024-11-03T14:14:14.1045922+02:00||;False|2024-11-03T14:11:05.0075042+02:00||;False|2024-11-03T14:08:49.4044595+02:00||;False|2024-11-03T14:07:08.5460045+02:00||;False|2024-10-31T14:18:40.8203570+03:00||;True|2024-10-31T13:25:29.7452473+03:00||;True|2024-10-31T12:32:41.1613370+03:00||;True|2024-10-31T12:15:41.7979160+03:00||;True|2024-10-31T12:04:15.7959020+03:00||;False|2024-10-31T11:59:43.4468017+03:00||;True|2024-10-31T11:15:01.5578197+03:00||;False|2024-10-31T11:13:08.4077187+03:00||;False|2024-10-31T11:06:00.4008278+03:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -156,16 +156,16 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/15/2019 10:56:52</publishTime>
     </File>
     <File Include="techYard.API.deps.json">
-      <publishTime>11/03/2024 16:43:47</publishTime>
+      <publishTime>11/04/2024 11:23:17</publishTime>
     </File>
     <File Include="techYard.API.dll">
-      <publishTime>11/03/2024 16:43:46</publishTime>
+      <publishTime>11/04/2024 11:23:16</publishTime>
     </File>
     <File Include="techYard.API.exe">
-      <publishTime>11/03/2024 16:43:46</publishTime>
+      <publishTime>11/04/2024 11:23:16</publishTime>
     </File>
     <File Include="techYard.API.pdb">
-      <publishTime>11/03/2024 16:43:46</publishTime>
+      <publishTime>11/04/2024 11:23:16</publishTime>
     </File>
     <File Include="techYard.API.runtimeconfig.json">
       <publishTime>10/31/2024 10:35:34</publishTime>
@@ -183,13 +183,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/31/2024 14:18:06</publishTime>
     </File>
     <File Include="techYard.Service.dll">
-      <publishTime>11/03/2024 16:40:37</publishTime>
+      <publishTime>11/04/2024 11:07:18</publishTime>
     </File>
     <File Include="techYard.Service.pdb">
-      <publishTime>11/03/2024 16:40:37</publishTime>
+      <publishTime>11/04/2024 11:07:18</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>11/03/2024 16:43:47</publishTime>
+      <publishTime>11/04/2024 11:23:17</publishTime>
     </File>
     <File Include="wwwroot/Images/category/01f97314-b66f-4e0f-90b3-ee344d2bfd76.png">
       <publishTime>10/30/2024 10:58:03</publishTime>
